@@ -1,0 +1,9 @@
+1. randomly order the timeslots for each class.
+
+2.generate timetable based on each timeslot with the chosen timeslot being the starting point for generation evenly distrubuted based on number of timetables user wants.
+
+3. randomly order the timetables after generating all the timetables.
+
+4. order timeslots in the timetable based on start time.
+
+5. output each timetable to pre formatted excel sheet
