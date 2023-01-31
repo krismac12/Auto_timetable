@@ -13,27 +13,48 @@ public class Generator
 
 	public void generateTimetables(int count)
     {
-		int timeCount = 0;
-		for(int i = 0; i < classes.Count;i++)
+		while(classes.Count < count)
         {
-			timeCount += classes[i].times.Count;
-			for(int x = 0; x < classes[i].times.Count; x++)
-            {
-				List<Time> times = new List<Time>();
-				times.Add(classes[i].times[x]);
+			for (int i = 0; i < classes.Count; i++)
+			{
+				for (int x = 0; x < classes[i].times.Count; x++)
+				{
+					Timetable timetable = new Timetable();
+					timetable.AddTime(classes[i].times[x]);
 
-				foreach(Class @class in classes)
-                {
-					if(@class != classes[i])
-                    {
-						@class.randomize();
-						times.Add(@class.times[0]);
+					foreach (Class @class in classes)
+					{
+						if (@class != classes[i])
+						{
+							@class.randomize();
+							foreach (Time time in @class.times)
+							{
+								if (timetables.Count >= count)
+								{
+									return;
+								}
+								if (!timetable.Conflicts(time))
+								{
+									timetable.AddTime(time);
+									break;
+								}
+							}
+						}
 					}
-                }
-				Timetable timetable = new Timetable(times);
-				timetables.Add(timetable);
+					timetables.Add(timetable);
 
+				}
 			}
-        }
+		}
+		randomize();
     }
+	public void randomize()
+	{
+		Random rng;
+		if (timetables.Count != 0)
+		{
+			rng = new Random();
+			timetables = timetables.OrderBy(a => rng.Next()).ToList();
+		}
+	}
 }
