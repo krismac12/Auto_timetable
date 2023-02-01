@@ -8,24 +8,25 @@ public class HelperFunctions
 
     public static void Test()
     {
-        Subject s = new Subject("hello", "ios its");
+        Subject s = new Subject("Subject 1", "ios its");
+        Subject s2 = new Subject("Subject 2", "ios its");
         Class c = new Class("class1", s);
-        Class c2 = new Class("class2", s);
+        Class c2 = new Class("class2", s2);
         Class c3 = new Class("class3", s);
-        Class c4 = new Class("class4", s);
+        Class c4 = new Class("class4", s2);
 
         List<Class> classes = new List<Class>();
 
-        DateTime d1 = new DateTime(2015, 12, 30, 5, 0, 0);
-        DateTime d2 = new DateTime(2015, 12, 30, 7, 0, 0);
-        DateTime d3 = new DateTime(2015, 12, 30, 9, 0, 0);
-        DateTime d4 = new DateTime(2015, 12, 30, 11, 0, 0);
-        DateTime d5 = new DateTime(2015, 12, 31, 6, 0, 0);
-        DateTime d6 = new DateTime(2015, 12, 31, 7, 0, 0);
-        DateTime d7 = new DateTime(2015, 12, 31, 8, 0, 0);
-        DateTime d8 = new DateTime(2015, 12, 31, 9, 0, 0);
-        DateTime d9 = new DateTime(2015, 12, 31, 10, 0, 0);
-        DateTime d10 = new DateTime(2015, 12, 31, 11, 0, 0);
+        DateTime d1 = new DateTime(2022, 12, 6, 5, 0, 0);
+        DateTime d2 = new DateTime(2022, 12, 7, 4, 0, 0);
+        DateTime d3 = new DateTime(2022, 12, 8, 6, 0, 0);
+        DateTime d4 = new DateTime(2022, 12, 9, 7, 0, 0);
+        DateTime d5 = new DateTime(2022, 12, 10, 8, 0, 0);
+        DateTime d6 = new DateTime(2022, 12, 11, 9, 0, 0);
+        DateTime d7 = new DateTime(2022, 12,12, 10, 0, 0);
+        DateTime d8 = new DateTime(2022, 12, 31, 11, 0, 0);
+        DateTime d9 = new DateTime(2022, 12, 31, 12, 0, 0);
+        DateTime d10 = new DateTime(2022, 12, 29, 13, 0, 0);
 
         Time time1 = createTime(d1, c);
         Time time2 = createTime(d2, c);
@@ -173,7 +174,7 @@ public class HelperFunctions
         Generator g = new Generator(classes);
 
         g.generateTimetables(10);
-        foreach(Timetable timeable in g.timetables)
+        foreach (Timetable timeable in g.timetables)
         {
             System.Diagnostics.Debug.WriteLine("new timetable");
             timeable.pTable();
