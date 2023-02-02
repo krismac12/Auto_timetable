@@ -89,7 +89,7 @@ namespace WinFormsApp1
             // 
             // folder_output
             // 
-            this.folder_output.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.folder_output.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.folder_output.Location = new System.Drawing.Point(272, 89);
             this.folder_output.Name = "folder_output";
             this.folder_output.Size = new System.Drawing.Size(203, 38);
