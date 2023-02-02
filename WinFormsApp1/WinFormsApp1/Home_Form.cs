@@ -19,7 +19,9 @@ namespace WinFormsApp1
 
         private void subjects_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var myForm = new subjects_form();
+            myForm.Show();
         }
 
         private void classes_Click(object sender, EventArgs e)

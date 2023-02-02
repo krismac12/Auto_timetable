@@ -16,3 +16,4 @@ C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\r
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.pdb
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.Home_Form.resources
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.subjects_form.resources
