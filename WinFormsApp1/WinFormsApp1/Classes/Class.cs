@@ -16,6 +16,8 @@ public class Class
 		this.ID = ID;
 		this.name = name;
 		this.subject = subject;
+
+		subject.AddClass(this);
 	}
 
 	public void AddTime(Time time)

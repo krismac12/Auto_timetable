@@ -12,18 +12,39 @@ namespace WinFormsApp1
         public static void Test()
         {
 
-            SqliteDataAccess.insertSubject("subject the fourth", "banana");
 
+            
             List<Subject> subjects = SqliteDataAccess.getSubjects();
+            List<Class> classes = SqliteDataAccess.getClasses(subjects);
+
+            foreach(Class @class in classes)
+            {
+                System.Diagnostics.Debug.WriteLine(@class.name);
+            }
 
             foreach(Subject subject in subjects)
             {
                 System.Diagnostics.Debug.WriteLine(subject.name);
+                foreach(Class @class in subject.classes)
+                {
+                    System.Diagnostics.Debug.WriteLine(@class.name);
+                }
             }
 
+            SqliteDataAccess.UpdateClass("Class2 New", "Code 2 New",1,3);
+            foreach (Class @class in classes)
+            {
+                System.Diagnostics.Debug.WriteLine(@class.name);
+            }
 
-            SqliteDataAccess.insertSubject("subject the fourth","banana");
-
+            foreach (Subject subject in subjects)
+            {
+                System.Diagnostics.Debug.WriteLine(subject.name);
+                foreach (Class @class in subject.classes)
+                {
+                    System.Diagnostics.Debug.WriteLine(@class.name);
+                }
+            }
             //System.Diagnostics.Debug.WriteLine(conflict);
 
             //Generator g = new Generator(classes);

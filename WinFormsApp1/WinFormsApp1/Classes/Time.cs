@@ -5,15 +5,17 @@ public class Time
 	public int ID;
 	public int type;
 	public string room;
-	public Class timeClass;
+	public Class @class;
 	public DateTime start;
 	public DateTime end;
-	public Time(string room, DateTime start,DateTime end,Class timeClass)
+	public Time(string room, DateTime start,DateTime end,Class @class)
 	{
 		this.room = room;
-		this.timeClass = timeClass;
+		this.@class = @class;
 		this.start = nextDayofWeek(start);
 		this.end = nextDayofWeek(end);
+
+		@class.AddTime(this);
 	}
 
 	public bool overlap(Time newTime)

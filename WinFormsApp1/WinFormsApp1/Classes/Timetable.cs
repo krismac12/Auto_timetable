@@ -50,7 +50,7 @@ public class Timetable
     {
             foreach (Time t in times)
             {
-                System.Diagnostics.Debug.WriteLine(t.timeClass.subject.name + " " + t.timeClass.name+" "+t.start.DayOfWeek + " "+t.start.TimeOfDay + "-" + t.end.TimeOfDay);
+                System.Diagnostics.Debug.WriteLine(t.@class.subject.name + " " + t.@class.name+" "+t.start.DayOfWeek + " "+t.start.TimeOfDay + "-" + t.end.TimeOfDay);
             }
     }
 
