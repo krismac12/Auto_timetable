@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WOMAzaSIwk5y04DjDzJVtOUYh+w83/hs0Hbfce6ZgI6/OAC27P3Buajpb/mCMBmuSxs8xlVrKMUxDXS5s0E6bg==",
+  "dgSpecHash": "qJ0hYGN3MgbHnDZ8BE5WnbUsv5MyMP3HXQt20+f60B2wppQk/B34+F99F39H0QQydS0odzJQvLKApiEmSTnQ8g==",
   "success": true,
   "projectFilePath": "C:\\timetable\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\krist\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\krist\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.117\\stub.system.data.sqlite.core.netstandard.1.0.117.nupkg.sha512",
+    "C:\\Users\\krist\\.nuget\\packages\\system.data.sqlite.core\\1.0.117\\system.data.sqlite.core.1.0.117.nupkg.sha512"
+  ],
   "logs": []
 }

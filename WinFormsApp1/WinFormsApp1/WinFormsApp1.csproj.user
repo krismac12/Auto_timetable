@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
-    <Compile Update="Home_Form.cs">
+    <Compile Update="Forms\Home_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="subjects_form.cs">
+    <Compile Update="Forms\subjects_form.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

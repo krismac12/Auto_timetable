@@ -2,6 +2,8 @@
 
 public class Time
 {
+	public int ID;
+	public int type;
 	public string room;
 	public Class timeClass;
 	public DateTime start;

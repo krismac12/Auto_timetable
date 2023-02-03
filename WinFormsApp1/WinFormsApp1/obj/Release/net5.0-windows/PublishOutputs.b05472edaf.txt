@@ -1,0 +1,5 @@
+C:\Users\krist\Desktop\auto app\WinFormsApp1.exe
+C:\Users\krist\Desktop\auto app\WinFormsApp1.dll
+C:\Users\krist\Desktop\auto app\WinFormsApp1.deps.json
+C:\Users\krist\Desktop\auto app\WinFormsApp1.runtimeconfig.json
+C:\Users\krist\Desktop\auto app\WinFormsApp1.pdb

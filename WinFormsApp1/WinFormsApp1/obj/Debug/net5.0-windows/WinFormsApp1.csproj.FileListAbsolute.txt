@@ -17,3 +17,12 @@ C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\W
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.Home_Form.resources
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.subjects_form.resources
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\DB\auto_timetable.db
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\WinFormsApp1.dll.config
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\Dapper.dll
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\System.Data.SQLite.dll
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.csproj.CopyComplete
