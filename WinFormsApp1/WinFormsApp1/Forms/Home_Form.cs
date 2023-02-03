@@ -48,5 +48,10 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void view_timetables_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

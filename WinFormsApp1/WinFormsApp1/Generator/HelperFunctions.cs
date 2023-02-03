@@ -12,13 +12,17 @@ namespace WinFormsApp1
         public static void Test()
         {
 
+            SqliteDataAccess.insertSubject("subject the fourth", "banana");
+
             List<Subject> subjects = SqliteDataAccess.getSubjects();
 
             foreach(Subject subject in subjects)
             {
-                System.Diagnostics.Debug.WriteLine(subject);
+                System.Diagnostics.Debug.WriteLine(subject.name);
             }
 
+
+            SqliteDataAccess.insertSubject("subject the fourth","banana");
 
             //System.Diagnostics.Debug.WriteLine(conflict);
 

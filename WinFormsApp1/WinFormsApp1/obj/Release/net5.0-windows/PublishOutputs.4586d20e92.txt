@@ -3,4 +3,11 @@ C:\Users\krist\Desktop\app\DB\auto_timetable.db
 C:\Users\krist\Desktop\app\WinFormsApp1.dll
 C:\Users\krist\Desktop\app\WinFormsApp1.deps.json
 C:\Users\krist\Desktop\app\WinFormsApp1.runtimeconfig.json
+C:\Users\krist\Desktop\app\WinFormsApp1.dll.config
 C:\Users\krist\Desktop\app\WinFormsApp1.pdb
+C:\Users\krist\Desktop\app\Dapper.dll
+C:\Users\krist\Desktop\app\System.Data.SQLite.dll
+C:\Users\krist\Desktop\app\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\krist\Desktop\app\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\krist\Desktop\app\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\krist\Desktop\app\runtimes\win-x86\native\SQLite.Interop.dll

@@ -105,6 +105,7 @@ namespace WinFormsApp1
             this.view_timetables.TabIndex = 6;
             this.view_timetables.Text = "View Timetables";
             this.view_timetables.UseVisualStyleBackColor = true;
+            this.view_timetables.Click += new System.EventHandler(this.view_timetables_Click);
             // 
             // Home_Form
             // 

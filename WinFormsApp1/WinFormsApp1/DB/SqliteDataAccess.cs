@@ -37,6 +37,19 @@ namespace WinFormsApp1
 
             db.CloseConnection();
             return subjects;
+        }
+
+        public static void insertSubject(string name,string code)
+        {
+            Database db = new Database();
+            string query = "INSERT INTO Subjects ('Name', 'Code') VALUES(@name, @code)";
+            db.OpenConnection();
+            SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
+            myCommand.Parameters.AddWithValue("@name", name);
+            myCommand.Parameters.AddWithValue("@code", code);
+            var result = myCommand.ExecuteNonQuery();
+            db.CloseConnection();
+
 
 
         }
