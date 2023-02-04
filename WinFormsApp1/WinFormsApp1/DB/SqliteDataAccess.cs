@@ -132,5 +132,71 @@ namespace WinFormsApp1
 
 
         }
+
+        public static List<Time> getTimes(List<Class> classes, int tp)
+        {
+            List<Time> times = new List<Time>();
+            Database db = new Database();
+            string query = "Select * from Time WHERE Type = "+tp;
+            SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
+            db.OpenConnection();
+            SQLiteDataReader result = myCommand.ExecuteReader();
+
+            if (result.HasRows)
+            {
+                while (result.Read())
+                {
+                    int id = Convert.ToInt32(result["ID"]);
+                    int type = Convert.ToInt32(result["Type"]);
+                    string room = result["Room"].ToString();
+                    string startTime = result["StartTime"].ToString();
+                    string endTime = result["EndTime"].ToString();
+                    int classID = Convert.ToInt32(result["Class_ID"]);
+                    Class @class = classes.FirstOrDefault(o => o.ID == classID);
+                    Time time = new Time(id,room,type, DateTime.Parse(startTime),DateTime.Parse(endTime),@class);
+                    times.Add(time);
+                }
+            }
+
+            db.CloseConnection();
+            return times;
+        }
+
+        public static void insertTime(int type,string room,string start_time,string end_time,int class_ID)
+        {
+            Database db = new Database();
+            string query = "INSERT INTO Time ('Type', 'Room', 'StartTime', 'EndTime', 'Class_ID') VALUES(@type, @room,@start_time,@end_time,@class_ID)";
+            db.OpenConnection();
+            SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
+            myCommand.Parameters.AddWithValue("@type", type);
+            myCommand.Parameters.AddWithValue("@room", room);
+            myCommand.Parameters.AddWithValue("@start_time", start_time);
+            myCommand.Parameters.AddWithValue("@end_time", end_time);
+            myCommand.Parameters.AddWithValue("@class_ID", class_ID);
+            var result = myCommand.ExecuteNonQuery();
+
+            db.CloseConnection();
+
+
+
+        }
+
+        public static void UpdateTime(int id, int type, string room, string start_time, string end_time, int class_ID)
+        {
+            Database db = new Database();
+            string query = "UPDATE Time SET type = @type, room = @room, StartTime = @start_time,EndTime = @end_time ,Class_ID = @Class_ID WHERE id = @ID ";
+            db.OpenConnection();
+            SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
+            myCommand.Parameters.AddWithValue("@type", type);
+            myCommand.Parameters.AddWithValue("@room", room);
+            myCommand.Parameters.AddWithValue("@start_time", start_time);
+            myCommand.Parameters.AddWithValue("@end_time", end_time);
+            myCommand.Parameters.AddWithValue("@class_ID", class_ID);
+            var result = myCommand.ExecuteNonQuery();
+            db.CloseConnection();
+
+
+
+        }
     }
 }

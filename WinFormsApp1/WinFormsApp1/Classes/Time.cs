@@ -8,14 +8,25 @@ public class Time
 	public Class @class;
 	public DateTime start;
 	public DateTime end;
-	public Time(string room, DateTime start,DateTime end,Class @class)
+	public Time(int id ,string room,int type, DateTime start,DateTime end,Class @class)
 	{
+		this.ID = id;
 		this.room = room;
+		this.type = type;
 		this.@class = @class;
 		this.start = nextDayofWeek(start);
 		this.end = nextDayofWeek(end);
 
 		@class.AddTime(this);
+	}
+
+	public Time(int id, string room, int type, DateTime start, DateTime end)
+	{
+		this.ID = id;
+		this.room = room;
+		this.type = type;
+		this.start = nextDayofWeek(start);
+		this.end = nextDayofWeek(end);
 	}
 
 	public bool overlap(Time newTime)
