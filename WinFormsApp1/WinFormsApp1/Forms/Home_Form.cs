@@ -20,13 +20,16 @@ namespace WinFormsApp1
         private void subjects_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var myForm = new subjects_form();
+            var myForm = new Subject_Form();
             myForm.Show();
         }
 
         private void classes_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            List<Subject> subjects = SubjectAccess.getSubjects();
+            var myForm = new Class_Form(subjects);
+            myForm.Show();
         }
 
         private void available_times_Click(object sender, EventArgs e)

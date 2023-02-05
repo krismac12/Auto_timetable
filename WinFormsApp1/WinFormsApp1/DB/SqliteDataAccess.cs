@@ -133,11 +133,11 @@ namespace WinFormsApp1
 
         }
 
-        public static List<Time> getTimes(List<Class> classes, int tp)
+        public static List<Time> getTimes(List<Class> classes, int class_ID)
         {
             List<Time> times = new List<Time>();
             Database db = new Database();
-            string query = "Select * from Time WHERE Type = "+tp;
+            string query = "Select * from Time WHERE Class_ID = "+ class_ID;
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             db.OpenConnection();
             SQLiteDataReader result = myCommand.ExecuteReader();

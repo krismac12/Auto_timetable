@@ -20,4 +20,9 @@ public class Subject
 	{
 		this.classes.Add(@class);
 	}
+
+	public override string ToString() 
+	{
+		return this.name;
+	}
 }
