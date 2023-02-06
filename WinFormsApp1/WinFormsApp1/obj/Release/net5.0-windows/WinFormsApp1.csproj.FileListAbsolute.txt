@@ -7,7 +7,6 @@ C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\WinFormsApp1.pdb
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Home_Form.resources
-C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.subjects_form.resources
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.csproj.GenerateResource.cache
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
@@ -26,3 +25,5 @@ C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.csproj.CopyComplete
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Class_Form.resources
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Subject_Form.resources

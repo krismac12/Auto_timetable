@@ -20,7 +20,7 @@ namespace WinFormsApp1
         private void subjects_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var myForm = new Subject_Form();
+            var myForm = new Subject_Form(this);
             myForm.Show();
         }
 
@@ -28,7 +28,7 @@ namespace WinFormsApp1
         {
             this.Hide();
             List<Subject> subjects = SubjectAccess.getSubjects();
-            var myForm = new Class_Form(subjects);
+            var myForm = new Class_Form(this);
             myForm.Show();
         }
 

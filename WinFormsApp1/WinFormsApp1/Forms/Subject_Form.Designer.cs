@@ -37,6 +37,7 @@ namespace WinFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.Delete_Button = new System.Windows.Forms.Button();
             this.Edit_Button = new System.Windows.Forms.Button();
+            this.Back_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Add_Button
@@ -113,11 +114,22 @@ namespace WinFormsApp1
             this.Edit_Button.UseVisualStyleBackColor = true;
             this.Edit_Button.Click += new System.EventHandler(this.Edit_Button_Click);
             // 
+            // Back_Button
+            // 
+            this.Back_Button.Location = new System.Drawing.Point(12, 12);
+            this.Back_Button.Name = "Back_Button";
+            this.Back_Button.Size = new System.Drawing.Size(112, 34);
+            this.Back_Button.TabIndex = 28;
+            this.Back_Button.Text = "Back";
+            this.Back_Button.UseVisualStyleBackColor = true;
+            this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
+            // 
             // Subject_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 318);
+            this.Controls.Add(this.Back_Button);
             this.Controls.Add(this.Add_Button);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.Code_Box);
@@ -143,5 +155,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Delete_Button;
         private System.Windows.Forms.Button Edit_Button;
+        private System.Windows.Forms.Button Back_Button;
     }
 }

@@ -90,7 +90,7 @@ namespace WinFormsApp1
                     string code = result["Code"].ToString();
                     int subjectID = Convert.ToInt32(result["Subject_ID"]);
                     Subject subject = subjects.FirstOrDefault(o => o.ID == subjectID);
-                    Class @class = new Class(id, name, subject);
+                    Class @class = new Class(id, name,code, subject);
                     classes.Add(@class);
                 }
             }

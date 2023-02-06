@@ -14,10 +14,12 @@ namespace WinFormsApp1
     {
         public List<Subject> subjects;
         Subject selected;
-        public Subject_Form()
+        Form home;
+        public Subject_Form(Form form)
         {
             InitializeComponent();
             FillList();
+            home = form;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -98,9 +100,16 @@ namespace WinFormsApp1
             }
             else
             {
+                
                 SubjectAccess.deleteSubject(selected.ID);
                 FillList();
             }
+        }
+
+        private void Back_Button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            home.Show();
         }
     }
 }
