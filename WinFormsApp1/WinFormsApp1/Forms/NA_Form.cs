@@ -35,8 +35,8 @@ namespace WinFormsApp1
             days.Add(monday);
             days.Add(tuesday);
             days.Add(wednesday);
-            days.Add(friday);
             days.Add(thursday);
+            days.Add(friday);
             days.Add(saturday);
 
 

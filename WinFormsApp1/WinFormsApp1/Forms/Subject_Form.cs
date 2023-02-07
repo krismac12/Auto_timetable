@@ -13,7 +13,7 @@ namespace WinFormsApp1
     public partial class Subject_Form : Form
     {
         public List<Subject> subjects;
-        Subject selected;
+        public Subject selected;
         Form home;
         public Subject_Form(Form form)
         {
@@ -110,6 +110,23 @@ namespace WinFormsApp1
         {
             this.Hide();
             home.Show();
+        }
+
+        private void Classes_button_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == -1)
+            {
+
+            }
+            else
+            {
+                if(selected != null)
+                {
+                    this.Hide();
+                    var myForm = new Class_Form(this, selected);
+                    myForm.Show();
+                }
+            }
         }
     }
 }

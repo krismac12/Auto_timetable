@@ -38,6 +38,7 @@ namespace WinFormsApp1
             this.Delete_Button = new System.Windows.Forms.Button();
             this.Edit_Button = new System.Windows.Forms.Button();
             this.Back_Button = new System.Windows.Forms.Button();
+            this.Classes_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Add_Button
@@ -124,11 +125,22 @@ namespace WinFormsApp1
             this.Back_Button.UseVisualStyleBackColor = true;
             this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
             // 
+            // Classes_button
+            // 
+            this.Classes_button.Location = new System.Drawing.Point(27, 239);
+            this.Classes_button.Name = "Classes_button";
+            this.Classes_button.Size = new System.Drawing.Size(112, 34);
+            this.Classes_button.TabIndex = 29;
+            this.Classes_button.Text = "Classes";
+            this.Classes_button.UseVisualStyleBackColor = true;
+            this.Classes_button.Click += new System.EventHandler(this.Classes_button_Click);
+            // 
             // Subject_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 318);
+            this.Controls.Add(this.Classes_button);
             this.Controls.Add(this.Back_Button);
             this.Controls.Add(this.Add_Button);
             this.Controls.Add(this.listBox1);
@@ -156,5 +168,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Button Delete_Button;
         private System.Windows.Forms.Button Edit_Button;
         private System.Windows.Forms.Button Back_Button;
+        private System.Windows.Forms.Button Classes_button;
     }
 }

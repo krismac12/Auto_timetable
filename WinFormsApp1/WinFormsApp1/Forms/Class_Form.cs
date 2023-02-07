@@ -14,17 +14,34 @@ namespace WinFormsApp1
     {
         private List<Class> classes = new List<Class>();
         private List<Subject> subjects = new List<Subject>();
+        private int type;
+        Subject subject;
         Subject selectedSubject;
         Class selected;
         Form home;
         public Class_Form(Form form)
         {
+            type = 1;
             subjects = SubjectAccess.getSubjects();
             classes = ClassAccess.getClasses(subjects);
             InitializeComponent();
             FillList();
             FillCombo();
             home = form;
+            Subject_Label.Text = "";
+        }
+
+        public Class_Form(Form form,Subject subject)
+        {
+            type = 2;
+            subjects = SubjectAccess.getSubjects();
+            classes = ClassAccess.getClasses(subjects,subject.ID);
+            this.subject = subject;
+            InitializeComponent();
+            FillList();
+            FillCombo();
+            home = form;
+            Subject_Label.Text = "Classes for : " + subject.name;
         }
 
         private void Save_Button_Click(object sender, EventArgs e)
@@ -155,15 +172,30 @@ namespace WinFormsApp1
 
         private void FillList()
         {
-            listBox1.Items.Clear();
-            classes = ClassAccess.getClasses(subjects) ;
-            foreach (Class @class in classes)
+            if(type == 1)
             {
-                listBox1.Items.Add(@class);
+                listBox1.Items.Clear();
+                classes = ClassAccess.getClasses(subjects);
+                foreach (Class @class in classes)
+                {
+                    listBox1.Items.Add(@class);
+                }
+                Name_box.Text = "";
+                Code_Box.Text = "";
+                Subject_Box.SelectedIndex = -1;
             }
-            Name_box.Text = "";
-            Code_Box.Text = "";
-            Subject_Box.SelectedIndex = -1;
+            else
+            {
+                listBox1.Items.Clear();
+                classes = ClassAccess.getClasses(subjects,subject.ID);
+                foreach (Class @class in classes)
+                {
+                    listBox1.Items.Add(@class);
+                }
+                Name_box.Text = "";
+                Code_Box.Text = "";
+                Subject_Box.SelectedIndex = -1;
+            }
         }
 
         private void FillCombo()

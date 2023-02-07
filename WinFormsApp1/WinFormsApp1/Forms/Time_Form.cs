@@ -44,7 +44,7 @@ namespace WinFormsApp1
             days.Add(thursday);
             days.Add(saturday);
 
-            Class_Label.Text = "Times for: " + @class.name;
+            Class_Label.Text = @class.subject.name + ": " + @class.name;
 
             FillList();
             FillCombo();

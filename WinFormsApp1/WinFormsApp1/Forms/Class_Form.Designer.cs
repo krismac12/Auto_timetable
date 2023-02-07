@@ -41,6 +41,7 @@ namespace WinFormsApp1
             this.Add_Button = new System.Windows.Forms.Button();
             this.Back_Button = new System.Windows.Forms.Button();
             this.Times = new System.Windows.Forms.Button();
+            this.Subject_Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Edit_Button
@@ -157,11 +158,21 @@ namespace WinFormsApp1
             this.Times.UseVisualStyleBackColor = true;
             this.Times.Click += new System.EventHandler(this.Times_Click);
             // 
+            // Subject_Label
+            // 
+            this.Subject_Label.AutoSize = true;
+            this.Subject_Label.Location = new System.Drawing.Point(130, 17);
+            this.Subject_Label.Name = "Subject_Label";
+            this.Subject_Label.Size = new System.Drawing.Size(59, 25);
+            this.Subject_Label.TabIndex = 31;
+            this.Subject_Label.Text = "Name";
+            // 
             // Class_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 318);
+            this.Controls.Add(this.Subject_Label);
             this.Controls.Add(this.Times);
             this.Controls.Add(this.Back_Button);
             this.Controls.Add(this.Add_Button);
@@ -194,5 +205,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Button Add_Button;
         private System.Windows.Forms.Button Back_Button;
         private System.Windows.Forms.Button Times;
+        private System.Windows.Forms.Label Subject_Label;
     }
 }
