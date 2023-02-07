@@ -20,13 +20,12 @@ namespace WinFormsApp1
 
             List<Time> NA = TimeAcess.getNA();
             Generator g = new Generator(classes,NA);
-            g.generateTimetables(20);
+            g.generateTimetables(50);
             foreach (Timetable table in g.timetables)
             {
                 table.pTable();
             }
 
-            NA[0].overlap(TimeAcess.getTimes(classes,7)[0]);
 
             //System.Diagnostics.Debug.WriteLine(conflict);
 
