@@ -10,8 +10,7 @@ using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
-
-    public partial class Time_Form : Form
+    public partial class NA_Form : Form
     {
         private DateTime sunday = new DateTime(2023, 2, 5);
         private DateTime monday = new DateTime(2023, 2, 6);
@@ -21,20 +20,16 @@ namespace WinFormsApp1
         private DateTime friday = new DateTime(2023, 2, 10);
         private DateTime saturday = new DateTime(2023, 2, 11);
 
-
         List<Time> times = new List<Time>();
-        List<Class> classes = new List<Class>();
         List<DateTime> days = new List<DateTime>();
         Time selected;
-        Class @class;
-        Form class_form;
-        public Time_Form(Class @class, List<Class> classes,Form form)
+        Form home;
+
+        public NA_Form(Form form)
         {
             InitializeComponent();
 
-            class_form = form;
-            this.classes = classes;
-            this.@class = @class;
+            home = form;
 
             days.Add(sunday);
             days.Add(monday);
@@ -44,7 +39,6 @@ namespace WinFormsApp1
             days.Add(thursday);
             days.Add(saturday);
 
-            Class_Label.Text = "Times for: " + @class.name;
 
             FillList();
             FillCombo();
@@ -55,70 +49,6 @@ namespace WinFormsApp1
             End_Picker.ShowUpDown = true;
             End_Picker.CustomFormat = "hh:mm tt";
             End_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            selected = ((ListBox)sender).SelectedItem as Time;
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Edit_Button_Click(object sender, EventArgs e)
-        {
-            if (Room_box.Text == "" || Day_Box.SelectedIndex == -1 || listBox1.SelectedIndex == -1)
-            {
-            }
-            else
-            {
-                DateTime start = days[Day_Box.SelectedIndex].AddHours(Start_Picker.Value.Hour).AddMinutes(Start_Picker.Value.Minute);
-                DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
-                if (end > start)
-                {
-                    TimeAcess.UpdateTime(selected.ID,1, Room_box.Text, start.ToString(), end.ToString());
-                    FillList();
-                }
-            }
-        }
-
-        private void Add_Button_Click(object sender, EventArgs e)
-        {
-
-            if(Room_box.Text == "" || Day_Box.SelectedIndex == -1)
-            {
-            }
-            else
-            {
-                DateTime start = days[Day_Box.SelectedIndex].AddHours(Start_Picker.Value.Hour).AddMinutes(Start_Picker.Value.Minute);
-                DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
-                if(end > start)
-                {
-                    TimeAcess.insertTime(1, Room_box.Text, start.ToString(), end.ToString(), @class.ID);
-                    FillList();
-                }
-                else
-                {
-                    MessageBox.Show("Please make End time After Start Time", "Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-
-        private void Delete_Button_Click(object sender, EventArgs e)
-        {
-            if (listBox1.SelectedIndex == -1)
-            {
-                FillList();
-            }
-            else
-            {
-                TimeAcess.deleteTime(selected.ID);
-                FillList();
-            }
         }
 
         private void FillCombo()
@@ -137,7 +67,7 @@ namespace WinFormsApp1
         private void FillList()
         {
             listBox1.Items.Clear();
-            times = TimeAcess.getTimes(classes,@class.ID);
+            times = TimeAcess.getNA();
             foreach (Time t in times)
             {
                 listBox1.Items.Add(t);
@@ -145,15 +75,50 @@ namespace WinFormsApp1
 
         }
 
-        private void Class_Label_Click(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            selected = ((ListBox)sender).SelectedItem as Time;
         }
 
         private void Back_Button_Click(object sender, EventArgs e)
         {
             this.Hide();
-            class_form.Show();
+            home.Show();
+        }
+
+        private void Add_Button_Click(object sender, EventArgs e)
+        {
+            if (Type_box.Text == "" || Day_Box.SelectedIndex == -1)
+            {
+            }
+            else
+            {
+                DateTime start = days[Day_Box.SelectedIndex].AddHours(Start_Picker.Value.Hour).AddMinutes(Start_Picker.Value.Minute);
+                DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
+                if (end > start)
+                {
+                    TimeAcess.insertNA(2, Type_box.Text, start.ToString(), end.ToString());
+                    FillList();
+                }
+                else
+                {
+                    MessageBox.Show("Please make End time After Start Time", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void Delete_Button_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == -1)
+            {
+                FillList();
+            }
+            else
+            {
+                TimeAcess.deleteTime(selected.ID);
+                FillList();
+            }
         }
     }
 }

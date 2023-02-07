@@ -28,3 +28,4 @@ C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\W
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.Class_Form.resources
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.Subject_Form.resources
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.Time_Form.resources
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.NA_Form.resources

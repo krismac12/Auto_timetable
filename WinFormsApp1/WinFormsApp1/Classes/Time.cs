@@ -31,7 +31,15 @@ public class Time
 
 	public bool overlap(Time newTime)
     {
-		bool overlap = start < newTime.end && end > newTime.start;
+		bool overlap = true;
+		if (start < newTime.start)
+        {
+			overlap = end > newTime.start;
+        }
+        else
+        {
+			overlap = start < newTime.end;
+        }
 		return overlap;
 	}
 
@@ -45,16 +53,7 @@ public class Time
 
 	public override string ToString()
 	{
-		if(type == 1)
-        {
 			return this.room +": "+this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end);
-
-		}
-        else
-        {
-			return this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end);
-
-		}
 	}
 }
 

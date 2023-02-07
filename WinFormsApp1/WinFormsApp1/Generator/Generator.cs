@@ -11,9 +11,11 @@ namespace WinFormsApp1
 	{
 		public List<Class> classes = new List<Class>();
 		public List<Timetable> timetables = new List<Timetable>();
-		public Generator(List<Class> classes)
+		public List<Time> NA = new List<Time>();
+		public Generator(List<Class> classes,List<Time> times)
 		{
 			this.classes = classes;
+			NA = times;
 		}
 
 		public void generateTimetables(int count)
@@ -25,8 +27,18 @@ namespace WinFormsApp1
 					for (int x = 0; x < classes[i].times.Count; x++)
 					{
 						Timetable timetable = new Timetable();
-						timetable.AddTime(classes[i].times[x]);
-
+						foreach(Time time in NA)
+                        {
+							timetable.AddTime(time);
+                        }
+						if (timetable.Conflicts(classes[i].times[x]))
+                        {
+							continue;
+                        }
+                        else
+                        {
+							timetable.AddTime(classes[i].times[x]);
+                        }
 						foreach (Class @class in classes)
 						{
 							if (@class != classes[i])
@@ -52,6 +64,7 @@ namespace WinFormsApp1
 				}
 			}
 			randomize();
+
 		}
 		public void randomize()
 		{

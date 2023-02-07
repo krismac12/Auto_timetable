@@ -52,6 +52,7 @@ namespace WinFormsApp1
             this.Back_Button.TabIndex = 37;
             this.Back_Button.Text = "Back";
             this.Back_Button.UseVisualStyleBackColor = true;
+            this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
             // 
             // Add_Button
             // 

@@ -147,7 +147,7 @@ namespace WinFormsApp1
             else
             {
                 this.Hide();
-                var myForm = new Time_Form(selected,classes);
+                var myForm = new Time_Form(selected,classes,this);
                 myForm.Show();
             }
 
