@@ -42,6 +42,20 @@ public class Time
 		var nextDay = start.AddDays((int)date.DayOfWeek).AddHours(date.Hour).AddMinutes(date.Minute);
 		return nextDay;
 	}
+
+	public override string ToString()
+	{
+		if(type == 1)
+        {
+			return this.room +": "+this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end);
+
+		}
+        else
+        {
+			return this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end);
+
+		}
+	}
 }
 
 public static class DateTimeExtensions

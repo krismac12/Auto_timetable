@@ -34,7 +34,10 @@ namespace WinFormsApp1
 
         private void available_times_Click(object sender, EventArgs e)
         {
-
+            //this.Hide();
+            //List<Subject> subjects = SubjectAccess.getSubjects();
+            //var myForm = new Time_Form();
+            //myForm.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)

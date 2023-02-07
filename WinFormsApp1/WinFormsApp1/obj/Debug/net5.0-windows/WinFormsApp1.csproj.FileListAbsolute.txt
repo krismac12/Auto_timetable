@@ -27,3 +27,4 @@ C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\r
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.csproj.CopyComplete
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.Class_Form.resources
 C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.Subject_Form.resources
+C:\timetable\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.Time_Form.resources

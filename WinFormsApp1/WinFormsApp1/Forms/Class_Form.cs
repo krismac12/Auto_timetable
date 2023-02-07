@@ -140,6 +140,16 @@ namespace WinFormsApp1
 
         private void Times_Click(object sender, EventArgs e)
         {
+            if (listBox1.SelectedIndex == -1)
+            {
+
+            }
+            else
+            {
+                this.Hide();
+                var myForm = new Time_Form(selected,classes);
+                myForm.Show();
+            }
 
         }
 
