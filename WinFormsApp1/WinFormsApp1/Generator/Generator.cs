@@ -58,6 +58,7 @@ namespace WinFormsApp1
 								}
 							}
 						}
+						timetable.addStrings();
 						timetables.Add(timetable);
 
 					}

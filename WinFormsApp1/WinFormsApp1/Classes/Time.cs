@@ -55,6 +55,27 @@ public class Time
 	{
 			return this.room +": "+this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end);
 	}
+
+	public string Display()
+    {
+		if(type == 1)
+        {
+			return @class.subject.name + " \r\n" +
+				"Class: " + @class.name + " \r\n" +
+				"Room: " + room + " \r\n" +
+				"Time: " + " \r\n" +
+				string.Format("{0:hh:mm tt}", start) +" - "+ string.Format("{0:hh:mm tt}", end) + "\r\n";
+
+
+		}
+        else
+        {
+			return
+				"Type: " + room + " \r\n" +
+				"Time: " + " \r\n" +
+				string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm tt}", end) + "\r\n";
+		}
+    }
 }
 
 public static class DateTimeExtensions

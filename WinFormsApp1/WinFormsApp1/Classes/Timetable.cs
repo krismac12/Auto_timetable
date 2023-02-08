@@ -6,6 +6,7 @@ public class Timetable
 
 {
 	public List<Time> times = new List<Time>();
+	public List<string> timeString = new List<string>();
 	public Timetable()
 	{
 
@@ -50,20 +51,28 @@ public class Timetable
     {
             foreach (Time t in times)
             {
-				if(t.type == 1)
-				{
-					System.Diagnostics.Debug.WriteLine(t.@class.subject.name + " " + t.@class.name + " " + t.start.DayOfWeek + " " + t.start.TimeOfDay + "-" + t.end.TimeOfDay);
+			if (t.type == 1)
+			{
+				System.Diagnostics.Debug.WriteLine(t.@class.subject.name + " " + t.@class.name + " " + t.start.DayOfWeek + " " + t.start.TimeOfDay + "-" + t.end.TimeOfDay);
 
-				}
-				else
-				{
-				
-					System.Diagnostics.Debug.WriteLine(t.room + " " + t.start.DayOfWeek + " " + t.start.TimeOfDay + "-" + t.end.TimeOfDay);
-
-				}
 			}
-		System.Diagnostics.Debug.WriteLine("NEW Timetable");
+			else
+			{
+
+				System.Diagnostics.Debug.WriteLine(t.room + " " + t.start.DayOfWeek + " " + t.start.TimeOfDay + "-" + t.end.TimeOfDay);
+
+			}
+		}
+			System.Diagnostics.Debug.WriteLine("NEW Timetable");
 
 	}
+
+	public void addStrings()
+    {
+		foreach(Time time in times)
+        {
+			timeString.Add(time.Display());
+        }
+    }
 
 }
