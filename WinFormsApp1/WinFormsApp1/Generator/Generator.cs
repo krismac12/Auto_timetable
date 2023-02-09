@@ -17,15 +17,14 @@ namespace WinFormsApp1
 			NA = times;
 
 			classes = classes.OrderBy(x => x.times.Count).ToList();
-			classes.Reverse();
 			this.classes = classes;
 
 		}
 
 		public void generateTimetables(int count)
 		{
-			while (classes.Count < count)
-			{
+			int num = 0;
+
 				for (int i = 0; i < classes.Count; i++)
 				{
 					for (int x = 0; x < classes[i].times.Count; x++)
@@ -61,8 +60,12 @@ namespace WinFormsApp1
 								}
 							}
 						}
-						timetable.addStrings();
-						timetables.Add(timetable);
+						num++;
+						if(timetable.times.Count == NA.Count + classes.Count)
+                        {
+							timetable.addStrings();
+							timetables.Add(timetable);
+						}
 						if (timetables.Count >= count)
 						{
 							return;
@@ -70,7 +73,6 @@ namespace WinFormsApp1
 
 					}
 				}
-			}
 			randomize();
 
 		}

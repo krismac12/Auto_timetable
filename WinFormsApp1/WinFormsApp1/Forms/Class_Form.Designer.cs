@@ -162,10 +162,12 @@ namespace WinFormsApp1
             // 
             this.Subject_Label.AutoSize = true;
             this.Subject_Label.Location = new System.Drawing.Point(130, 17);
+            this.Subject_Label.MaximumSize = new System.Drawing.Size(175, 100);
             this.Subject_Label.Name = "Subject_Label";
             this.Subject_Label.Size = new System.Drawing.Size(59, 25);
             this.Subject_Label.TabIndex = 31;
             this.Subject_Label.Text = "Name";
+            this.Subject_Label.Click += new System.EventHandler(this.Subject_Label_Click);
             // 
             // Class_Form
             // 

@@ -31,7 +31,7 @@ public class Class
     {
 		if(times.Count != 0)
         {
-			rng = new Random();
+			rng = new Random(1);
 			times = times.OrderBy(a => rng.Next()).ToList();
 		}
 	}

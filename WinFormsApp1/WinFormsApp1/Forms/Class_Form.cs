@@ -29,6 +29,7 @@ namespace WinFormsApp1
             FillCombo();
             home = form;
             Subject_Label.Text = "";
+
         }
 
         public Class_Form(Form form,Subject subject)
@@ -205,6 +206,11 @@ namespace WinFormsApp1
             {
                 Subject_Box.Items.Add(subject);
             }
+        }
+
+        private void Subject_Label_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

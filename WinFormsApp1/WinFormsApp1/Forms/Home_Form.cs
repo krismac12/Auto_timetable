@@ -58,6 +58,13 @@ namespace WinFormsApp1
                 {
                     generateTables();
 
+                    if(g.timetables.Count == 0)
+                    {
+                        MessageBox.Show("No Timetables possible for current data", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
                     string filePath = folder_output.Text;
                     //loop
                     int i = 1;
@@ -140,13 +147,13 @@ namespace WinFormsApp1
                     gens = gens * @class.times.Count;
                 }
             }
-            if (gens <= 50)
+            if (gens <= 25)
             {
                 count = gens + 2;
             }
             else
             {
-                count = 50;
+                count = 25;
             }
             num = gens;
             g = new Generator(classes, NA);
