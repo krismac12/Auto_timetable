@@ -112,5 +112,18 @@ namespace WinFormsApp1
             var result = myCommand.ExecuteNonQuery();
             db.CloseConnection();
         }
+        public static void deleteClassCascade()
+        {
+
+
+            Database db = new Database();
+
+            db.OpenConnection();
+            db.CloseConnection();
+
+            TimeAcess.deleteTimeCascade();
+
+
+        }
     }
 }

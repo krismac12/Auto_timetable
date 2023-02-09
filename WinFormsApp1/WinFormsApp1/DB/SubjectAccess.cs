@@ -52,6 +52,8 @@ namespace WinFormsApp1
 
 
 
+
+
         }
 
         public static void UpdateSubject(string name, string code, int ID)
@@ -74,12 +76,13 @@ namespace WinFormsApp1
         {
             Database db = new Database();
 
-            string query = "DELETE FROM Subjects WHERE ID = @ID;" +
-                "DELETE FROM Classes WHERE Subject_ID = @ID";
+            string query = "DELETE FROM Subjects WHERE ID = @ID;";
             db.OpenConnection();
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             myCommand.Parameters.AddWithValue("@ID", ID);
             var result = myCommand.ExecuteNonQuery();
+            db.CloseConnection();
+            ClassAccess.deleteClassCascade();
         }
     }
 }

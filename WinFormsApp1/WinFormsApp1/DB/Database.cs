@@ -15,7 +15,7 @@ namespace WinFormsApp1 {
 		public SQLiteConnection myConnection;
 		public Database()
 		{
-			myConnection = new SQLiteConnection("Data Source = ./DB/auto_timetable.db");
+			myConnection = new SQLiteConnection("Data Source = ./DB/auto_timetable.db;foreign keys=true;");
 		}
 
 		public void OpenConnection()

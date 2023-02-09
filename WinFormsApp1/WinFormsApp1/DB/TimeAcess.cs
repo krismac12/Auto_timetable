@@ -162,5 +162,40 @@ namespace WinFormsApp1
             var result = myCommand.ExecuteNonQuery();
             db.CloseConnection();
         }
+
+        public static bool isEmpty()
+        {
+            Database db = new Database();
+            int count = 0;
+            string query = "SELECT COUNT(*) FROM Time Where Type = 1";
+            db.OpenConnection();
+            SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
+            SQLiteDataReader result = myCommand.ExecuteReader();
+
+            if (result.HasRows)
+            {
+                while (result.Read())
+                {
+                     count = Convert.ToInt32(result["COUNT(*)"]);
+                }
+            }
+            db.CloseConnection();
+            if (count <= 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static void deleteTimeCascade()
+        {
+            Database db = new Database();
+
+            db.OpenConnection();
+            db.CloseConnection();
+        }
     }
 }

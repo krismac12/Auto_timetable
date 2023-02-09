@@ -14,8 +14,12 @@ namespace WinFormsApp1
 		public List<Time> NA = new List<Time>();
 		public Generator(List<Class> classes,List<Time> times)
 		{
-			this.classes = classes;
 			NA = times;
+
+			classes = classes.OrderBy(x => x.times.Count).ToList();
+			classes.Reverse();
+			this.classes = classes;
+
 		}
 
 		public void generateTimetables(int count)
@@ -39,27 +43,30 @@ namespace WinFormsApp1
                         {
 							timetable.AddTime(classes[i].times[x]);
                         }
-						foreach (Class @class in classes)
-						{
-							if (@class != classes[i])
+						if(classes.Count >= 1)
+                        {
+							foreach (Class @class in classes)
 							{
-								@class.randomize();
-								foreach (Time time in @class.times)
+								if (@class != classes[i])
 								{
-									if (timetables.Count >= count)
+									@class.randomize();
+									foreach (Time time in @class.times)
 									{
-										return;
-									}
-									if (!timetable.Conflicts(time))
-									{
-										timetable.AddTime(time);
-										break;
+										if (!timetable.Conflicts(time))
+										{
+											timetable.AddTime(time);
+											break;
+										}
 									}
 								}
 							}
 						}
 						timetable.addStrings();
 						timetables.Add(timetable);
+						if (timetables.Count >= count)
+						{
+							return;
+						}
 
 					}
 				}

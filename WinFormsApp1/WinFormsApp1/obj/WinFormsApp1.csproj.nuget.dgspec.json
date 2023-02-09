@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\timetable\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "C:\\Users\\krist\\Source\\Repos\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\timetable\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "C:\\Users\\krist\\Source\\Repos\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\timetable\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\krist\\Source\\Repos\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "C:\\timetable\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectPath": "C:\\Users\\krist\\Source\\Repos\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
         "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\timetable\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\obj\\",
+        "outputPath": "C:\\Users\\krist\\Source\\Repos\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",

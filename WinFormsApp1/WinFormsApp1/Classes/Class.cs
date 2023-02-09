@@ -40,6 +40,4 @@ public class Class
 	{
 		return this.name;
 	}
-
-
 }

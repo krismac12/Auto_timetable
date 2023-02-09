@@ -17,6 +17,7 @@ namespace WinFormsApp1
     public partial class Home_Form : Form
     {
         Generator g;
+        int num;
         public Home_Form()
         {
             InitializeComponent();
@@ -51,41 +52,53 @@ namespace WinFormsApp1
 
         private void generate_Click(object sender, EventArgs e)
         {
-            if (Directory.Exists(folder_output.Text))
+            if (!TimeAcess.isEmpty())
             {
-                generateTables();
-
-                string filePath = folder_output.Text;
-                //loop
-                int i = 1;
-                foreach (Timetable table in g.timetables)
+                if (Directory.Exists(folder_output.Text))
                 {
-                    string destination = "./DB/excelfile.xlsx";
-                    CreateExcel("./DB/Schedule_template.xlsx", destination);
+                    generateTables();
 
-                    writeTable(destination, table);
-                    FileInfo existingFile = new FileInfo(destination);
+                    string filePath = folder_output.Text;
+                    //loop
+                    int i = 1;
+                    foreach (Timetable table in g.timetables)
+                    {
+                        string destination = "./DB/excelfile.xlsx";
+                        CreateExcel("./DB/Schedule_template.xlsx", destination);
 
-                    string pdfFile = filePath +"\\Timetable"+ i + ".pdf";
+                        writeTable(destination, table);
+                        FileInfo existingFile = new FileInfo(destination);
 
-                    Workbook workbook = new Workbook();
-                    workbook.LoadFromFile(destination);
+                        string pdfFile = filePath + "\\Timetable" + i + ".pdf";
 
-                    Worksheet sheet = workbook.Worksheets[0];
-                    sheet.PageSetup.Orientation = PageOrientationType.Landscape;
-                    sheet.PageSetup.FitToPagesTall = 1;
+                        Workbook workbook = new Workbook();
+                        workbook.LoadFromFile(destination);
 
-                    workbook.SaveToFile(pdfFile, FileFormat.PDF);
-                    File.Delete(destination);
-                    i++;
+                        Worksheet sheet = workbook.Worksheets[0];
+                        sheet.PageSetup.Orientation = PageOrientationType.Landscape;
+                        sheet.PageSetup.FitToPagesTall = 1;
+
+                        workbook.SaveToFile(pdfFile, FileFormat.PDF);
+                        File.Delete(destination);
+                        i++;
+                        if (i > num)
+                        {
+                            break;
+                        }
+                    }
+                    MessageBox.Show("Finished Generating Timetables", "INFO",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                MessageBox.Show("Finished Generating Timetables", "INFO",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                {
+                    MessageBox.Show("Please Select a Folder", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Please Select a Folder", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please Create Times", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -117,8 +130,27 @@ namespace WinFormsApp1
             }
 
             List<Time> NA = TimeAcess.getNA();
+
+            int gens = 1;
+            int count;
+            foreach (Class @class in classes)
+            {
+                if (@class.times.Count >= 1)
+                {
+                    gens = gens * @class.times.Count;
+                }
+            }
+            if (gens <= 50)
+            {
+                count = gens + 2;
+            }
+            else
+            {
+                count = 50;
+            }
+            num = gens;
             g = new Generator(classes, NA);
-            g.generateTimetables(50);
+            g.generateTimetables(count);
         }
 
         private void writeTable(string file,Timetable table)
