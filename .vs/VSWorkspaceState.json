@@ -3,8 +3,9 @@
     "",
     "\\WinFormsApp1",
     "\\WinFormsApp1\\WinFormsApp1",
+    "\\WinFormsApp1\\WinFormsApp1\\Classes",
     "\\WinFormsApp1\\WinFormsApp1\\DB"
   ],
-  "SelectedNode": "\\WinFormsApp1\\WinFormsApp1\\DB\\TimeAcess.cs",
+  "SelectedNode": "\\WinFormsApp1\\WinFormsApp1\\Classes\\Time.cs",
   "PreviewInSolutionExplorer": false
 }

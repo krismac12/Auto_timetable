@@ -222,3 +222,4 @@ C:\Users\krist\Source\Repos\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release
 C:\Users\krist\Source\Repos\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\ref\WinFormsApp1.dll
 C:\Users\krist\Source\Repos\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.pdb
 C:\Users\krist\Source\Repos\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\krist\Source\Repos\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Saves\auto_timetable.db

@@ -280,5 +280,48 @@ namespace WinFormsApp1
             }
         }
 
+        private void Save_file_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog diag = new OpenFileDialog();
+            diag.Filter = "Database file (*.db)|*.db";
+            if (diag.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                Save_file.Text = diag.FileName;
+            }
+            else
+            {
+                Save_file.Text = "Save File";
+            }
+        }
+
+        private void Load_Button_Click(object sender, EventArgs e)
+        {
+            if (File.Exists("./DB/auto_timetable.db"))
+            {
+                File.Delete("./DB/auto_timetable.db");
+            }
+            if (Save_file.Text != "")
+            {
+                File.Copy(Save_file.Text, "./DB/auto_timetable.db");
+
+            }
+        }
+
+        private void Save_Button_Click(object sender, EventArgs e)
+        {
+            if(Save_text.Text != "")
+            {
+                try
+                {
+                    File.Copy("./DB/auto_timetable.db", "./Saves/" + Save_text.Text + ".db");
+
+                }
+                catch
+                {
+                    MessageBox.Show("Save File Already Exists", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

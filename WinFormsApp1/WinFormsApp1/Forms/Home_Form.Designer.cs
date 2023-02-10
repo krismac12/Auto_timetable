@@ -36,6 +36,11 @@ namespace WinFormsApp1
             this.generate = new System.Windows.Forms.Button();
             this.folder_output = new System.Windows.Forms.Label();
             this.view_timetables = new System.Windows.Forms.Button();
+            this.Save_Button = new System.Windows.Forms.Button();
+            this.Save_file = new System.Windows.Forms.Label();
+            this.Load_Button = new System.Windows.Forms.Button();
+            this.Save_text = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // subjects
@@ -89,7 +94,7 @@ namespace WinFormsApp1
             this.generate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.generate.Location = new System.Drawing.Point(272, 93);
+            this.generate.Location = new System.Drawing.Point(268, 66);
             this.generate.MaximumSize = new System.Drawing.Size(10000, 50);
             this.generate.Name = "generate";
             this.generate.Size = new System.Drawing.Size(203, 37);
@@ -104,7 +109,7 @@ namespace WinFormsApp1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.folder_output.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.folder_output.Location = new System.Drawing.Point(272, 52);
+            this.folder_output.Location = new System.Drawing.Point(268, 25);
             this.folder_output.MaximumSize = new System.Drawing.Size(10000, 50);
             this.folder_output.Name = "folder_output";
             this.folder_output.Size = new System.Drawing.Size(203, 37);
@@ -117,7 +122,7 @@ namespace WinFormsApp1
             this.view_timetables.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.view_timetables.Location = new System.Drawing.Point(272, 193);
+            this.view_timetables.Location = new System.Drawing.Point(268, 109);
             this.view_timetables.MaximumSize = new System.Drawing.Size(10000, 50);
             this.view_timetables.Name = "view_timetables";
             this.view_timetables.Size = new System.Drawing.Size(203, 37);
@@ -126,11 +131,72 @@ namespace WinFormsApp1
             this.view_timetables.UseVisualStyleBackColor = true;
             this.view_timetables.Click += new System.EventHandler(this.view_timetables_Click);
             // 
+            // Save_Button
+            // 
+            this.Save_Button.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Save_Button.Location = new System.Drawing.Point(143, 248);
+            this.Save_Button.MaximumSize = new System.Drawing.Size(200, 50);
+            this.Save_Button.Name = "Save_Button";
+            this.Save_Button.Size = new System.Drawing.Size(200, 37);
+            this.Save_Button.TabIndex = 7;
+            this.Save_Button.Text = "Save";
+            this.Save_Button.UseVisualStyleBackColor = true;
+            this.Save_Button.Click += new System.EventHandler(this.Save_Button_Click);
+            // 
+            // Save_file
+            // 
+            this.Save_file.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Save_file.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Save_file.Location = new System.Drawing.Point(366, 207);
+            this.Save_file.MaximumSize = new System.Drawing.Size(200, 50);
+            this.Save_file.Name = "Save_file";
+            this.Save_file.Size = new System.Drawing.Size(200, 37);
+            this.Save_file.TabIndex = 10;
+            this.Save_file.Text = "Save File";
+            this.Save_file.Click += new System.EventHandler(this.Save_file_Click);
+            // 
+            // Load_Button
+            // 
+            this.Load_Button.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Load_Button.Location = new System.Drawing.Point(366, 248);
+            this.Load_Button.MaximumSize = new System.Drawing.Size(200, 50);
+            this.Load_Button.Name = "Load_Button";
+            this.Load_Button.Size = new System.Drawing.Size(200, 37);
+            this.Load_Button.TabIndex = 9;
+            this.Load_Button.Text = "Load";
+            this.Load_Button.UseVisualStyleBackColor = true;
+            this.Load_Button.Click += new System.EventHandler(this.Load_Button_Click);
+            // 
+            // Save_text
+            // 
+            this.Save_text.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Save_text.Location = new System.Drawing.Point(143, 213);
+            this.Save_text.MaximumSize = new System.Drawing.Size(200, 50);
+            this.Save_text.Name = "Save_text";
+            this.Save_text.Size = new System.Drawing.Size(200, 31);
+            this.Save_text.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(189, 185);
+            this.label2.MaximumSize = new System.Drawing.Size(200, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 25);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Save Name";
+            // 
             // Home_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 318);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Save_text);
+            this.Controls.Add(this.Save_file);
+            this.Controls.Add(this.Load_Button);
+            this.Controls.Add(this.Save_Button);
             this.Controls.Add(this.view_timetables);
             this.Controls.Add(this.folder_output);
             this.Controls.Add(this.generate);
@@ -141,6 +207,7 @@ namespace WinFormsApp1
             this.Name = "Home_Form";
             this.Text = "Home_Form";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -153,5 +220,10 @@ namespace WinFormsApp1
         private System.Windows.Forms.Button generate;
         private System.Windows.Forms.Label folder_output;
         private System.Windows.Forms.Button view_timetables;
+        private System.Windows.Forms.Button Save_Button;
+        private System.Windows.Forms.Label Save_file;
+        private System.Windows.Forms.Button Load_Button;
+        private System.Windows.Forms.TextBox Save_text;
+        private System.Windows.Forms.Label label2;
     }
 }

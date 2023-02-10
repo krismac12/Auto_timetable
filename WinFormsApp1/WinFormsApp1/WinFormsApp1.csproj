@@ -8,8 +8,14 @@
 
   <ItemGroup>
     <Compile Remove="Excel\**" />
+    <Compile Remove="Saves\**" />
+    <Compile Remove="timetables\**" />
     <EmbeddedResource Remove="Excel\**" />
+    <EmbeddedResource Remove="Saves\**" />
+    <EmbeddedResource Remove="timetables\**" />
     <None Remove="Excel\**" />
+    <None Remove="Saves\**" />
+    <None Remove="timetables\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +30,9 @@
     <Content Include="DB\Schedule_template.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Saves\auto_timetable.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -35,10 +44,6 @@
     <PackageReference Include="SautinSoft.PdfVision" Version="6.2.11.16" />
     <PackageReference Include="Syncfusion.ExcelToPdfConverter.AspNet" Version="20.4.0.44" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.117" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="timetables\" />
   </ItemGroup>
 
 </Project>
