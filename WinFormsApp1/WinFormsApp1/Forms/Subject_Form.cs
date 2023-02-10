@@ -80,7 +80,7 @@ namespace WinFormsApp1
         {
             string code = Code_Box.Text;
             string name = Name_box.Text;
-            if (code == "" || name == "")
+            if (code == "" || name == "" || listBox1.SelectedIndex == -1)
             {
 
             }
