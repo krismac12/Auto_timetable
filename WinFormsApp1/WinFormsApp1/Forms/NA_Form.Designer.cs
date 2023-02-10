@@ -95,7 +95,8 @@ namespace WinFormsApp1
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(164, 274);
+            this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Add_Button.Location = new System.Drawing.Point(559, 272);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(112, 34);
             this.Add_Button.TabIndex = 51;
@@ -105,6 +106,9 @@ namespace WinFormsApp1
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(323, 12);
@@ -140,7 +144,8 @@ namespace WinFormsApp1
             // 
             // Delete_Button
             // 
-            this.Delete_Button.Location = new System.Drawing.Point(33, 274);
+            this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Delete_Button.Location = new System.Drawing.Point(363, 272);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(112, 34);
             this.Delete_Button.TabIndex = 46;
