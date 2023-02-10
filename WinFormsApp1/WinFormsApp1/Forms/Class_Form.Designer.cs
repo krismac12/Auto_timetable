@@ -46,7 +46,8 @@ namespace WinFormsApp1
             // 
             // Edit_Button
             // 
-            this.Edit_Button.Location = new System.Drawing.Point(153, 219);
+            this.Edit_Button.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Edit_Button.Location = new System.Drawing.Point(35, 228);
             this.Edit_Button.Name = "Edit_Button";
             this.Edit_Button.Size = new System.Drawing.Size(112, 34);
             this.Edit_Button.TabIndex = 1;
@@ -56,7 +57,8 @@ namespace WinFormsApp1
             // 
             // Delete_Button
             // 
-            this.Delete_Button.Location = new System.Drawing.Point(35, 219);
+            this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Delete_Button.Location = new System.Drawing.Point(35, 123);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(112, 34);
             this.Delete_Button.TabIndex = 2;
@@ -67,7 +69,7 @@ namespace WinFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 79);
+            this.label1.Location = new System.Drawing.Point(235, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 25);
             this.label1.TabIndex = 4;
@@ -76,15 +78,18 @@ namespace WinFormsApp1
             // 
             // Name_box
             // 
-            this.Name_box.Location = new System.Drawing.Point(115, 79);
+            this.Name_box.Location = new System.Drawing.Point(301, 84);
+            this.Name_box.MaximumSize = new System.Drawing.Size(1000, 4);
             this.Name_box.Name = "Name_box";
-            this.Name_box.Size = new System.Drawing.Size(150, 31);
+            this.Name_box.Size = new System.Drawing.Size(100, 31);
             this.Name_box.TabIndex = 5;
             this.Name_box.TextChanged += new System.EventHandler(this.Name_box_TextChanged);
             // 
             // Code_Box
             // 
-            this.Code_Box.Location = new System.Drawing.Point(115, 116);
+            this.Code_Box.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Code_Box.Location = new System.Drawing.Point(748, 83);
+            this.Code_Box.MaximumSize = new System.Drawing.Size(1000, 50);
             this.Code_Box.Name = "Code_Box";
             this.Code_Box.Size = new System.Drawing.Size(150, 31);
             this.Code_Box.TabIndex = 7;
@@ -92,8 +97,9 @@ namespace WinFormsApp1
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 116);
+            this.label2.Location = new System.Drawing.Point(682, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 25);
             this.label2.TabIndex = 6;
@@ -102,8 +108,9 @@ namespace WinFormsApp1
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 156);
+            this.label4.Location = new System.Drawing.Point(463, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 25);
             this.label4.TabIndex = 12;
@@ -111,26 +118,32 @@ namespace WinFormsApp1
             // 
             // Subject_Box
             // 
+            this.Subject_Box.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Subject_Box.FormattingEnabled = true;
-            this.Subject_Box.Location = new System.Drawing.Point(115, 156);
+            this.Subject_Box.Location = new System.Drawing.Point(529, 83);
+            this.Subject_Box.MaximumSize = new System.Drawing.Size(1000, 0);
             this.Subject_Box.Name = "Subject_Box";
-            this.Subject_Box.Size = new System.Drawing.Size(151, 33);
+            this.Subject_Box.Size = new System.Drawing.Size(150, 33);
             this.Subject_Box.TabIndex = 13;
             this.Subject_Box.SelectedIndexChanged += new System.EventHandler(this.Subject_Box_SelectedIndexChanged);
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(341, 12);
+            this.listBox1.Location = new System.Drawing.Point(301, 136);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(228, 254);
+            this.listBox1.Size = new System.Drawing.Size(600, 279);
             this.listBox1.TabIndex = 14;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(399, 272);
+            this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Add_Button.Location = new System.Drawing.Point(553, 450);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(112, 34);
             this.Add_Button.TabIndex = 15;
@@ -150,7 +163,8 @@ namespace WinFormsApp1
             // 
             // Times
             // 
-            this.Times.Location = new System.Drawing.Point(35, 259);
+            this.Times.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Times.Location = new System.Drawing.Point(35, 348);
             this.Times.Name = "Times";
             this.Times.Size = new System.Drawing.Size(112, 34);
             this.Times.TabIndex = 30;
@@ -161,8 +175,8 @@ namespace WinFormsApp1
             // Subject_Label
             // 
             this.Subject_Label.AutoSize = true;
-            this.Subject_Label.Location = new System.Drawing.Point(130, 17);
-            this.Subject_Label.MaximumSize = new System.Drawing.Size(175, 100);
+            this.Subject_Label.Location = new System.Drawing.Point(301, 9);
+            this.Subject_Label.MaximumSize = new System.Drawing.Size(500, 50);
             this.Subject_Label.Name = "Subject_Label";
             this.Subject_Label.Size = new System.Drawing.Size(59, 25);
             this.Subject_Label.TabIndex = 31;
@@ -173,7 +187,7 @@ namespace WinFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 318);
+            this.ClientSize = new System.Drawing.Size(913, 496);
             this.Controls.Add(this.Subject_Label);
             this.Controls.Add(this.Times);
             this.Controls.Add(this.Back_Button);

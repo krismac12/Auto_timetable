@@ -41,6 +41,7 @@ namespace WinFormsApp1
             // subjects
             // 
             this.subjects.Location = new System.Drawing.Point(12, 30);
+            this.subjects.MaximumSize = new System.Drawing.Size(1000, 50);
             this.subjects.Name = "subjects";
             this.subjects.Size = new System.Drawing.Size(112, 34);
             this.subjects.TabIndex = 0;
@@ -50,7 +51,9 @@ namespace WinFormsApp1
             // 
             // classes
             // 
+            this.classes.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.classes.Location = new System.Drawing.Point(12, 130);
+            this.classes.MaximumSize = new System.Drawing.Size(1000, 50);
             this.classes.Name = "classes";
             this.classes.Size = new System.Drawing.Size(112, 34);
             this.classes.TabIndex = 1;
@@ -60,7 +63,9 @@ namespace WinFormsApp1
             // 
             // available_times
             // 
+            this.available_times.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.available_times.Location = new System.Drawing.Point(12, 230);
+            this.available_times.MaximumSize = new System.Drawing.Size(1000, 50);
             this.available_times.Name = "available_times";
             this.available_times.Size = new System.Drawing.Size(112, 34);
             this.available_times.TabIndex = 2;
@@ -70,18 +75,24 @@ namespace WinFormsApp1
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(143, -43);
+            this.label1.Location = new System.Drawing.Point(130, -1788);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(10, 427);
+            this.label1.Size = new System.Drawing.Size(32, 2238);
             this.label1.TabIndex = 3;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // generate
             // 
-            this.generate.Location = new System.Drawing.Point(272, 130);
+            this.generate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.generate.Location = new System.Drawing.Point(272, 93);
+            this.generate.MaximumSize = new System.Drawing.Size(10000, 50);
             this.generate.Name = "generate";
-            this.generate.Size = new System.Drawing.Size(203, 34);
+            this.generate.Size = new System.Drawing.Size(203, 37);
             this.generate.TabIndex = 4;
             this.generate.Text = "Generate";
             this.generate.UseVisualStyleBackColor = true;
@@ -89,19 +100,27 @@ namespace WinFormsApp1
             // 
             // folder_output
             // 
+            this.folder_output.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.folder_output.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.folder_output.Location = new System.Drawing.Point(272, 89);
+            this.folder_output.Location = new System.Drawing.Point(272, 52);
+            this.folder_output.MaximumSize = new System.Drawing.Size(10000, 50);
             this.folder_output.Name = "folder_output";
-            this.folder_output.Size = new System.Drawing.Size(203, 38);
+            this.folder_output.Size = new System.Drawing.Size(203, 37);
             this.folder_output.TabIndex = 5;
             this.folder_output.Text = "Folder Output";
             this.folder_output.Click += new System.EventHandler(this.folder_output_Click);
             // 
             // view_timetables
             // 
-            this.view_timetables.Location = new System.Drawing.Point(272, 230);
+            this.view_timetables.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.view_timetables.Location = new System.Drawing.Point(272, 193);
+            this.view_timetables.MaximumSize = new System.Drawing.Size(10000, 50);
             this.view_timetables.Name = "view_timetables";
-            this.view_timetables.Size = new System.Drawing.Size(203, 34);
+            this.view_timetables.Size = new System.Drawing.Size(203, 37);
             this.view_timetables.TabIndex = 6;
             this.view_timetables.Text = "View Timetables";
             this.view_timetables.UseVisualStyleBackColor = true;

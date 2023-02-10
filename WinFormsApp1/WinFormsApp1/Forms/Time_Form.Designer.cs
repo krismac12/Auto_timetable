@@ -56,7 +56,8 @@ namespace WinFormsApp1
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(168, 274);
+            this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Add_Button.Location = new System.Drawing.Point(685, 406);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(112, 34);
             this.Add_Button.TabIndex = 36;
@@ -66,18 +67,21 @@ namespace WinFormsApp1
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(327, 12);
+            this.listBox1.Location = new System.Drawing.Point(333, 71);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(396, 254);
+            this.listBox1.Size = new System.Drawing.Size(550, 329);
             this.listBox1.TabIndex = 35;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 169);
+            this.label2.Location = new System.Drawing.Point(46, 225);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 25);
             this.label2.TabIndex = 33;
@@ -85,7 +89,7 @@ namespace WinFormsApp1
             // 
             // Room_box
             // 
-            this.Room_box.Location = new System.Drawing.Point(103, 96);
+            this.Room_box.Location = new System.Drawing.Point(112, 152);
             this.Room_box.Name = "Room_box";
             this.Room_box.Size = new System.Drawing.Size(150, 31);
             this.Room_box.TabIndex = 32;
@@ -93,7 +97,7 @@ namespace WinFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 96);
+            this.label1.Location = new System.Drawing.Point(46, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 25);
             this.label1.TabIndex = 31;
@@ -101,7 +105,8 @@ namespace WinFormsApp1
             // 
             // Delete_Button
             // 
-            this.Delete_Button.Location = new System.Drawing.Point(37, 274);
+            this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Delete_Button.Location = new System.Drawing.Point(419, 406);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(112, 34);
             this.Delete_Button.TabIndex = 30;
@@ -112,7 +117,7 @@ namespace WinFormsApp1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 209);
+            this.label3.Location = new System.Drawing.Point(46, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 25);
             this.label3.TabIndex = 38;
@@ -120,7 +125,7 @@ namespace WinFormsApp1
             // 
             // Start_Picker
             // 
-            this.Start_Picker.Location = new System.Drawing.Point(103, 170);
+            this.Start_Picker.Location = new System.Drawing.Point(112, 226);
             this.Start_Picker.Name = "Start_Picker";
             this.Start_Picker.Size = new System.Drawing.Size(150, 31);
             this.Start_Picker.TabIndex = 40;
@@ -129,7 +134,7 @@ namespace WinFormsApp1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(37, 133);
+            this.label4.Location = new System.Drawing.Point(46, 189);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 25);
             this.label4.TabIndex = 42;
@@ -138,14 +143,14 @@ namespace WinFormsApp1
             // Day_Box
             // 
             this.Day_Box.FormattingEnabled = true;
-            this.Day_Box.Location = new System.Drawing.Point(103, 133);
+            this.Day_Box.Location = new System.Drawing.Point(112, 189);
             this.Day_Box.Name = "Day_Box";
             this.Day_Box.Size = new System.Drawing.Size(151, 33);
             this.Day_Box.TabIndex = 43;
             // 
             // End_Picker
             // 
-            this.End_Picker.Location = new System.Drawing.Point(103, 207);
+            this.End_Picker.Location = new System.Drawing.Point(112, 263);
             this.End_Picker.Name = "End_Picker";
             this.End_Picker.Size = new System.Drawing.Size(150, 31);
             this.End_Picker.TabIndex = 44;
@@ -153,7 +158,8 @@ namespace WinFormsApp1
             // Class_Label
             // 
             this.Class_Label.AutoSize = true;
-            this.Class_Label.Location = new System.Drawing.Point(126, 17);
+            this.Class_Label.Location = new System.Drawing.Point(333, 9);
+            this.Class_Label.MaximumSize = new System.Drawing.Size(500, 50);
             this.Class_Label.Name = "Class_Label";
             this.Class_Label.Size = new System.Drawing.Size(60, 25);
             this.Class_Label.TabIndex = 45;
@@ -164,7 +170,7 @@ namespace WinFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 320);
+            this.ClientSize = new System.Drawing.Size(895, 455);
             this.Controls.Add(this.Class_Label);
             this.Controls.Add(this.End_Picker);
             this.Controls.Add(this.Day_Box);

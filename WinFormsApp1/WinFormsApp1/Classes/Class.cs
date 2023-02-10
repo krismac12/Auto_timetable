@@ -38,6 +38,7 @@ public class Class
 
 	public override string ToString()
 	{
-		return this.name;
+		return this.subject.name + ": " + this.name;
+
 	}
 }

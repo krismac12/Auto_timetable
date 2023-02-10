@@ -43,7 +43,8 @@ namespace WinFormsApp1
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(389, 272);
+            this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Add_Button.Location = new System.Drawing.Point(439, 357);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(112, 34);
             this.Add_Button.TabIndex = 27;
@@ -53,17 +54,21 @@ namespace WinFormsApp1
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(331, 12);
+            this.listBox1.Location = new System.Drawing.Point(247, 122);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(228, 254);
+            this.listBox1.Size = new System.Drawing.Size(492, 229);
             this.listBox1.TabIndex = 26;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Code_Box
             // 
-            this.Code_Box.Location = new System.Drawing.Point(107, 133);
+            this.Code_Box.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Code_Box.Location = new System.Drawing.Point(587, 85);
             this.Code_Box.Name = "Code_Box";
             this.Code_Box.Size = new System.Drawing.Size(150, 31);
             this.Code_Box.TabIndex = 23;
@@ -71,8 +76,9 @@ namespace WinFormsApp1
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 133);
+            this.label2.Location = new System.Drawing.Point(521, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 25);
             this.label2.TabIndex = 22;
@@ -80,7 +86,7 @@ namespace WinFormsApp1
             // 
             // Name_box
             // 
-            this.Name_box.Location = new System.Drawing.Point(107, 96);
+            this.Name_box.Location = new System.Drawing.Point(307, 85);
             this.Name_box.Name = "Name_box";
             this.Name_box.Size = new System.Drawing.Size(150, 31);
             this.Name_box.TabIndex = 21;
@@ -89,7 +95,7 @@ namespace WinFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 96);
+            this.label1.Location = new System.Drawing.Point(241, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 25);
             this.label1.TabIndex = 20;
@@ -97,7 +103,8 @@ namespace WinFormsApp1
             // 
             // Delete_Button
             // 
-            this.Delete_Button.Location = new System.Drawing.Point(27, 199);
+            this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Delete_Button.Location = new System.Drawing.Point(65, 141);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(112, 34);
             this.Delete_Button.TabIndex = 18;
@@ -107,7 +114,8 @@ namespace WinFormsApp1
             // 
             // Edit_Button
             // 
-            this.Edit_Button.Location = new System.Drawing.Point(145, 199);
+            this.Edit_Button.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Edit_Button.Location = new System.Drawing.Point(65, 239);
             this.Edit_Button.Name = "Edit_Button";
             this.Edit_Button.Size = new System.Drawing.Size(112, 34);
             this.Edit_Button.TabIndex = 17;
@@ -127,7 +135,8 @@ namespace WinFormsApp1
             // 
             // Classes_button
             // 
-            this.Classes_button.Location = new System.Drawing.Point(27, 239);
+            this.Classes_button.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Classes_button.Location = new System.Drawing.Point(65, 341);
             this.Classes_button.Name = "Classes_button";
             this.Classes_button.Size = new System.Drawing.Size(112, 34);
             this.Classes_button.TabIndex = 29;
@@ -139,7 +148,7 @@ namespace WinFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 318);
+            this.ClientSize = new System.Drawing.Size(751, 446);
             this.Controls.Add(this.Classes_button);
             this.Controls.Add(this.Back_Button);
             this.Controls.Add(this.Add_Button);
