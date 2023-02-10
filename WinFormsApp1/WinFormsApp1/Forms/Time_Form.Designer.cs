@@ -42,6 +42,12 @@ namespace WinFormsApp1
             this.Day_Box = new System.Windows.Forms.ComboBox();
             this.End_Picker = new System.Windows.Forms.DateTimePicker();
             this.Class_Label = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Start_num = new System.Windows.Forms.NumericUpDown();
+            this.End_num = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Start_num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.End_num)).BeginInit();
             this.SuspendLayout();
             // 
             // Back_Button
@@ -57,7 +63,7 @@ namespace WinFormsApp1
             // Add_Button
             // 
             this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Add_Button.Location = new System.Drawing.Point(685, 406);
+            this.Add_Button.Location = new System.Drawing.Point(780, 406);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(112, 34);
             this.Add_Button.TabIndex = 36;
@@ -74,7 +80,7 @@ namespace WinFormsApp1
             this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(333, 71);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(550, 329);
+            this.listBox1.Size = new System.Drawing.Size(740, 329);
             this.listBox1.TabIndex = 35;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -106,7 +112,7 @@ namespace WinFormsApp1
             // Delete_Button
             // 
             this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Delete_Button.Location = new System.Drawing.Point(419, 406);
+            this.Delete_Button.Location = new System.Drawing.Point(514, 406);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(112, 34);
             this.Delete_Button.TabIndex = 30;
@@ -166,11 +172,47 @@ namespace WinFormsApp1
             this.Class_Label.Text = "Room";
             this.Class_Label.Click += new System.EventHandler(this.Class_Label_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 306);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 25);
+            this.label6.TabIndex = 46;
+            this.label6.Text = "Start Week";
+            // 
+            // Start_num
+            // 
+            this.Start_num.Location = new System.Drawing.Point(112, 300);
+            this.Start_num.Name = "Start_num";
+            this.Start_num.Size = new System.Drawing.Size(151, 31);
+            this.Start_num.TabIndex = 50;
+            // 
+            // End_num
+            // 
+            this.End_num.Location = new System.Drawing.Point(112, 337);
+            this.End_num.Name = "End_num";
+            this.End_num.Size = new System.Drawing.Size(151, 31);
+            this.End_num.TabIndex = 51;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 343);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 25);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "End Week";
+            // 
             // Time_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 455);
+            this.ClientSize = new System.Drawing.Size(1085, 455);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.End_num);
+            this.Controls.Add(this.Start_num);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.Class_Label);
             this.Controls.Add(this.End_Picker);
             this.Controls.Add(this.Day_Box);
@@ -186,6 +228,8 @@ namespace WinFormsApp1
             this.Controls.Add(this.Delete_Button);
             this.Name = "Time_Form";
             this.Text = "Time_Form";
+            ((System.ComponentModel.ISupportInitialize)(this.Start_num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.End_num)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +250,9 @@ namespace WinFormsApp1
         private System.Windows.Forms.ComboBox Day_Box;
         private System.Windows.Forms.DateTimePicker End_Picker;
         private System.Windows.Forms.Label Class_Label;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown Start_num;
+        private System.Windows.Forms.NumericUpDown End_num;
+        private System.Windows.Forms.Label label7;
     }
 }

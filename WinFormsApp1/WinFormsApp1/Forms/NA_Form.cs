@@ -88,7 +88,7 @@ namespace WinFormsApp1
 
         private void Add_Button_Click(object sender, EventArgs e)
         {
-            if (Type_box.Text == "" || Day_Box.SelectedIndex == -1)
+            if (Type_box.Text == "" || Day_Box.SelectedIndex == -1 || ((int)Start_num.Value) <= 0 || ((int)End_num.Value) <= 0)
             {
             }
             else
@@ -97,8 +97,16 @@ namespace WinFormsApp1
                 DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
                 if (end > start)
                 {
-                    TimeAcess.insertNA(2, Type_box.Text, start.ToString(), end.ToString());
-                    FillList();
+                    if (((int)Start_num.Value) < ((int)End_num.Value)) 
+                    { 
+                        TimeAcess.insertNA(2, Type_box.Text, start.ToString(), end.ToString(), ((int)Start_num.Value), ((int)End_num.Value));
+                        FillList();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please make End Week After Start Week", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {

@@ -41,6 +41,12 @@ namespace WinFormsApp1
             this.Type_box = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Delete_Button = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.End_num = new System.Windows.Forms.NumericUpDown();
+            this.Start_num = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.End_num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Start_num)).BeginInit();
             this.SuspendLayout();
             // 
             // End_Picker
@@ -96,7 +102,7 @@ namespace WinFormsApp1
             // Add_Button
             // 
             this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Add_Button.Location = new System.Drawing.Point(559, 272);
+            this.Add_Button.Location = new System.Drawing.Point(677, 272);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(112, 34);
             this.Add_Button.TabIndex = 51;
@@ -113,7 +119,7 @@ namespace WinFormsApp1
             this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(323, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(396, 254);
+            this.listBox1.Size = new System.Drawing.Size(633, 254);
             this.listBox1.TabIndex = 50;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -145,7 +151,7 @@ namespace WinFormsApp1
             // Delete_Button
             // 
             this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Delete_Button.Location = new System.Drawing.Point(363, 272);
+            this.Delete_Button.Location = new System.Drawing.Point(481, 272);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(112, 34);
             this.Delete_Button.TabIndex = 46;
@@ -153,11 +159,47 @@ namespace WinFormsApp1
             this.Delete_Button.UseVisualStyleBackColor = true;
             this.Delete_Button.Click += new System.EventHandler(this.Delete_Button_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(-3, 287);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 25);
+            this.label7.TabIndex = 61;
+            this.label7.Text = "End Week";
+            // 
+            // End_num
+            // 
+            this.End_num.Location = new System.Drawing.Point(99, 281);
+            this.End_num.Name = "End_num";
+            this.End_num.Size = new System.Drawing.Size(151, 31);
+            this.End_num.TabIndex = 60;
+            // 
+            // Start_num
+            // 
+            this.Start_num.Location = new System.Drawing.Point(99, 244);
+            this.Start_num.Name = "Start_num";
+            this.Start_num.Size = new System.Drawing.Size(151, 31);
+            this.Start_num.TabIndex = 59;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(-3, 250);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 25);
+            this.label6.TabIndex = 58;
+            this.label6.Text = "Start Week";
+            // 
             // NA_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 344);
+            this.ClientSize = new System.Drawing.Size(981, 344);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.End_num);
+            this.Controls.Add(this.Start_num);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.End_Picker);
             this.Controls.Add(this.Day_Box);
             this.Controls.Add(this.label4);
@@ -172,6 +214,8 @@ namespace WinFormsApp1
             this.Controls.Add(this.Delete_Button);
             this.Name = "NA_Form";
             this.Text = "NA_Form";
+            ((System.ComponentModel.ISupportInitialize)(this.End_num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Start_num)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +235,9 @@ namespace WinFormsApp1
         private System.Windows.Forms.TextBox Type_box;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Delete_Button;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown End_num;
+        private System.Windows.Forms.NumericUpDown Start_num;
+        private System.Windows.Forms.Label label6;
     }
 }

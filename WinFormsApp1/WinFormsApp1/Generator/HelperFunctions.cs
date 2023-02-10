@@ -34,11 +34,5 @@ namespace WinFormsApp1
             //g.generateTimetables(10);
         }
 
-        public static Time createTime(DateTime start, Class @class)
-        {
-            DateTime end = start.AddHours(2);
-
-            return new Time(1,"room",1, start, end, @class);
-        }
     }
 }

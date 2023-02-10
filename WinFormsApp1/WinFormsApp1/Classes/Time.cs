@@ -8,7 +8,9 @@ public class Time
 	public Class @class;
 	public DateTime start;
 	public DateTime end;
-	public Time(int id ,string room,int type, DateTime start,DateTime end,Class @class)
+	public int start_week;
+	public int end_week;
+	public Time(int id ,string room,int type, DateTime start,DateTime end,Class @class,int start_week,int end_week)
 	{
 		this.ID = id;
 		this.room = room;
@@ -16,29 +18,53 @@ public class Time
 		this.@class = @class;
 		this.start = nextDayofWeek(start);
 		this.end = nextDayofWeek(end);
+		this.start_week = start_week;
+		this.end_week = end_week;
 
 		@class.AddTime(this);
 	}
 
-	public Time(int id, string room, int type, DateTime start, DateTime end)
+	public Time(int id, string room, int type, DateTime start, DateTime end, int start_week, int end_week)
 	{
 		this.ID = id;
 		this.room = room;
 		this.type = type;
 		this.start = nextDayofWeek(start);
 		this.end = nextDayofWeek(end);
+		this.start_week = start_week;
+		this.end_week = end_week;
 	}
 
 	public bool overlap(Time newTime)
     {
 		bool overlap = true;
+		bool overlapTime = true;
+		bool overlapWeek = true;
 		if (start < newTime.start)
         {
-			overlap = end > newTime.start;
+			overlapTime = end > newTime.start;
         }
         else
         {
-			overlap = start < newTime.end;
+			overlapTime = start < newTime.end;
+        }
+
+		if (start_week < newTime.start_week)
+		{
+			overlapWeek = end_week > newTime.start_week;
+		}
+		else
+		{
+			overlapWeek = start_week < newTime.end_week;
+		}
+
+		if(overlapWeek && overlapTime)
+        {
+			overlap = true;
+        }
+        else
+        {
+			overlap = false;
         }
 		return overlap;
 	}
@@ -53,7 +79,7 @@ public class Time
 
 	public override string ToString()
 	{
-			return this.room +": "+this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end);
+			return this.room +": "+this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end) + " Weeks: " + start_week + " - "+ end_week;
 	}
 
 	public string Display()
@@ -64,6 +90,7 @@ public class Time
 				@class.subject.name + " \r\n" +
 				"Class: " + @class.name + " \r\n" +
 				"Room: " + room + " \r\n" +
+				"Weeks: " + start_week + " - " + end_week + " \r\n" +
 				"Time: " + " \r\n" +
 				string.Format("{0:hh:mm tt}", start) +" - "+ string.Format("{0:hh:mm tt}", end) + "\r\n";
 
