@@ -60,7 +60,8 @@ public class Time
     {
 		if(type == 1)
         {
-			return @class.subject.name + " \r\n" +
+			return @class.subject.code + " \r\n" +
+				@class.subject.name + " \r\n" +
 				"Class: " + @class.name + " \r\n" +
 				"Room: " + room + " \r\n" +
 				"Time: " + " \r\n" +
