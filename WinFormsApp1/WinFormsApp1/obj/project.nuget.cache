@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J7egHmf1DfP2JkV0/cRH30VmscEfmwOw/4fstAkjfC8zvbvz5974BlkeRoqBR+NNKNeyxM3uJ/lLYb2TAxdJPA==",
+  "dgSpecHash": "NjDrClhMS93lR841bMMg21OJa1ypOcW2T6qbtAFmxLxREZgELyD1wwUG6muRuGBbJT6pHpksP/YUQ5Un6ratJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\krist\\Source\\Repos\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\krist\\source\\repos\\timt\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\krist\\.nuget\\packages\\bytescout.spreadsheet\\4.6.0.2025\\bytescout.spreadsheet.4.6.0.2025.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

@@ -296,24 +296,45 @@ namespace WinFormsApp1
 
         private void Load_Button_Click(object sender, EventArgs e)
         {
-            if (File.Exists("./DB/auto_timetable.db"))
+            try
             {
-                File.Delete("./DB/auto_timetable.db");
-            }
-            if (Save_file.Text != "")
-            {
-                File.Copy(Save_file.Text, "./DB/auto_timetable.db");
+                if (File.Exists("./DB/auto_timetable.db"))
+                {
+                    File.Delete("./DB/auto_timetable.db");
+                }
 
+                if (Save_file.Text != "")
+                {
+                    try
+                    {
+                        File.Copy(Save_file.Text, "./DB/auto_timetable.db");
+                        MessageBox.Show("Save File " + Save_file.Text + " Loaded", "Info",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Wait DB file is still in use", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Wait DB file is still in use , if persists close the application", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void Save_Button_Click(object sender, EventArgs e)
         {
-            if(Save_text.Text != "")
+            if (Save_text.Text != "")
             {
                 try
                 {
                     File.Copy("./DB/auto_timetable.db", "./Saves/" + Save_text.Text + ".db");
+                    MessageBox.Show("Save File " + Save_text.Text + " Saved", "Info",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 catch

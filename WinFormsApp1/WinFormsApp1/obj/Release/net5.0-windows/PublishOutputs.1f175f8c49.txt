@@ -1,6 +1,7 @@
 C:\Users\krist\Desktop\tester\APP\DB\Schedule_template.xlsx
 C:\Users\krist\Desktop\tester\APP\WinFormsApp1.exe
 C:\Users\krist\Desktop\tester\APP\DB\auto_timetable.db
+C:\Users\krist\Desktop\tester\APP\Saves\auto_timetable.db
 C:\Users\krist\Desktop\tester\APP\WinFormsApp1.dll
 C:\Users\krist\Desktop\tester\APP\WinFormsApp1.deps.json
 C:\Users\krist\Desktop\tester\APP\WinFormsApp1.runtimeconfig.json
