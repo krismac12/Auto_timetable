@@ -119,7 +119,7 @@ namespace WinFormsApp1
             string query = "UPDATE Time SET type = @type, room = @room, StartTime = @start_time,EndTime = @end_time, Start_Week = @start_week, End_Week = @end_week  WHERE ID = @ID ";
             db.OpenConnection();
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
-            myCommand.Parameters.AddWithValue("@ID", type);
+            myCommand.Parameters.AddWithValue("@ID", id);
             myCommand.Parameters.AddWithValue("@type", type);
             myCommand.Parameters.AddWithValue("@room", room);
             myCommand.Parameters.AddWithValue("@start_time", start_time);

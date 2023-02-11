@@ -31,11 +31,6 @@ C:\Users\krist\Desktop\tester\APP\Microsoft.Office.Interop.Excel.dll
 C:\Users\krist\Desktop\tester\APP\Newtonsoft.Json.dll
 C:\Users\krist\Desktop\tester\APP\SautinSoft.PdfVision.dll
 C:\Users\krist\Desktop\tester\APP\System.Data.SQLite.dll
-C:\Users\krist\Desktop\tester\APP\Syncfusion.Compression.Base.dll
-C:\Users\krist\Desktop\tester\APP\Syncfusion.ExcelToPdfConverter.Base.dll
-C:\Users\krist\Desktop\tester\APP\Syncfusion.Licensing.dll
-C:\Users\krist\Desktop\tester\APP\Syncfusion.Pdf.Base.dll
-C:\Users\krist\Desktop\tester\APP\Syncfusion.XlsIO.Base.dll
 C:\Users\krist\Desktop\tester\APP\System.ComponentModel.Composition.dll
 C:\Users\krist\Desktop\tester\APP\System.ComponentModel.Composition.Registration.dll
 C:\Users\krist\Desktop\tester\APP\System.Data.Odbc.dll

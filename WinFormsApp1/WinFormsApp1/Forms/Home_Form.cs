@@ -25,6 +25,7 @@ namespace WinFormsApp1
 
         private void subjects_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
             var myForm = new Subject_Form(this);
             myForm.Show();
@@ -82,7 +83,10 @@ namespace WinFormsApp1
                         workbook.LoadFromFile(destination);
 
                         Worksheet sheet = workbook.Worksheets[0];
-                        
+                        for (int x = 0; x < 6; x++)
+                        {
+                            sheet.Columns[x].AutoFitColumns();
+                        }
                         sheet.PageSetup.Orientation = PageOrientationType.Landscape;
                         sheet.PageSetup.FitToPagesTall = 1;
 
