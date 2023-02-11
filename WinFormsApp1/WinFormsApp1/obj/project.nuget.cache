@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NjDrClhMS93lR841bMMg21OJa1ypOcW2T6qbtAFmxLxREZgELyD1wwUG6muRuGBbJT6pHpksP/YUQ5Un6ratJQ==",
+  "dgSpecHash": "Wr2XADI+/00KongaNKWeWu4IyT+F+vlgqpzfzPXAdp4SsbRS0mzJepsGLN1u1QaUH6GEle5K5cPxwNJKH+XjNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\krist\\source\\repos\\timt\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
@@ -61,11 +61,6 @@
     "C:\\Users\\krist\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\sautinsoft.pdfvision\\6.2.11.16\\sautinsoft.pdfvision.6.2.11.16.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.117\\stub.system.data.sqlite.core.netstandard.1.0.117.nupkg.sha512",
-    "C:\\Users\\krist\\.nuget\\packages\\syncfusion.compression.base\\20.4.0.44\\syncfusion.compression.base.20.4.0.44.nupkg.sha512",
-    "C:\\Users\\krist\\.nuget\\packages\\syncfusion.exceltopdfconverter.aspnet\\20.4.0.44\\syncfusion.exceltopdfconverter.aspnet.20.4.0.44.nupkg.sha512",
-    "C:\\Users\\krist\\.nuget\\packages\\syncfusion.licensing\\20.4.0.44\\syncfusion.licensing.20.4.0.44.nupkg.sha512",
-    "C:\\Users\\krist\\.nuget\\packages\\syncfusion.pdf.aspnet\\20.4.0.44\\syncfusion.pdf.aspnet.20.4.0.44.nupkg.sha512",
-    "C:\\Users\\krist\\.nuget\\packages\\syncfusion.xlsio.aspnet\\20.4.0.44\\syncfusion.xlsio.aspnet.20.4.0.44.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
@@ -173,46 +168,5 @@
     "C:\\Users\\krist\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Syncfusion.Compression.Base 20.4.0.44' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Syncfusion.Compression.Base",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Syncfusion.ExcelToPdfConverter.AspNet 20.4.0.44' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Syncfusion.ExcelToPdfConverter.AspNet",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Syncfusion.Pdf.AspNet 20.4.0.44' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Syncfusion.Pdf.AspNet",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Syncfusion.XlsIO.AspNet 20.4.0.44' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Syncfusion.XlsIO.AspNet",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

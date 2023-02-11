@@ -64,10 +64,6 @@
               "target": "Package",
               "version": "[6.2.11.16, )"
             },
-            "Syncfusion.ExcelToPdfConverter.AspNet": {
-              "target": "Package",
-              "version": "[20.4.0.44, )"
-            },
             "System.Data.SQLite.Core": {
               "target": "Package",
               "version": "[1.0.117, )"

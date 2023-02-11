@@ -127,5 +127,23 @@ namespace WinFormsApp1
                 FillList();
             }
         }
+
+        private void Edit_Click(object sender, EventArgs e)
+        {
+            if (Type_box.Text == "" || Day_Box.SelectedIndex == -1 || Start_num.Value == 0 || End_num.Value == 0 || listBox1.SelectedIndex == -1)
+            {
+
+            }
+            else
+            {
+                DateTime start = days[Day_Box.SelectedIndex].AddHours(Start_Picker.Value.Hour).AddMinutes(Start_Picker.Value.Minute);
+                DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
+                if (end > start)
+                {
+                    TimeAcess.UpdateTime(selected.ID, 2, Type_box.Text, start.ToString(), end.ToString(), ((int)Start_num.Value), ((int)End_num.Value));
+                }
+            }
+            FillList();
+        }
     }
 }

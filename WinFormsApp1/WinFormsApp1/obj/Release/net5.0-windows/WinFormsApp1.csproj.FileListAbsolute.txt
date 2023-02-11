@@ -258,11 +258,6 @@ C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-wi
 C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Newtonsoft.Json.dll
 C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\SautinSoft.PdfVision.dll
 C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.Data.SQLite.dll
-C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Syncfusion.Compression.Base.dll
-C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Syncfusion.ExcelToPdfConverter.Base.dll
-C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Syncfusion.Licensing.dll
-C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Syncfusion.Pdf.Base.dll
-C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Syncfusion.XlsIO.Base.dll
 C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.ComponentModel.Composition.dll
 C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.ComponentModel.Composition.Registration.dll
 C:\Users\krist\source\repos\timt\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.Data.Odbc.dll

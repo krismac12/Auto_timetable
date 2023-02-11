@@ -684,60 +684,6 @@
           }
         }
       },
-      "Syncfusion.Compression.Base/20.4.0.44": {
-        "runtime": {
-          "lib/net46/Syncfusion.Compression.Base.dll": {
-            "assemblyVersion": "20.4460.0.44",
-            "fileVersion": "20.4460.0.44"
-          }
-        }
-      },
-      "Syncfusion.ExcelToPdfConverter.AspNet/20.4.0.44": {
-        "dependencies": {
-          "Syncfusion.Compression.Base": "20.4.0.44",
-          "Syncfusion.Licensing": "20.4.0.44",
-          "Syncfusion.Pdf.AspNet": "20.4.0.44",
-          "Syncfusion.XlsIO.AspNet": "20.4.0.44"
-        },
-        "runtime": {
-          "lib/net46/Syncfusion.ExcelToPdfConverter.Base.dll": {
-            "assemblyVersion": "20.4460.0.44",
-            "fileVersion": "20.4460.0.44"
-          }
-        }
-      },
-      "Syncfusion.Licensing/20.4.0.44": {
-        "runtime": {
-          "lib/netcoreapp3.1/Syncfusion.Licensing.dll": {
-            "assemblyVersion": "20.4.0.44",
-            "fileVersion": "20.4.0.44"
-          }
-        }
-      },
-      "Syncfusion.Pdf.AspNet/20.4.0.44": {
-        "dependencies": {
-          "Syncfusion.Compression.Base": "20.4.0.44",
-          "Syncfusion.Licensing": "20.4.0.44"
-        },
-        "runtime": {
-          "lib/net46/Syncfusion.Pdf.Base.dll": {
-            "assemblyVersion": "20.4460.0.44",
-            "fileVersion": "20.4460.0.44"
-          }
-        }
-      },
-      "Syncfusion.XlsIO.AspNet/20.4.0.44": {
-        "dependencies": {
-          "Syncfusion.Compression.Base": "20.4.0.44",
-          "Syncfusion.Licensing": "20.4.0.44"
-        },
-        "runtime": {
-          "lib/net46/Syncfusion.XlsIO.Base.dll": {
-            "assemblyVersion": "20.4460.0.44",
-            "fileVersion": "20.4460.0.44"
-          }
-        }
-      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -2810,41 +2756,6 @@
       "sha512": "sha512-x1zzPC/A4MmiKGDLoxLE6O5KLu7Kz7dyzhPQzlqYFTFcXmXAtM7hNNWpGw5yLEz833AnGbd/kxoitXArgR4YyA==",
       "path": "stub.system.data.sqlite.core.netstandard/1.0.117",
       "hashPath": "stub.system.data.sqlite.core.netstandard.1.0.117.nupkg.sha512"
-    },
-    "Syncfusion.Compression.Base/20.4.0.44": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-n2BbPQo5NucyiwjE5vXOFpHt5FG+MtS7c0sdZwTGpYRPpIDgGZMsPBykYv3EE6tqfJIXKoYsfhtiWS56Rs7lHQ==",
-      "path": "syncfusion.compression.base/20.4.0.44",
-      "hashPath": "syncfusion.compression.base.20.4.0.44.nupkg.sha512"
-    },
-    "Syncfusion.ExcelToPdfConverter.AspNet/20.4.0.44": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cQmYzgGcoxCJFtSpogI6Mz1FGJ/UxLF2B57cemiUXLUwoZe5eNMZGtejgnsYYqTH2K8xv6eJ2az0csLbnat/Aw==",
-      "path": "syncfusion.exceltopdfconverter.aspnet/20.4.0.44",
-      "hashPath": "syncfusion.exceltopdfconverter.aspnet.20.4.0.44.nupkg.sha512"
-    },
-    "Syncfusion.Licensing/20.4.0.44": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-VdynAGuXiYwbp3lpA2gNBTgXfTkG5fpcGuT1doqSetr165SMuydr/jhdEwaOvlCUxFf6JrlTKWWpE7XgDLjrUA==",
-      "path": "syncfusion.licensing/20.4.0.44",
-      "hashPath": "syncfusion.licensing.20.4.0.44.nupkg.sha512"
-    },
-    "Syncfusion.Pdf.AspNet/20.4.0.44": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yYqXaCO/YFPq5J0ApCwKFQtJoG2RaU1bZqTotIm7btL0QGfSRrjuFCkF3duvhGCjBKMLKmYuNpjzAajDEiKvSA==",
-      "path": "syncfusion.pdf.aspnet/20.4.0.44",
-      "hashPath": "syncfusion.pdf.aspnet.20.4.0.44.nupkg.sha512"
-    },
-    "Syncfusion.XlsIO.AspNet/20.4.0.44": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-sF+67fPGWJC80g18YBe61G5oWzzEukECLo1GTFPe/PGBlM0ewR+edjhCcYNNGe58RVaQi2BuR6CY34DaPkO3qQ==",
-      "path": "syncfusion.xlsio.aspnet/20.4.0.44",
-      "hashPath": "syncfusion.xlsio.aspnet.20.4.0.44.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

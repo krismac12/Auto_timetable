@@ -42,7 +42,6 @@
     <PackageReference Include="FreeSpire.XLS" Version="12.7.0" />
     <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
     <PackageReference Include="SautinSoft.PdfVision" Version="6.2.11.16" />
-    <PackageReference Include="Syncfusion.ExcelToPdfConverter.AspNet" Version="20.4.0.44" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.117" />
   </ItemGroup>
 

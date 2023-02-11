@@ -113,10 +113,10 @@ namespace WinFormsApp1
 
         }
 
-        public static void UpdateTime(int id, int type, string room, string start_time, string end_time)
+        public static void UpdateTime(int id, int type, string room, string start_time, string end_time,int start_week,int end_week)
         {
             Database db = new Database();
-            string query = "UPDATE Time SET type = @type, room = @room, StartTime = @start_time,EndTime = @end_time,  WHERE id = @ID ";
+            string query = "UPDATE Time SET type = @type, room = @room, StartTime = @start_time,EndTime = @end_time, Start_Week = @start_week, End_Week = @end_week  WHERE ID = @ID ";
             db.OpenConnection();
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             myCommand.Parameters.AddWithValue("@ID", type);
@@ -124,6 +124,8 @@ namespace WinFormsApp1
             myCommand.Parameters.AddWithValue("@room", room);
             myCommand.Parameters.AddWithValue("@start_time", start_time);
             myCommand.Parameters.AddWithValue("@end_time", end_time);
+            myCommand.Parameters.AddWithValue("@start_week", start_week);
+            myCommand.Parameters.AddWithValue("@end_week", end_week);
             var result = myCommand.ExecuteNonQuery();
             db.CloseConnection();
 
