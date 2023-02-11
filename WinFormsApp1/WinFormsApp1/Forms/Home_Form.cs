@@ -82,6 +82,7 @@ namespace WinFormsApp1
                         workbook.LoadFromFile(destination);
 
                         Worksheet sheet = workbook.Worksheets[0];
+                        
                         sheet.PageSetup.Orientation = PageOrientationType.Landscape;
                         sheet.PageSetup.FitToPagesTall = 1;
 

@@ -163,5 +163,13 @@ namespace WinFormsApp1
             this.Hide();
             class_form.Show();
         }
+
+        private void Edit_Click(object sender, EventArgs e)
+        {
+            if (Room_box.Text == "" || Day_Box.SelectedIndex == -1 ||Start_num.Value == 0 || End_num.Value == 0 ||listBox1.SelectedIndex == -1)
+            {
+
+            }
+        }
     }
 }

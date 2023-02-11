@@ -152,7 +152,16 @@ namespace WinFormsApp1
 
         private void Back_Button_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            if(subject != null)
+            {
+                this.Hide();
+                home.Show();
+            }
+            else
+            {
+                Application.Restart();
+
+            }
         }
 
         private void Times_Click(object sender, EventArgs e)

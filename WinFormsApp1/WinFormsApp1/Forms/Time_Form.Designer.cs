@@ -46,6 +46,7 @@ namespace WinFormsApp1
             this.Start_num = new System.Windows.Forms.NumericUpDown();
             this.End_num = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
+            this.Edit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Start_num)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.End_num)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +64,7 @@ namespace WinFormsApp1
             // Add_Button
             // 
             this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Add_Button.Location = new System.Drawing.Point(780, 406);
+            this.Add_Button.Location = new System.Drawing.Point(860, 406);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(112, 34);
             this.Add_Button.TabIndex = 36;
@@ -112,7 +113,7 @@ namespace WinFormsApp1
             // Delete_Button
             // 
             this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Delete_Button.Location = new System.Drawing.Point(514, 406);
+            this.Delete_Button.Location = new System.Drawing.Point(420, 406);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(112, 34);
             this.Delete_Button.TabIndex = 30;
@@ -204,11 +205,23 @@ namespace WinFormsApp1
             this.label7.TabIndex = 52;
             this.label7.Text = "End Week";
             // 
+            // Edit
+            // 
+            this.Edit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Edit.Location = new System.Drawing.Point(635, 406);
+            this.Edit.Name = "Edit";
+            this.Edit.Size = new System.Drawing.Size(112, 34);
+            this.Edit.TabIndex = 53;
+            this.Edit.Text = "Edit";
+            this.Edit.UseVisualStyleBackColor = true;
+            this.Edit.Click += new System.EventHandler(this.Edit_Click);
+            // 
             // Time_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1085, 455);
+            this.Controls.Add(this.Edit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.End_num);
             this.Controls.Add(this.Start_num);
@@ -254,5 +267,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.NumericUpDown Start_num;
         private System.Windows.Forms.NumericUpDown End_num;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button Edit;
     }
 }

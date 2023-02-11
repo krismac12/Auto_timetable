@@ -63,8 +63,20 @@ namespace WinFormsApp1
 						num++;
 						if(timetable.times.Count == NA.Count + classes.Count)
                         {
-							timetable.addStrings();
-							timetables.Add(timetable);
+							if(timetables.Count == 0)
+							{
+								timetable.addStrings();
+								timetables.Add(timetable);
+							}
+							else if(timetables[timetables.Count - 1].times == timetable.times)
+							{
+
+							}
+							else
+							{
+								timetable.addStrings();
+								timetables.Add(timetable);
+							}
 						}
 						if (timetables.Count >= count)
 						{
@@ -74,6 +86,7 @@ namespace WinFormsApp1
 					}
 				}
 			randomize();
+			timetables = timetables.Distinct().ToList();
 
 		}
 		public void randomize()

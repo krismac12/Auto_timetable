@@ -116,7 +116,7 @@ namespace WinFormsApp1
         public static void UpdateTime(int id, int type, string room, string start_time, string end_time)
         {
             Database db = new Database();
-            string query = "UPDATE Time SET type = @type, room = @room, StartTime = @start_time,EndTime = @end_time  WHERE id = @ID ";
+            string query = "UPDATE Time SET type = @type, room = @room, StartTime = @start_time,EndTime = @end_time,  WHERE id = @ID ";
             db.OpenConnection();
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             myCommand.Parameters.AddWithValue("@ID", type);

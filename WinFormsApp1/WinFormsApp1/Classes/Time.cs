@@ -82,6 +82,8 @@ public class Time
 			return this.room +": "+this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end) + " Weeks: " + start_week + " - "+ end_week;
 	}
 
+
+
 	public string Display()
     {
 		if(type == 1)
