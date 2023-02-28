@@ -3,8 +3,9 @@
     "",
     "\\WinFormsApp1",
     "\\WinFormsApp1\\WinFormsApp1",
+    "\\WinFormsApp1\\WinFormsApp1\\DB",
     "\\WinFormsApp1\\WinFormsApp1\\Forms"
   ],
-  "SelectedNode": "\\WinFormsApp1\\WinFormsApp1\\Forms\\Home_Form.cs",
+  "SelectedNode": "\\WinFormsApp1\\WinFormsApp1\\DB\\KeyDB.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[15.0.4795.1001, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.31, )"
+            },
             "SautinSoft.PdfVision": {
               "target": "Package",
               "version": "[6.2.11.16, )"

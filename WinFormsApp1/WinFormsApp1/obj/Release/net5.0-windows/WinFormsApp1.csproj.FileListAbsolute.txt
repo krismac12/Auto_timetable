@@ -439,3 +439,12 @@ C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\obj\Release\net5.
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\ref\WinFormsApp1.dll
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.pdb
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Google.Protobuf.dll
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\MySql.Data.dll
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\ZstdNet.dll
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.login_Form.resources
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Key.xml
