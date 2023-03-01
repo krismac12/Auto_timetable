@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[8.0.31, )"
             },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "SautinSoft.PdfVision": {
               "target": "Package",
               "version": "[6.2.11.16, )"

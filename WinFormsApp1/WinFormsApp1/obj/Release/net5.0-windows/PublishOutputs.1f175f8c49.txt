@@ -35,6 +35,7 @@ C:\Users\krist\Desktop\tester\APP\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\krist\Desktop\tester\APP\Microsoft.Office.Interop.Excel.dll
 C:\Users\krist\Desktop\tester\APP\MySql.Data.dll
 C:\Users\krist\Desktop\tester\APP\ZstdNet.dll
+C:\Users\krist\Desktop\tester\APP\MySqlConnector.dll
 C:\Users\krist\Desktop\tester\APP\Newtonsoft.Json.dll
 C:\Users\krist\Desktop\tester\APP\BouncyCastle.Crypto.dll
 C:\Users\krist\Desktop\tester\APP\SautinSoft.PdfVision.dll
@@ -44,6 +45,7 @@ C:\Users\krist\Desktop\tester\APP\System.ComponentModel.Composition.Registration
 C:\Users\krist\Desktop\tester\APP\System.Data.Odbc.dll
 C:\Users\krist\Desktop\tester\APP\System.Data.OleDb.dll
 C:\Users\krist\Desktop\tester\APP\System.Data.SqlClient.dll
+C:\Users\krist\Desktop\tester\APP\System.Diagnostics.DiagnosticSource.dll
 C:\Users\krist\Desktop\tester\APP\System.Diagnostics.EventLog.dll
 C:\Users\krist\Desktop\tester\APP\System.Diagnostics.PerformanceCounter.dll
 C:\Users\krist\Desktop\tester\APP\System.DirectoryServices.AccountManagement.dll
@@ -53,6 +55,7 @@ C:\Users\krist\Desktop\tester\APP\System.Management.dll
 C:\Users\krist\Desktop\tester\APP\System.Private.ServiceModel.dll
 C:\Users\krist\Desktop\tester\APP\System.Reflection.Context.dll
 C:\Users\krist\Desktop\tester\APP\System.Runtime.Caching.dll
+C:\Users\krist\Desktop\tester\APP\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\krist\Desktop\tester\APP\System.Security.Cryptography.Pkcs.dll
 C:\Users\krist\Desktop\tester\APP\System.ServiceModel.Duplex.dll
 C:\Users\krist\Desktop\tester\APP\System.ServiceModel.Http.dll

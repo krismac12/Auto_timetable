@@ -31,7 +31,7 @@ namespace WinFormsApp1
 
             var node = doc.Descendants("Data").FirstOrDefault();
 
-            if(((int)node.Element("Login")) == 1)
+            if(((int)node.Element("Login")) == 1 && KeyDB.Login(((string?)node.Element("Key"))))
             {
                 login = true;
             }

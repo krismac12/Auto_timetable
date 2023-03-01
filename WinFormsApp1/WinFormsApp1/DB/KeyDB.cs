@@ -1,10 +1,11 @@
-﻿using MySql.Data.MySqlClient;
+﻿using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
 
 namespace WinFormsApp1
 {
@@ -29,7 +30,7 @@ namespace WinFormsApp1
 
         public static bool Login(string Key)
         {
-            bool login = true;
+            bool login = false;
             MySqlConnection connection = GetConnection();
             try
             {
@@ -41,11 +42,8 @@ namespace WinFormsApp1
                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            finally
-            {
-                connection.Close();
-            }
-            /*string sql = "Select * From Users where PassKey = @key;";
+
+            string sql = "Select * From Users where PassKey = @key;";
             MySqlCommand cmd = new MySqlCommand(sql, connection);
             cmd.Parameters.Add("@key", MySqlDbType.VarChar).Value = Key;
 
@@ -66,8 +64,7 @@ namespace WinFormsApp1
 MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return login;
             }
-            connection.Close();*/
-            login = true;
+            connection.Close();
             return login;
 
         }

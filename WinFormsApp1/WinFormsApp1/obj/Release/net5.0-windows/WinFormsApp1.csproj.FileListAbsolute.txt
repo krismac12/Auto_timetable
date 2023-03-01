@@ -448,3 +448,6 @@ C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\BouncyCastle.Crypto.dll
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.login_Form.resources
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Key.xml
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\MySqlConnector.dll
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.Runtime.CompilerServices.Unsafe.dll
