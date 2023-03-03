@@ -10,6 +10,10 @@ public class Time
 	public DateTime end;
 	public int start_week;
 	public int end_week;
+	public int sHour;
+	public int eHour;
+	public string sDay;
+	public string eDay;
 	public Time(int id ,string room,int type, DateTime start,DateTime end,Class @class,int start_week,int end_week)
 	{
 		this.ID = id;
@@ -21,9 +25,59 @@ public class Time
 		this.start_week = start_week;
 		this.end_week = end_week;
 
+
+
+		sDay = dayCell(start);
+		eDay = dayCell(end);
+
+		sHour = start.Hour;
+		eHour = end.Hour;
+
+
 		@class.AddTime(this);
 	}
 
+	private string dayCell(DateTime day)
+    {
+		string r = "";
+		switch (day.DayOfWeek)
+		{
+			case DayOfWeek.Sunday:
+				r = "B";
+				break;
+
+			case DayOfWeek.Monday:
+				r = "C";
+				break;
+
+			case DayOfWeek.Tuesday:
+				r = "D";
+				break;
+
+			case DayOfWeek.Wednesday:
+				r = "E";
+				break;
+
+			case DayOfWeek.Thursday:
+				r = "F";
+				break;
+
+			case DayOfWeek.Friday:
+				r = "G";
+				break;
+
+			case DayOfWeek.Saturday:
+				r = "H";
+				break;
+
+
+
+			default:
+				// code block
+				break;
+		}
+		return r;
+	}
 	public Time(int id, string room, int type, DateTime start, DateTime end, int start_week, int end_week)
 	{
 		this.ID = id;

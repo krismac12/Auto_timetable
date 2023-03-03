@@ -87,7 +87,8 @@ namespace WinFormsApp1
                         {
                             sheet.Columns[x].AutoFitColumns();
                         }
-                        sheet.PageSetup.Orientation = PageOrientationType.Landscape;
+
+                            sheet.PageSetup.Orientation = PageOrientationType.Landscape;
                         sheet.PageSetup.FitToPagesTall = 1;
 
                         workbook.SaveToFile(pdfFile, FileFormat.PDF);
@@ -239,13 +240,41 @@ namespace WinFormsApp1
                 ws.Rows.Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
                 ws.Rows.Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Top;
                 ws.Rows.Style.WrapText = true;
-                int a = 1;
+                int a = 2;
                 foreach (List<Time> times in lists)
                 {
                     int b = 2;
                     foreach (Time time in times)
                     {
-                        ws.Cells[b, a].Value = time.Display();
+                        
+                        int subtract = 5;
+                        while(ws.Cells[time.start.Hour - subtract, a].Merge)
+                        {
+                            subtract--;
+                        }
+                        int cells = (time.eHour - subtract) - (time.sHour - subtract);
+                        string c = time.sDay + (time.sHour - subtract).ToString() + ":" + time.eDay + (time.sHour - subtract + cells);
+                        ws.Cells[c].Merge = true;
+                        ws.Cells[time.start.Hour - subtract, a].Value = time.Display();
+                        ws.Cells[time.start.Hour - subtract, a].AutoFitColumns();
+                        double height = 120;
+                        if (cells >= 1)
+                        {
+                            height = 120 / cells;
+
+                        }
+                        else
+                        {
+
+                        }
+                        for (int r = time.start.Hour - subtract ; r <= time.eHour - 5; r++)
+                        {
+                            if (height >= ws.Row(r).Height)
+                            {
+                                ws.Row(r).Height = height;
+                            }
+                        }
+
                         b++;
                     }
                     a++;
@@ -255,6 +284,7 @@ namespace WinFormsApp1
 
 
         }
+
 
         private static void CreateExcel(string source,string destinationFile)
         {
