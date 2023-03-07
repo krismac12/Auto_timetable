@@ -42,6 +42,7 @@ namespace WinFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Grade_Calc_Button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,11 +80,15 @@ namespace WinFormsApp1
             // 
             // available_times
             // 
-            this.available_times.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.available_times.Location = new System.Drawing.Point(194, 462);
-            this.available_times.MaximumSize = new System.Drawing.Size(1000, 50);
+            this.available_times.Dock = System.Windows.Forms.DockStyle.Top;
+            this.available_times.FlatAppearance.BorderSize = 0;
+            this.available_times.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.available_times.Image = global::WinFormsApp1.Properties.Resources.white_p__2_;
+            this.available_times.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.available_times.Location = new System.Drawing.Point(0, 236);
+            this.available_times.MaximumSize = new System.Drawing.Size(1000, 10000);
             this.available_times.Name = "available_times";
-            this.available_times.Size = new System.Drawing.Size(112, 34);
+            this.available_times.Size = new System.Drawing.Size(232, 60);
             this.available_times.TabIndex = 2;
             this.available_times.Text = "N/A Times";
             this.available_times.UseVisualStyleBackColor = true;
@@ -190,6 +195,8 @@ namespace WinFormsApp1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(71)))));
+            this.panel1.Controls.Add(this.Grade_Calc_Button);
+            this.panel1.Controls.Add(this.available_times);
             this.panel1.Controls.Add(this.classes);
             this.panel1.Controls.Add(this.subjects);
             this.panel1.Controls.Add(this.panel2);
@@ -209,6 +216,21 @@ namespace WinFormsApp1
             this.panel2.Size = new System.Drawing.Size(232, 116);
             this.panel2.TabIndex = 0;
             // 
+            // Grade_Calc_Button
+            // 
+            this.Grade_Calc_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Grade_Calc_Button.FlatAppearance.BorderSize = 0;
+            this.Grade_Calc_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Grade_Calc_Button.Image = global::WinFormsApp1.Properties.Resources.white_p__2_;
+            this.Grade_Calc_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Grade_Calc_Button.Location = new System.Drawing.Point(0, 296);
+            this.Grade_Calc_Button.MaximumSize = new System.Drawing.Size(1000, 10000);
+            this.Grade_Calc_Button.Name = "Grade_Calc_Button";
+            this.Grade_Calc_Button.Size = new System.Drawing.Size(232, 60);
+            this.Grade_Calc_Button.TabIndex = 3;
+            this.Grade_Calc_Button.Text = "GPA Calculator";
+            this.Grade_Calc_Button.UseVisualStyleBackColor = true;
+            // 
             // Home_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -222,7 +244,6 @@ namespace WinFormsApp1
             this.Controls.Add(this.view_timetables);
             this.Controls.Add(this.folder_output);
             this.Controls.Add(this.generate);
-            this.Controls.Add(this.available_times);
             this.Controls.Add(this.panel1);
             this.Name = "Home_Form";
             this.Text = "Home_Form";
@@ -247,5 +268,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button Grade_Calc_Button;
     }
 }
