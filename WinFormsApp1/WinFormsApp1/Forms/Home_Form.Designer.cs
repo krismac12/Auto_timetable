@@ -96,7 +96,7 @@ namespace WinFormsApp1
             // generate
             // 
             this.generate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.generate.Location = new System.Drawing.Point(638, 357);
+            this.generate.Location = new System.Drawing.Point(505, 388);
             this.generate.MaximumSize = new System.Drawing.Size(10000, 1000);
             this.generate.Name = "generate";
             this.generate.Size = new System.Drawing.Size(500, 50);
@@ -109,7 +109,7 @@ namespace WinFormsApp1
             // 
             this.folder_output.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.folder_output.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.folder_output.Location = new System.Drawing.Point(638, 199);
+            this.folder_output.Location = new System.Drawing.Point(505, 230);
             this.folder_output.MaximumSize = new System.Drawing.Size(10000, 50);
             this.folder_output.Name = "folder_output";
             this.folder_output.Size = new System.Drawing.Size(500, 50);
@@ -120,7 +120,7 @@ namespace WinFormsApp1
             // view_timetables
             // 
             this.view_timetables.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.view_timetables.Location = new System.Drawing.Point(626, 280);
+            this.view_timetables.Location = new System.Drawing.Point(493, 311);
             this.view_timetables.MaximumSize = new System.Drawing.Size(10000, 50);
             this.view_timetables.Name = "view_timetables";
             this.view_timetables.Size = new System.Drawing.Size(500, 50);
@@ -132,7 +132,7 @@ namespace WinFormsApp1
             // Save_Button
             // 
             this.Save_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Save_Button.Location = new System.Drawing.Point(680, 495);
+            this.Save_Button.Location = new System.Drawing.Point(547, 526);
             this.Save_Button.MaximumSize = new System.Drawing.Size(200, 50);
             this.Save_Button.Name = "Save_Button";
             this.Save_Button.Size = new System.Drawing.Size(200, 37);
@@ -145,7 +145,7 @@ namespace WinFormsApp1
             // 
             this.Save_file.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Save_file.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Save_file.Location = new System.Drawing.Point(903, 454);
+            this.Save_file.Location = new System.Drawing.Point(770, 485);
             this.Save_file.MaximumSize = new System.Drawing.Size(200, 50);
             this.Save_file.Name = "Save_file";
             this.Save_file.Size = new System.Drawing.Size(200, 37);
@@ -156,7 +156,7 @@ namespace WinFormsApp1
             // Load_Button
             // 
             this.Load_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Load_Button.Location = new System.Drawing.Point(903, 495);
+            this.Load_Button.Location = new System.Drawing.Point(770, 526);
             this.Load_Button.MaximumSize = new System.Drawing.Size(200, 50);
             this.Load_Button.Name = "Load_Button";
             this.Load_Button.Size = new System.Drawing.Size(200, 37);
@@ -168,7 +168,7 @@ namespace WinFormsApp1
             // Save_text
             // 
             this.Save_text.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Save_text.Location = new System.Drawing.Point(680, 460);
+            this.Save_text.Location = new System.Drawing.Point(547, 491);
             this.Save_text.MaximumSize = new System.Drawing.Size(200, 50);
             this.Save_text.Name = "Save_text";
             this.Save_text.Size = new System.Drawing.Size(200, 31);
@@ -178,7 +178,7 @@ namespace WinFormsApp1
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(726, 432);
+            this.label2.Location = new System.Drawing.Point(593, 463);
             this.label2.MaximumSize = new System.Drawing.Size(200, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 25);
@@ -197,7 +197,7 @@ namespace WinFormsApp1
             this.panel1.ForeColor = System.Drawing.Color.Gainsboro;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(232, 844);
+            this.panel1.Size = new System.Drawing.Size(232, 664);
             this.panel1.TabIndex = 13;
             // 
             // Grade_Calc_Button
@@ -229,14 +229,14 @@ namespace WinFormsApp1
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(232, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1346, 100);
+            this.panel3.Size = new System.Drawing.Size(1026, 100);
             this.panel3.TabIndex = 1;
             // 
             // Home_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1578, 844);
+            this.ClientSize = new System.Drawing.Size(1258, 664);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Save_text);
