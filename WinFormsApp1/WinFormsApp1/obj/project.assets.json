@@ -9048,11 +9048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\krist\\source\\repos\\new_2new\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectUniqueName": "C:\\desk\\code\\Fivver\\Auto_table\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
       "projectName": "WinFormsApp1",
-      "projectPath": "C:\\Users\\krist\\source\\repos\\new_2new\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectPath": "C:\\desk\\code\\Fivver\\Auto_table\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
       "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\krist\\source\\repos\\new_2new\\WinFormsApp1\\WinFormsApp1\\obj\\",
+      "outputPath": "C:\\desk\\code\\Fivver\\Auto_table\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",
