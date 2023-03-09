@@ -63,6 +63,16 @@ namespace WinFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Book__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Book (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Clock__1_ {
             get {
                 object obj = ResourceManager.GetObject("Clock (1)", resourceCulture);
