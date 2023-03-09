@@ -19,12 +19,12 @@ namespace WinFormsApp1
             Application.SetCompatibleTextRenderingDefault(false);
             if (XML.Check())
             {
-                Application.Run(new Home_Form());
+                Application.Run(new Main_Form());
             }
             else
             {
-                //Application.Run(new login_Form());
-                Application.Run(new Main_Form());
+                Application.Run(new login_Form());
+                //Application.Run(new Main_Form());
 
             }
 
