@@ -36,10 +36,13 @@ namespace WinFormsApp1
             this.classes = new System.Windows.Forms.Button();
             this.subjects = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Main_Panel = new System.Windows.Forms.Panel();
             this.Home_Button = new System.Windows.Forms.Button();
+            this.Main_Panel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +67,7 @@ namespace WinFormsApp1
             this.Grade_Calc_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.Grade_Calc_Button.FlatAppearance.BorderSize = 0;
             this.Grade_Calc_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Grade_Calc_Button.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Grade_Calc_Button.Image = ((System.Drawing.Image)(resources.GetObject("Grade_Calc_Button.Image")));
             this.Grade_Calc_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Grade_Calc_Button.Location = new System.Drawing.Point(0, 280);
@@ -80,6 +84,7 @@ namespace WinFormsApp1
             this.available_times.Dock = System.Windows.Forms.DockStyle.Top;
             this.available_times.FlatAppearance.BorderSize = 0;
             this.available_times.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.available_times.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.available_times.Image = ((System.Drawing.Image)(resources.GetObject("available_times.Image")));
             this.available_times.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.available_times.Location = new System.Drawing.Point(0, 220);
@@ -97,6 +102,7 @@ namespace WinFormsApp1
             this.classes.Dock = System.Windows.Forms.DockStyle.Top;
             this.classes.FlatAppearance.BorderSize = 0;
             this.classes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.classes.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.classes.Image = ((System.Drawing.Image)(resources.GetObject("classes.Image")));
             this.classes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.classes.Location = new System.Drawing.Point(0, 160);
@@ -114,6 +120,8 @@ namespace WinFormsApp1
             this.subjects.Dock = System.Windows.Forms.DockStyle.Top;
             this.subjects.FlatAppearance.BorderSize = 0;
             this.subjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subjects.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.subjects.ForeColor = System.Drawing.Color.Gainsboro;
             this.subjects.Image = ((System.Drawing.Image)(resources.GetObject("subjects.Image")));
             this.subjects.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.subjects.Location = new System.Drawing.Point(0, 100);
@@ -128,11 +136,31 @@ namespace WinFormsApp1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(232, 100);
             this.panel2.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(232, 100);
+            this.label2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.Location = new System.Drawing.Point(73, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 25);
+            this.label1.TabIndex = 0;
             // 
             // panel3
             // 
@@ -144,14 +172,6 @@ namespace WinFormsApp1
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1026, 100);
             this.panel3.TabIndex = 4;
-            // 
-            // Main_Panel
-            // 
-            this.Main_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Main_Panel.Location = new System.Drawing.Point(232, 100);
-            this.Main_Panel.Name = "Main_Panel";
-            this.Main_Panel.Size = new System.Drawing.Size(1026, 564);
-            this.Main_Panel.TabIndex = 15;
             // 
             // Home_Button
             // 
@@ -167,6 +187,14 @@ namespace WinFormsApp1
             this.Home_Button.UseVisualStyleBackColor = false;
             this.Home_Button.Click += new System.EventHandler(this.Home_Button_Click);
             // 
+            // Main_Panel
+            // 
+            this.Main_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Main_Panel.Location = new System.Drawing.Point(232, 100);
+            this.Main_Panel.Name = "Main_Panel";
+            this.Main_Panel.Size = new System.Drawing.Size(1026, 564);
+            this.Main_Panel.TabIndex = 15;
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -178,6 +206,8 @@ namespace WinFormsApp1
             this.Name = "Main_Form";
             this.Text = "Main_Form";
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -194,5 +224,7 @@ namespace WinFormsApp1
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel Main_Panel;
         private System.Windows.Forms.Button Home_Button;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

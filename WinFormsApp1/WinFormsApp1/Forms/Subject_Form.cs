@@ -14,12 +14,12 @@ namespace WinFormsApp1
     {
         public List<Subject> subjects;
         public Subject selected;
-        Form home;
-        public Subject_Form(Form form)
+        Main_Form main;
+        public Subject_Form(Main_Form form)
         {
             InitializeComponent();
             FillList();
-            home = form;
+            main = form;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -121,9 +121,8 @@ namespace WinFormsApp1
             {
                 if(selected != null)
                 {
-                    this.Hide();
-                    var myForm = new Class_Form(this, selected);
-                    myForm.Show();
+                    var myForm = new Class_Form(main, selected);
+                    main.OpenChildForm(myForm);
                 }
             }
         }

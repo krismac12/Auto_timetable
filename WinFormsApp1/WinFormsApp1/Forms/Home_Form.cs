@@ -26,24 +26,17 @@ namespace WinFormsApp1
         private void subjects_Click(object sender, EventArgs e)
         {
             
-            this.Hide();
-            var myForm = new Subject_Form(this);
-            myForm.Show();
+
         }
 
         private void classes_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            List<Subject> subjects = SubjectAccess.getSubjects();
-            var myForm = new Class_Form(this);
-            myForm.Show();
+
         }
 
         private void available_times_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var myForm = new NA_Form(this);
-            myForm.Show();
+
         }
 
         private void label1_Click(object sender, EventArgs e)

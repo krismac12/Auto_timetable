@@ -18,8 +18,8 @@ namespace WinFormsApp1
         Subject subject;
         Subject selectedSubject;
         Class selected;
-        Form home;
-        public Class_Form(Form form)
+        Main_Form main;
+        public Class_Form(Main_Form form)
         {
             type = 1;
             subjects = SubjectAccess.getSubjects();
@@ -27,12 +27,12 @@ namespace WinFormsApp1
             InitializeComponent();
             FillList();
             FillCombo();
-            home = form;
+            main = form;
             Subject_Label.Text = "";
 
         }
 
-        public Class_Form(Form form,Subject subject)
+        public Class_Form(Main_Form form,Subject subject)
         {
             type = 2;
             subjects = SubjectAccess.getSubjects();
@@ -41,7 +41,7 @@ namespace WinFormsApp1
             InitializeComponent();
             FillList();
             FillCombo();
-            home = form;
+            main = form;
             Subject_Label.Text = "Classes for : " + subject.name;
         }
 
@@ -155,7 +155,7 @@ namespace WinFormsApp1
             if(subject != null)
             {
                 this.Hide();
-                home.Show();
+                main.Show();
             }
             else
             {
@@ -172,9 +172,8 @@ namespace WinFormsApp1
             }
             else
             {
-                this.Hide();
                 var myForm = new Time_Form(selected,classes,this);
-                myForm.Show();
+                main.OpenChildForm(myForm);
             }
 
         }

@@ -19,8 +19,43 @@ namespace WinFormsApp1
         }
 
         Form activeForm;
+        Button current = null;
 
-        private void OpenChildForm(Form childForm)
+        private void ActiveButton(Button button,Color color)
+        {
+            if(current != null)
+            {
+                current.BackColor = Color.FromArgb(51, 51, 71);
+                current.ForeColor = Color.Gainsboro;
+                current.Enabled = true;
+            }
+
+            current = button;
+            current.ForeColor = Color.White;
+            current.BackColor = color;
+            current.Enabled = false;
+
+
+            panel3.BackColor = color;
+            Home_Button.BackColor = color;
+
+        }
+
+        private void DisableButton()
+        {
+            if(current != null)
+            {
+                current.BackColor = Color.FromArgb(51, 51, 71);
+                current.ForeColor = Color.Gainsboro;
+                current.Enabled = true;
+                current = null;
+            }
+
+
+            panel3.BackColor = Color.FromArgb(51, 51, 71);
+            Home_Button.BackColor = Color.FromArgb(51, 51, 71);
+        }
+        public void OpenChildForm(Form childForm)
         {
             if(activeForm != null)
             {
@@ -40,27 +75,32 @@ namespace WinFormsApp1
         private void subjects_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new Subject_Form(this));
+            ActiveButton(subjects,Color.FromArgb(131,250,122));
         }
 
         private void classes_Click_1(object sender, EventArgs e)
         {
 
             OpenChildForm(new Class_Form(this));
+            ActiveButton(classes, Color.FromArgb(212, 176, 83));
         }
 
         private void available_times_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new NA_Form(this));
+            ActiveButton(available_times, Color.FromArgb(235, 104, 104));
         }
 
         private void Grade_Calc_Button_Click(object sender, EventArgs e)
         {
+            ActiveButton(Grade_Calc_Button, Color.FromArgb(101, 92, 214));
 
         }
 
         private void Home_Button_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Home_Form());
+            DisableButton();
         }
     }
 }
