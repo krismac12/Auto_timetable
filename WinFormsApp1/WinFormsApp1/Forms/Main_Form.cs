@@ -15,7 +15,6 @@ namespace WinFormsApp1
         public Main_Form()
         {
             InitializeComponent();
-            OpenChildForm(new Home_Form());
         }
 
         Form activeForm;
@@ -72,6 +71,7 @@ namespace WinFormsApp1
 
         }
 
+
         private void subjects_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new Subject_Form(this));
@@ -99,8 +99,17 @@ namespace WinFormsApp1
 
         private void Home_Button_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Home_Form());
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
             DisableButton();
+        }
+
+        private void OutputButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Home_Form());
+            ActiveButton(OutputButton, Color.FromArgb(110, 250, 227));
         }
     }
 }

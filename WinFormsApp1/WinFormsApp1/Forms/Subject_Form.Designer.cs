@@ -42,7 +42,7 @@ namespace WinFormsApp1
             // 
             // Add_Button
             // 
-            this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Add_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Add_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Add_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Add_Button.FlatAppearance.BorderSize = 2;
@@ -50,6 +50,7 @@ namespace WinFormsApp1
             this.Add_Button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_Button.ForeColor = System.Drawing.Color.White;
             this.Add_Button.Location = new System.Drawing.Point(699, 443);
+            this.Add_Button.MaximumSize = new System.Drawing.Size(212, 47);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(212, 47);
             this.Add_Button.TabIndex = 27;
@@ -59,7 +60,9 @@ namespace WinFormsApp1
             // 
             // listBox1
             // 
-            this.listBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(245, 91);
@@ -70,7 +73,7 @@ namespace WinFormsApp1
             // 
             // Code_Box
             // 
-            this.Code_Box.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Code_Box.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Code_Box.Location = new System.Drawing.Point(76, 183);
             this.Code_Box.Name = "Code_Box";
             this.Code_Box.Size = new System.Drawing.Size(150, 31);
@@ -79,7 +82,7 @@ namespace WinFormsApp1
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(10, 183);
             this.label2.Name = "label2";
@@ -89,7 +92,7 @@ namespace WinFormsApp1
             // 
             // Name_box
             // 
-            this.Name_box.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Name_box.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Name_box.Location = new System.Drawing.Point(76, 101);
             this.Name_box.Name = "Name_box";
             this.Name_box.Size = new System.Drawing.Size(150, 31);
@@ -98,7 +101,7 @@ namespace WinFormsApp1
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(10, 101);
             this.label1.Name = "label1";
@@ -108,7 +111,7 @@ namespace WinFormsApp1
             // 
             // Delete_Button
             // 
-            this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Delete_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Delete_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Delete_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Delete_Button.FlatAppearance.BorderSize = 2;
@@ -116,6 +119,7 @@ namespace WinFormsApp1
             this.Delete_Button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
             this.Delete_Button.Location = new System.Drawing.Point(45, 443);
+            this.Delete_Button.MaximumSize = new System.Drawing.Size(212, 47);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(212, 47);
             this.Delete_Button.TabIndex = 18;
@@ -125,7 +129,8 @@ namespace WinFormsApp1
             // 
             // Edit_Button
             // 
-            this.Edit_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Edit_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Edit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Edit_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Edit_Button.FlatAppearance.BorderSize = 2;
@@ -133,6 +138,7 @@ namespace WinFormsApp1
             this.Edit_Button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Edit_Button.ForeColor = System.Drawing.Color.White;
             this.Edit_Button.Location = new System.Drawing.Point(263, 443);
+            this.Edit_Button.MaximumSize = new System.Drawing.Size(212, 47);
             this.Edit_Button.Name = "Edit_Button";
             this.Edit_Button.Size = new System.Drawing.Size(212, 47);
             this.Edit_Button.TabIndex = 17;
@@ -142,7 +148,8 @@ namespace WinFormsApp1
             // 
             // Classes_button
             // 
-            this.Classes_button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Classes_button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Classes_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Classes_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Classes_button.FlatAppearance.BorderSize = 2;
@@ -150,6 +157,7 @@ namespace WinFormsApp1
             this.Classes_button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Classes_button.ForeColor = System.Drawing.Color.White;
             this.Classes_button.Location = new System.Drawing.Point(481, 443);
+            this.Classes_button.MaximumSize = new System.Drawing.Size(212, 47);
             this.Classes_button.Name = "Classes_button";
             this.Classes_button.Size = new System.Drawing.Size(212, 47);
             this.Classes_button.TabIndex = 29;
