@@ -55,10 +55,12 @@ namespace WinFormsApp1
             this.panel1.Controls.Add(this.subjects);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.ForeColor = System.Drawing.Color.Gainsboro;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(232, 664);
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel1.Size = new System.Drawing.Size(242, 664);
             this.panel1.TabIndex = 14;
             // 
             // Grade_Calc_Button
@@ -73,9 +75,10 @@ namespace WinFormsApp1
             this.Grade_Calc_Button.Location = new System.Drawing.Point(0, 280);
             this.Grade_Calc_Button.MaximumSize = new System.Drawing.Size(1000, 10000);
             this.Grade_Calc_Button.Name = "Grade_Calc_Button";
-            this.Grade_Calc_Button.Size = new System.Drawing.Size(232, 60);
+            this.Grade_Calc_Button.Size = new System.Drawing.Size(242, 60);
             this.Grade_Calc_Button.TabIndex = 3;
-            this.Grade_Calc_Button.Text = "GPA Calculator";
+            this.Grade_Calc_Button.Text = "  Grade Calculator";
+            this.Grade_Calc_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Grade_Calc_Button.UseVisualStyleBackColor = false;
             this.Grade_Calc_Button.Click += new System.EventHandler(this.Grade_Calc_Button_Click);
             // 
@@ -90,7 +93,7 @@ namespace WinFormsApp1
             this.available_times.Location = new System.Drawing.Point(0, 220);
             this.available_times.MaximumSize = new System.Drawing.Size(1000, 10000);
             this.available_times.Name = "available_times";
-            this.available_times.Size = new System.Drawing.Size(232, 60);
+            this.available_times.Size = new System.Drawing.Size(242, 60);
             this.available_times.TabIndex = 2;
             this.available_times.Text = "N/A Times";
             this.available_times.UseVisualStyleBackColor = true;
@@ -108,7 +111,7 @@ namespace WinFormsApp1
             this.classes.Location = new System.Drawing.Point(0, 160);
             this.classes.MaximumSize = new System.Drawing.Size(1000, 1000);
             this.classes.Name = "classes";
-            this.classes.Size = new System.Drawing.Size(232, 60);
+            this.classes.Size = new System.Drawing.Size(242, 60);
             this.classes.TabIndex = 1;
             this.classes.Text = "Classes";
             this.classes.UseVisualStyleBackColor = false;
@@ -127,7 +130,7 @@ namespace WinFormsApp1
             this.subjects.Location = new System.Drawing.Point(0, 100);
             this.subjects.MaximumSize = new System.Drawing.Size(1000, 10000);
             this.subjects.Name = "subjects";
-            this.subjects.Size = new System.Drawing.Size(232, 60);
+            this.subjects.Size = new System.Drawing.Size(242, 60);
             this.subjects.TabIndex = 0;
             this.subjects.Text = "Subjects";
             this.subjects.UseVisualStyleBackColor = false;
@@ -142,7 +145,7 @@ namespace WinFormsApp1
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(232, 100);
+            this.panel2.Size = new System.Drawing.Size(242, 100);
             this.panel2.TabIndex = 0;
             // 
             // label2
@@ -150,7 +153,7 @@ namespace WinFormsApp1
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 100);
+            this.label2.Size = new System.Drawing.Size(242, 100);
             this.label2.TabIndex = 1;
             // 
             // label1
@@ -168,9 +171,9 @@ namespace WinFormsApp1
             this.panel3.Controls.Add(this.Home_Button);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.panel3.Location = new System.Drawing.Point(232, 0);
+            this.panel3.Location = new System.Drawing.Point(242, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1026, 100);
+            this.panel3.Size = new System.Drawing.Size(1016, 100);
             this.panel3.TabIndex = 4;
             // 
             // Home_Button
@@ -190,9 +193,9 @@ namespace WinFormsApp1
             // Main_Panel
             // 
             this.Main_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Main_Panel.Location = new System.Drawing.Point(232, 100);
+            this.Main_Panel.Location = new System.Drawing.Point(242, 100);
             this.Main_Panel.Name = "Main_Panel";
-            this.Main_Panel.Size = new System.Drawing.Size(1026, 564);
+            this.Main_Panel.Size = new System.Drawing.Size(1016, 564);
             this.Main_Panel.TabIndex = 15;
             // 
             // Main_Form

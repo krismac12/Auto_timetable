@@ -15,6 +15,7 @@ namespace WinFormsApp1
         public List<Subject> subjects;
         public Subject selected;
         Main_Form main;
+        Class_Form class_Form;
         public Subject_Form(Main_Form form)
         {
             InitializeComponent();
@@ -121,7 +122,7 @@ namespace WinFormsApp1
             {
                 if(selected != null)
                 {
-                    var myForm = new Class_Form(main, selected);
+                   var myForm = new Class_Form(main, selected);
                     main.OpenChildForm(myForm);
                 }
             }

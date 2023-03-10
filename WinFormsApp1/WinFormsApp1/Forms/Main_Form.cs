@@ -52,8 +52,8 @@ namespace WinFormsApp1
             }
 
 
-            panel3.BackColor = Color.FromArgb(51, 51, 71);
-            Home_Button.BackColor = Color.FromArgb(51, 51, 71);
+            panel3.BackColor = Color.FromArgb(39, 39, 58);
+            Home_Button.BackColor = Color.FromArgb(39, 39, 58);
         }
         public void OpenChildForm(Form childForm)
         {
@@ -75,7 +75,7 @@ namespace WinFormsApp1
         private void subjects_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new Subject_Form(this));
-            ActiveButton(subjects,Color.FromArgb(131,250,122));
+            ActiveButton(subjects,Color.FromArgb(115, 250, 110));
         }
 
         private void classes_Click_1(object sender, EventArgs e)

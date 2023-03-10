@@ -28,13 +28,15 @@ namespace WinFormsApp1
         Time selected;
         Class @class;
         Form class_form;
-        public Time_Form(Class @class, List<Class> classes,Form form)
+        Main_Form main;
+        public Time_Form(Class @class, List<Class> classes,Form form,Main_Form main)
         {
             InitializeComponent();
 
-            class_form = form;
+            class_form = new Class_Form(main,@class.subject);
             this.classes = classes;
             this.@class = @class;
+            this.main = main;
 
             days.Add(sunday);
             days.Add(monday);
@@ -144,8 +146,7 @@ namespace WinFormsApp1
 
         private void Back_Button_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            class_form.Show();
+            main.OpenChildForm(class_form);
         }
 
         private void Edit_Click(object sender, EventArgs e)

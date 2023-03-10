@@ -15,10 +15,11 @@ namespace WinFormsApp1
         private List<Class> classes = new List<Class>();
         private List<Subject> subjects = new List<Subject>();
         private int type;
-        Subject subject;
+        public Subject subject;
         Subject selectedSubject;
         Class selected;
         Main_Form main;
+        Form subject_Form1;
         public Class_Form(Main_Form form)
         {
             type = 1;
@@ -29,6 +30,7 @@ namespace WinFormsApp1
             FillCombo();
             main = form;
             Subject_Label.Text = "";
+            Back_Button.Visible = false;
 
         }
 
@@ -42,6 +44,7 @@ namespace WinFormsApp1
             FillList();
             FillCombo();
             main = form;
+            subject_Form1 = new Subject_Form(main);
             Subject_Label.Text = "Classes for : " + subject.name;
         }
 
@@ -154,12 +157,10 @@ namespace WinFormsApp1
         {
             if(subject != null)
             {
-                this.Hide();
-                main.Show();
+                main.OpenChildForm(subject_Form1);
             }
             else
             {
-                Application.Restart();
 
             }
         }
@@ -172,7 +173,7 @@ namespace WinFormsApp1
             }
             else
             {
-                var myForm = new Time_Form(selected,classes,this);
+                var myForm = new Time_Form(selected,classes,this,main);
                 main.OpenChildForm(myForm);
             }
 
