@@ -38,21 +38,23 @@ namespace WinFormsApp1
             this.Delete_Button = new System.Windows.Forms.Button();
             this.Edit_Button = new System.Windows.Forms.Button();
             this.Classes_button = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Add_Button
             // 
-            this.Add_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Add_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Add_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Add_Button.FlatAppearance.BorderSize = 2;
             this.Add_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_Button.ForeColor = System.Drawing.Color.White;
-            this.Add_Button.Location = new System.Drawing.Point(699, 443);
+            this.Add_Button.Location = new System.Drawing.Point(676, 3);
             this.Add_Button.MaximumSize = new System.Drawing.Size(212, 47);
             this.Add_Button.Name = "Add_Button";
-            this.Add_Button.Size = new System.Drawing.Size(212, 47);
+            this.Add_Button.Size = new System.Drawing.Size(212, 41);
             this.Add_Button.TabIndex = 27;
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = false;
@@ -111,17 +113,17 @@ namespace WinFormsApp1
             // 
             // Delete_Button
             // 
-            this.Delete_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Delete_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Delete_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Delete_Button.FlatAppearance.BorderSize = 2;
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
-            this.Delete_Button.Location = new System.Drawing.Point(45, 443);
+            this.Delete_Button.Location = new System.Drawing.Point(5, 3);
             this.Delete_Button.MaximumSize = new System.Drawing.Size(212, 47);
             this.Delete_Button.Name = "Delete_Button";
-            this.Delete_Button.Size = new System.Drawing.Size(212, 47);
+            this.Delete_Button.Size = new System.Drawing.Size(212, 41);
             this.Delete_Button.TabIndex = 18;
             this.Delete_Button.Text = "Delete";
             this.Delete_Button.UseVisualStyleBackColor = false;
@@ -129,18 +131,17 @@ namespace WinFormsApp1
             // 
             // Edit_Button
             // 
-            this.Edit_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Edit_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Edit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Edit_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Edit_Button.FlatAppearance.BorderSize = 2;
             this.Edit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Edit_Button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Edit_Button.ForeColor = System.Drawing.Color.White;
-            this.Edit_Button.Location = new System.Drawing.Point(263, 443);
+            this.Edit_Button.Location = new System.Drawing.Point(228, 3);
             this.Edit_Button.MaximumSize = new System.Drawing.Size(212, 47);
             this.Edit_Button.Name = "Edit_Button";
-            this.Edit_Button.Size = new System.Drawing.Size(212, 47);
+            this.Edit_Button.Size = new System.Drawing.Size(212, 41);
             this.Edit_Button.TabIndex = 17;
             this.Edit_Button.Text = "Edit";
             this.Edit_Button.UseVisualStyleBackColor = false;
@@ -148,39 +149,56 @@ namespace WinFormsApp1
             // 
             // Classes_button
             // 
-            this.Classes_button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Classes_button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Classes_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Classes_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Classes_button.FlatAppearance.BorderSize = 2;
             this.Classes_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Classes_button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Classes_button.ForeColor = System.Drawing.Color.White;
-            this.Classes_button.Location = new System.Drawing.Point(481, 443);
+            this.Classes_button.Location = new System.Drawing.Point(451, 3);
             this.Classes_button.MaximumSize = new System.Drawing.Size(212, 47);
             this.Classes_button.Name = "Classes_button";
-            this.Classes_button.Size = new System.Drawing.Size(212, 47);
+            this.Classes_button.Size = new System.Drawing.Size(212, 41);
             this.Classes_button.TabIndex = 29;
             this.Classes_button.Text = "Classes";
             this.Classes_button.UseVisualStyleBackColor = false;
             this.Classes_button.Click += new System.EventHandler(this.Classes_button_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.Delete_Button, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Add_Button, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Classes_button, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Edit_Button, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(43, 426);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(895, 47);
+            this.tableLayoutPanel1.TabIndex = 30;
             // 
             // Subject_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 502);
-            this.Controls.Add(this.Classes_button);
-            this.Controls.Add(this.Add_Button);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.Code_Box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Name_box);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Delete_Button);
-            this.Controls.Add(this.Edit_Button);
             this.Name = "Subject_Form";
             this.Text = "Subject_Form";
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,5 +215,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Button Delete_Button;
         private System.Windows.Forms.Button Edit_Button;
         private System.Windows.Forms.Button Classes_button;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

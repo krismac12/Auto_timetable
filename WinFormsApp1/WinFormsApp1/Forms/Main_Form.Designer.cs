@@ -244,6 +244,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.Main_Panel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(940, 510);
             this.Name = "Main_Form";
             this.Text = "Main_Form";
             this.panel1.ResumeLayout(false);
