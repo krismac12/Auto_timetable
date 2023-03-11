@@ -147,6 +147,7 @@ namespace WinFormsApp1
         private void Back_Button_Click(object sender, EventArgs e)
         {
             main.OpenChildForm(class_form);
+            main.ActiveButton(main.classes, Color.FromArgb(212, 176, 83));
         }
 
         private void Edit_Click(object sender, EventArgs e)

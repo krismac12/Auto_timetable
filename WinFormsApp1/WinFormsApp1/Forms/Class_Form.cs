@@ -175,6 +175,7 @@ namespace WinFormsApp1
             else
             {
                 var myForm = new Time_Form(selected,classes,this,main);
+                main.ActiveButton(main.classes, Color.FromArgb(235, 104, 104));
                 main.OpenChildForm(myForm);
             }
 
