@@ -258,18 +258,18 @@ namespace WinFormsApp1
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button Grade_Calc_Button;
-        private System.Windows.Forms.Button available_times;
-        private System.Windows.Forms.Button classes;
-        private System.Windows.Forms.Button subjects;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel Main_Panel;
-        private System.Windows.Forms.Button Home_Button;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button OutputButton;
-        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Button Grade_Calc_Button;
+        public System.Windows.Forms.Button available_times;
+        public System.Windows.Forms.Button classes;
+        public System.Windows.Forms.Button subjects;
+        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Panel panel3;
+        public System.Windows.Forms.Panel Main_Panel;
+        public System.Windows.Forms.Button Home_Button;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Button OutputButton;
+        public System.Windows.Forms.Label label3;
     }
 }

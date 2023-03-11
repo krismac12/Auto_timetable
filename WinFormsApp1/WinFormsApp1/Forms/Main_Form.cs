@@ -20,7 +20,7 @@ namespace WinFormsApp1
         Form activeForm;
         Button current = null;
 
-        private void ActiveButton(Button button,Color color)
+        public void ActiveButton(Button button,Color color)
         {
             if(current != null)
             {

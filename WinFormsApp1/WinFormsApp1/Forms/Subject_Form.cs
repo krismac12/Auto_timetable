@@ -124,6 +124,7 @@ namespace WinFormsApp1
                 {
                    var myForm = new Class_Form(main, selected);
                     main.OpenChildForm(myForm);
+                    main.ActiveButton(main.classes, Color.FromArgb(212, 176, 83));
                 }
             }
         }

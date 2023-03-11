@@ -158,6 +158,7 @@ namespace WinFormsApp1
             if(subject != null)
             {
                 main.OpenChildForm(subject_Form1);
+                main.ActiveButton(main.subjects, Color.FromArgb(115, 250, 110));
             }
             else
             {

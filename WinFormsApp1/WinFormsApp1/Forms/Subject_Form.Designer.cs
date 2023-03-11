@@ -49,7 +49,7 @@ namespace WinFormsApp1
             this.Add_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Add_Button.FlatAppearance.BorderSize = 2;
             this.Add_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_Button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Add_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_Button.ForeColor = System.Drawing.Color.White;
             this.Add_Button.Location = new System.Drawing.Point(676, 3);
             this.Add_Button.MaximumSize = new System.Drawing.Size(212, 47);
@@ -65,20 +65,22 @@ namespace WinFormsApp1
             this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(245, 91);
+            this.listBox1.ItemHeight = 23;
+            this.listBox1.Location = new System.Drawing.Point(245, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(693, 329);
+            this.listBox1.Size = new System.Drawing.Size(693, 372);
             this.listBox1.TabIndex = 26;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Code_Box
             // 
             this.Code_Box.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Code_Box.Location = new System.Drawing.Point(76, 183);
+            this.Code_Box.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Code_Box.Location = new System.Drawing.Point(76, 104);
             this.Code_Box.Name = "Code_Box";
-            this.Code_Box.Size = new System.Drawing.Size(150, 31);
+            this.Code_Box.Size = new System.Drawing.Size(150, 30);
             this.Code_Box.TabIndex = 23;
             this.Code_Box.TextChanged += new System.EventHandler(this.Code_Box_TextChanged);
             // 
@@ -86,18 +88,20 @@ namespace WinFormsApp1
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 183);
+            this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(10, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 25);
+            this.label2.Size = new System.Drawing.Size(57, 23);
             this.label2.TabIndex = 22;
             this.label2.Text = "Code";
             // 
             // Name_box
             // 
             this.Name_box.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Name_box.Location = new System.Drawing.Point(76, 101);
+            this.Name_box.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Name_box.Location = new System.Drawing.Point(76, 22);
             this.Name_box.Name = "Name_box";
-            this.Name_box.Size = new System.Drawing.Size(150, 31);
+            this.Name_box.Size = new System.Drawing.Size(150, 30);
             this.Name_box.TabIndex = 21;
             this.Name_box.TextChanged += new System.EventHandler(this.Name_box_TextChanged);
             // 
@@ -105,9 +109,10 @@ namespace WinFormsApp1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 101);
+            this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(10, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 25);
+            this.label1.Size = new System.Drawing.Size(61, 23);
             this.label1.TabIndex = 20;
             this.label1.Text = "Name";
             // 
@@ -118,7 +123,7 @@ namespace WinFormsApp1
             this.Delete_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Delete_Button.FlatAppearance.BorderSize = 2;
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_Button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Delete_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
             this.Delete_Button.Location = new System.Drawing.Point(5, 3);
             this.Delete_Button.MaximumSize = new System.Drawing.Size(212, 47);
@@ -136,7 +141,7 @@ namespace WinFormsApp1
             this.Edit_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Edit_Button.FlatAppearance.BorderSize = 2;
             this.Edit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit_Button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Edit_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Edit_Button.ForeColor = System.Drawing.Color.White;
             this.Edit_Button.Location = new System.Drawing.Point(228, 3);
             this.Edit_Button.MaximumSize = new System.Drawing.Size(212, 47);
@@ -154,7 +159,7 @@ namespace WinFormsApp1
             this.Classes_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Classes_button.FlatAppearance.BorderSize = 2;
             this.Classes_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Classes_button.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Classes_button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Classes_button.ForeColor = System.Drawing.Color.White;
             this.Classes_button.Location = new System.Drawing.Point(451, 3);
             this.Classes_button.MaximumSize = new System.Drawing.Size(212, 47);
@@ -178,7 +183,7 @@ namespace WinFormsApp1
             this.tableLayoutPanel1.Controls.Add(this.Add_Button, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.Classes_button, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.Edit_Button, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(43, 426);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(43, 410);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
