@@ -29,6 +29,7 @@ namespace WinFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Class_Form));
             this.Edit_Button = new System.Windows.Forms.Button();
             this.Delete_Button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -165,11 +166,13 @@ namespace WinFormsApp1
             // 
             // Back_Button
             // 
+            this.Back_Button.FlatAppearance.BorderSize = 0;
+            this.Back_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Back_Button.Image = ((System.Drawing.Image)(resources.GetObject("Back_Button.Image")));
             this.Back_Button.Location = new System.Drawing.Point(12, 12);
             this.Back_Button.Name = "Back_Button";
-            this.Back_Button.Size = new System.Drawing.Size(112, 34);
+            this.Back_Button.Size = new System.Drawing.Size(41, 34);
             this.Back_Button.TabIndex = 29;
-            this.Back_Button.Text = "Back";
             this.Back_Button.UseVisualStyleBackColor = true;
             this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
             // 

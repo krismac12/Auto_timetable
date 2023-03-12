@@ -167,5 +167,11 @@ namespace WinFormsApp1
             }
             FillList();
         }
+
+        private void Back_Button_Click_1(object sender, EventArgs e)
+        {
+            main.OpenChildForm(class_form);
+            main.ActiveButton(main.classes, Color.FromArgb(212, 176, 83));
+        }
     }
 }

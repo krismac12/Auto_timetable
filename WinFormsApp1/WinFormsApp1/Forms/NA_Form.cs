@@ -145,5 +145,66 @@ namespace WinFormsApp1
             }
             FillList();
         }
+
+        private void Delete_Button_Click_1(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == -1)
+            {
+                FillList();
+            }
+            else
+            {
+                TimeAcess.deleteTime(selected.ID);
+                FillList();
+            }
+        }
+
+        private void Edit_Click_1(object sender, EventArgs e)
+        {
+            if (Type_box.Text == "" || Day_Box.SelectedIndex == -1 || Start_num.Value == 0 || End_num.Value == 0 || listBox1.SelectedIndex == -1)
+            {
+
+            }
+            else
+            {
+                DateTime start = days[Day_Box.SelectedIndex].AddHours(Start_Picker.Value.Hour).AddMinutes(Start_Picker.Value.Minute);
+                DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
+                if (end > start)
+                {
+                    TimeAcess.UpdateTime(selected.ID, 2, Type_box.Text, start.ToString(), end.ToString(), ((int)Start_num.Value), ((int)End_num.Value));
+                }
+            }
+            FillList();
+        }
+
+        private void Add_Button_Click_1(object sender, EventArgs e)
+        {
+            if (Type_box.Text == "" || Day_Box.SelectedIndex == -1 || ((int)Start_num.Value) <= 0 || ((int)End_num.Value) <= 0)
+            {
+            }
+            else
+            {
+                DateTime start = days[Day_Box.SelectedIndex].AddHours(Start_Picker.Value.Hour).AddMinutes(Start_Picker.Value.Minute);
+                DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
+                if (end > start)
+                {
+                    if (((int)Start_num.Value) < ((int)End_num.Value))
+                    {
+                        TimeAcess.insertNA(2, Type_box.Text, start.ToString(), end.ToString(), ((int)Start_num.Value), ((int)End_num.Value));
+                        FillList();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please make End Week After Start Week", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please make End time After Start Time", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

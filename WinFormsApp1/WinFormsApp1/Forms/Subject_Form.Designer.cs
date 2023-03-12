@@ -47,7 +47,7 @@ namespace WinFormsApp1
             this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Add_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Add_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Add_Button.FlatAppearance.BorderSize = 2;
+            this.Add_Button.FlatAppearance.BorderSize = 0;
             this.Add_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_Button.ForeColor = System.Drawing.Color.White;
@@ -121,7 +121,7 @@ namespace WinFormsApp1
             this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Delete_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Delete_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Delete_Button.FlatAppearance.BorderSize = 2;
+            this.Delete_Button.FlatAppearance.BorderSize = 0;
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
@@ -139,7 +139,7 @@ namespace WinFormsApp1
             this.Edit_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Edit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Edit_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Edit_Button.FlatAppearance.BorderSize = 2;
+            this.Edit_Button.FlatAppearance.BorderSize = 0;
             this.Edit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Edit_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Edit_Button.ForeColor = System.Drawing.Color.White;
@@ -157,7 +157,7 @@ namespace WinFormsApp1
             this.Classes_button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Classes_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
             this.Classes_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Classes_button.FlatAppearance.BorderSize = 2;
+            this.Classes_button.FlatAppearance.BorderSize = 0;
             this.Classes_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Classes_button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Classes_button.ForeColor = System.Drawing.Color.White;
