@@ -356,11 +356,18 @@ namespace WinFormsApp1
 
         private void Save_Button_Click(object sender, EventArgs e)
         {
-            if (Save_text.Text != "")
+            if (Save_text.Text != "" & Folder_text.Text != "" & Folder_text.Text != "Save Folder")
             {
                 try
                 {
-                    File.Copy("./DB/auto_timetable.db", "./Saves/" + Save_text.Text + ".db");
+
+                    if (!Directory.Exists(Folder_text.Text + "\\Saves\\"))
+                    {
+                        Directory.CreateDirectory(Folder_text.Text + "\\Saves\\");
+                    }
+
+                    string copy = Folder_text.Text + "\\Saves\\" + Save_text.Text + ".db";
+                    File.Copy("./DB/auto_timetable.db", copy);
                     MessageBox.Show("Save File " + Save_text.Text + " Saved", "Info",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -370,6 +377,19 @@ namespace WinFormsApp1
                     MessageBox.Show("Save File Already Exists", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void Folder_text_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog diag = new FolderBrowserDialog();
+            if (diag.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                Folder_text.Text = diag.SelectedPath;
+            }
+            else
+            {
+                Folder_text.Text = "Save Folder";
             }
         }
     }
