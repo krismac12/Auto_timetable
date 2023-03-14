@@ -13,7 +13,7 @@ namespace WinFormsApp1
         {
             List<Grade> grades = new List<Grade>();
             Database db = new Database();
-            string query = "Select * from Grade WHERE Subject_ID = " + subject_ID;
+            string query = "Select * from Grades WHERE Subject_ID = " + subject_ID;
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             db.OpenConnection();
             SQLiteDataReader result = myCommand.ExecuteReader();
@@ -39,7 +39,7 @@ namespace WinFormsApp1
         public static void insertGrade(int subject_id, string name,string grade)
         {
             Database db = new Database();
-            string query = "INSERT INTO Grades ('Subject_ID', 'Name', 'Grade') VALUES(@subject_ID, @name,@grade,)";
+            string query = "INSERT INTO Grades ('Subject_ID', 'Name', 'Grade') VALUES(@subject_ID, @name,@grade)";
             db.OpenConnection();
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             myCommand.Parameters.AddWithValue("@subject_ID", subject_id);
@@ -57,7 +57,7 @@ namespace WinFormsApp1
         public static void UpdateGrade(int id,int subject_ID,string name,string grade) 
         {
             Database db = new Database();
-            string query = "UPDATE Time SET Subject_ID = @subject_ID, Name = @name, Grade = @grade WHERE ID = @ID ";
+            string query = "UPDATE Grades SET Subject_ID = @subject_ID, Name = @name, Grade = @grade WHERE ID = @ID ";
             db.OpenConnection();
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             myCommand.Parameters.AddWithValue("@ID", id);
@@ -75,7 +75,7 @@ namespace WinFormsApp1
         {
             Database db = new Database();
 
-            string query = "DELETE FROM Grade WHERE ID = @ID";
+            string query = "DELETE FROM Grades WHERE ID = @ID";
             db.OpenConnection();
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             myCommand.Parameters.AddWithValue("@ID", ID);

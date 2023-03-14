@@ -22,4 +22,9 @@ using System.Threading.Tasks;
             subject.AddGrade(this);
         }
 
+        public override string ToString() 
+        {
+            return name + ": " + grade;
+        }
+
     }

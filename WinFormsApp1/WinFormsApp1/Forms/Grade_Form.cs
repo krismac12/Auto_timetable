@@ -99,7 +99,18 @@ namespace WinFormsApp1
 
         private void GradesButton_Click(object sender, EventArgs e)
         {
+            if (listBox.SelectedIndex == -1)
+            {
 
+            }
+            else
+            {
+                if (selected != null)
+                {
+                    var myForm = new Grade_form2(main,selected);
+                    main.OpenChildForm(myForm);
+                }
+            }
         }
     }
 }

@@ -250,6 +250,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.label1);
             this.Name = "Class_Form";
             this.Text = "subjects_form";
+            this.Load += new System.EventHandler(this.Class_Form_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

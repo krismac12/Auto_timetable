@@ -222,5 +222,10 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void Class_Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
