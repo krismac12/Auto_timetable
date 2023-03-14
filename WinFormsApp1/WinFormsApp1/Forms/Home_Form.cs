@@ -392,5 +392,10 @@ namespace WinFormsApp1
                 Folder_text.Text = "Save Folder";
             }
         }
+
+        private void view_timetables_Click_1(object sender, EventArgs e)
+        {
+            OpenFolder(folder_output.Text);
+        }
     }
 }

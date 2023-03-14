@@ -75,7 +75,7 @@ namespace WinFormsApp1
         private void subjects_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new Subject_Form(this));
-            ActiveButton(subjects,Color.FromArgb(115, 250, 110));
+            ActiveButton(subjects,Color.FromArgb(200, 162, 200));
         }
 
         private void classes_Click_1(object sender, EventArgs e)
@@ -93,6 +93,7 @@ namespace WinFormsApp1
 
         private void Grade_Calc_Button_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Grade_Form(this));
             ActiveButton(Grade_Calc_Button, Color.FromArgb(101, 92, 214));
 
         }

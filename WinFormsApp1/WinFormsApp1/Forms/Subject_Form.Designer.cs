@@ -45,7 +45,7 @@ namespace WinFormsApp1
             // Add_Button
             // 
             this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
+            this.Add_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(162)))), ((int)(((byte)(200)))));
             this.Add_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Add_Button.FlatAppearance.BorderSize = 0;
             this.Add_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -94,6 +94,7 @@ namespace WinFormsApp1
             this.label2.Size = new System.Drawing.Size(57, 23);
             this.label2.TabIndex = 22;
             this.label2.Text = "Code";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Name_box
             // 
@@ -115,11 +116,12 @@ namespace WinFormsApp1
             this.label1.Size = new System.Drawing.Size(61, 23);
             this.label1.TabIndex = 20;
             this.label1.Text = "Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Delete_Button
             // 
             this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Delete_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
+            this.Delete_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(162)))), ((int)(((byte)(200)))));
             this.Delete_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Delete_Button.FlatAppearance.BorderSize = 0;
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -137,7 +139,7 @@ namespace WinFormsApp1
             // Edit_Button
             // 
             this.Edit_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Edit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
+            this.Edit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(162)))), ((int)(((byte)(200)))));
             this.Edit_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Edit_Button.FlatAppearance.BorderSize = 0;
             this.Edit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -155,7 +157,7 @@ namespace WinFormsApp1
             // Classes_button
             // 
             this.Classes_button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Classes_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(250)))), ((int)(((byte)(110)))));
+            this.Classes_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(162)))), ((int)(((byte)(200)))));
             this.Classes_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Classes_button.FlatAppearance.BorderSize = 0;
             this.Classes_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -189,6 +191,7 @@ namespace WinFormsApp1
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(895, 47);
             this.tableLayoutPanel1.TabIndex = 30;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // Subject_Form
             // 

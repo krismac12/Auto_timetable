@@ -573,3 +573,4 @@ C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Rele
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Properties.Resources.resources
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Main_Form.resources
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Grade_Form.resources
