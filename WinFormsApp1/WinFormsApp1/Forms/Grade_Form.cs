@@ -125,5 +125,31 @@ namespace WinFormsApp1
                 Folder_text.Text = "Save Folder";
             }
         }
+
+        private void Download_button_Click(object sender, EventArgs e)
+        {
+            List<Subject> graded = new List<Subject>();
+
+            subjects = SubjectAccess.getSubjects();
+
+            List<Grade> grades = GradeAcess.getGrades(subjects);
+            foreach(Subject subject in subjects)
+            {
+                if(subject.grades.Count > 0)
+                {
+                    graded.Add(subject);
+                }
+            }
+
+            string output = "";
+            foreach(Subject subject in graded)
+            {
+                subject.calculateGrade();
+                output += subject.name + ": " + subject.Grade + "@\n"; 
+            }
+
+            MessageBox.Show(output, "Info",
+            MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

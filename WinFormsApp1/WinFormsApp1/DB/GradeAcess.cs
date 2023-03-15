@@ -25,8 +25,9 @@ namespace WinFormsApp1
                     int id = Convert.ToInt32(result["ID"]);
                     string name = result["Name"].ToString();
                     string grade_s = result["Grade"].ToString();
+                    int weight = Convert.ToInt32(result["Weight"]);
                     Subject subject = subjects.FirstOrDefault(o => o.ID == subject_ID);
-                    Grade grade = new Grade(id, subject, float.Parse(grade_s), name);
+                    Grade grade = new Grade(id, subject, float.Parse(grade_s), name, (float)weight);
                     grades.Add(grade);
                 }
             }
@@ -52,8 +53,9 @@ namespace WinFormsApp1
                     int subject_ID = Convert.ToInt32(result["Subject_ID"]);
                     string name = result["Name"].ToString();
                     string grade_s = result["Grade"].ToString();
+                    int weight = Convert.ToInt32(result["Weight"]);
                     Subject subject = subjects.FirstOrDefault(o => o.ID == subject_ID);
-                    Grade grade = new Grade(id, subject, float.Parse(grade_s), name);
+                    Grade grade = new Grade(id, subject, float.Parse(grade_s), name, (float)weight);
                     grades.Add(grade);
                 }
             }
@@ -63,15 +65,16 @@ namespace WinFormsApp1
         }
 
 
-        public static void insertGrade(int subject_id, string name,string grade)
+        public static void insertGrade(int subject_id, string name,string grade,int weight)
         {
             Database db = new Database();
-            string query = "INSERT INTO Grades ('Subject_ID', 'Name', 'Grade') VALUES(@subject_ID, @name,@grade)";
+            string query = "INSERT INTO Grades ('Subject_ID', 'Name', 'Grade','Weight') VALUES(@subject_ID, @name,@grade,@weight)";
             db.OpenConnection();
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             myCommand.Parameters.AddWithValue("@subject_ID", subject_id);
             myCommand.Parameters.AddWithValue("@name", name);
             myCommand.Parameters.AddWithValue("@grade", grade);
+            myCommand.Parameters.AddWithValue("@weight", weight);
             var result = myCommand.ExecuteNonQuery();
 
             db.CloseConnection();
@@ -81,16 +84,17 @@ namespace WinFormsApp1
         }
 
 
-        public static void UpdateGrade(int id,int subject_ID,string name,string grade) 
+        public static void UpdateGrade(int id,int subject_ID,string name,string grade,int weight) 
         {
             Database db = new Database();
-            string query = "UPDATE Grades SET Subject_ID = @subject_ID, Name = @name, Grade = @grade WHERE ID = @ID ";
+            string query = "UPDATE Grades SET Subject_ID = @subject_ID, Name = @name, Grade = @grade, Weight = @weight WHERE ID = @ID ";
             db.OpenConnection();
             SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
             myCommand.Parameters.AddWithValue("@ID", id);
             myCommand.Parameters.AddWithValue("@subject_ID", subject_ID);
             myCommand.Parameters.AddWithValue("@name", name);
             myCommand.Parameters.AddWithValue("@grade", grade);
+            myCommand.Parameters.AddWithValue("@weight", weight);
             var result = myCommand.ExecuteNonQuery();
             db.CloseConnection();
 

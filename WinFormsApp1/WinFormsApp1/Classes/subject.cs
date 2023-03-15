@@ -9,6 +9,9 @@ public class Subject
 	public string code;
 	public List<Class> classes = new List<Class>();
 	public List<Grade> grades = new List<Grade>();
+	float totalWeight = 0;
+	float totalGrade = 0;
+	float g;
 
 	public float Grade;
 
@@ -46,4 +49,17 @@ public class Subject
 	{
 		return this.name;
 	}
+
+	public void calculateGrade()
+    {
+
+		foreach(Grade grade in grades)
+        {
+			g = (grade.weight / 100);
+			totalGrade += grade.grade * (grade.weight/100);
+			totalWeight += grade.weight;
+        }
+
+		Grade = totalGrade / (totalWeight / 100);
+    }
 }

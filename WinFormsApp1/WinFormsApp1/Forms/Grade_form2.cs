@@ -70,13 +70,14 @@ namespace WinFormsApp1
         {
             string assignement = Assignment_box.Text;
             string grade = Convert.ToInt32(Grade_num.Value).ToString();
-            if (assignement == "" || grade == "")
+            int weight = Convert.ToInt32(Weight_num.Value);
+            if (assignement == "" || grade == "" || weight <= 0)
             {
 
             }
             else
             {
-                GradeAcess.insertGrade(selected_subject.ID,assignement,grade);
+                GradeAcess.insertGrade(selected_subject.ID,assignement,grade,weight);
                 FillList();
             }
         }
@@ -85,13 +86,14 @@ namespace WinFormsApp1
         {
             string assignement = Assignment_box.Text;
             string grade = Convert.ToInt32(Grade_num.Value).ToString();
-            if (assignement == "" || grade == "" || listBox1.SelectedIndex == -1)
+            int weight = Convert.ToInt32(Weight_num.Value);
+            if (assignement == "" || grade == "" || listBox1.SelectedIndex == -1 || weight <= 0)
             {
 
             }
             else
             {
-                GradeAcess.UpdateGrade(selected.ID,selected_subject.ID, assignement, grade);
+                GradeAcess.UpdateGrade(selected.ID,selected_subject.ID, assignement, grade,weight);
                 FillList();
             }
         }

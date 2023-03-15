@@ -545,6 +545,7 @@ namespace WinFormsApp1
             this.Download_button.TabIndex = 41;
             this.Download_button.Text = "Download";
             this.Download_button.UseVisualStyleBackColor = false;
+            this.Download_button.Click += new System.EventHandler(this.Download_button_Click);
             // 
             // Grade_Form
             // 
