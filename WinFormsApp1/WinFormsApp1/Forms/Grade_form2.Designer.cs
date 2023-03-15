@@ -41,8 +41,11 @@ namespace WinFormsApp1
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.Assignment_box = new System.Windows.Forms.TextBox();
             this.Assignement = new System.Windows.Forms.Label();
+            this.Weight_num = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grade_num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Weight_num)).BeginInit();
             this.SuspendLayout();
             // 
             // Back_Button
@@ -181,11 +184,31 @@ namespace WinFormsApp1
             this.Assignement.TabIndex = 58;
             this.Assignement.Text = "Assignement";
             // 
+            // Weight_num
+            // 
+            this.Weight_num.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Weight_num.Location = new System.Drawing.Point(147, 241);
+            this.Weight_num.Name = "Weight_num";
+            this.Weight_num.Size = new System.Drawing.Size(166, 30);
+            this.Weight_num.TabIndex = 75;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(64, 243);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 23);
+            this.label1.TabIndex = 74;
+            this.label1.Text = "Weight";
+            // 
             // Grade_form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 502);
+            this.Controls.Add(this.Weight_num);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Back_Button);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.Grade_num);
@@ -198,6 +221,7 @@ namespace WinFormsApp1
             this.Text = "Grade_form2";
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Grade_num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Weight_num)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +240,7 @@ namespace WinFormsApp1
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox Assignment_box;
         private System.Windows.Forms.Label Assignement;
+        private System.Windows.Forms.NumericUpDown Weight_num;
+        private System.Windows.Forms.Label label1;
     }
 }

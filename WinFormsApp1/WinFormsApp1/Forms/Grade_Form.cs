@@ -112,5 +112,18 @@ namespace WinFormsApp1
                 }
             }
         }
+
+        private void Folder_text_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog diag = new FolderBrowserDialog();
+            if (diag.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                Folder_text.Text = diag.SelectedPath;
+            }
+            else
+            {
+                Folder_text.Text = "Save Folder";
+            }
+        }
     }
 }

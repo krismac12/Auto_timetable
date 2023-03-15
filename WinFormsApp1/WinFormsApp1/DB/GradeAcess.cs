@@ -35,6 +35,33 @@ namespace WinFormsApp1
             return grades;
         }
 
+        public static List<Grade> getGrades(List<Subject> subjects)
+        {
+            List<Grade> grades = new List<Grade>();
+            Database db = new Database();
+            string query = "Select * from Grades";
+            SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
+            db.OpenConnection();
+            SQLiteDataReader result = myCommand.ExecuteReader();
+
+            if (result.HasRows)
+            {
+                while (result.Read())
+                {
+                    int id = Convert.ToInt32(result["ID"]);
+                    int subject_ID = Convert.ToInt32(result["Subject_ID"]);
+                    string name = result["Name"].ToString();
+                    string grade_s = result["Grade"].ToString();
+                    Subject subject = subjects.FirstOrDefault(o => o.ID == subject_ID);
+                    Grade grade = new Grade(id, subject, float.Parse(grade_s), name);
+                    grades.Add(grade);
+                }
+            }
+
+            db.CloseConnection();
+            return grades;
+        }
+
 
         public static void insertGrade(int subject_id, string name,string grade)
         {
@@ -82,5 +109,6 @@ namespace WinFormsApp1
             var result = myCommand.ExecuteNonQuery();
             db.CloseConnection();
         }
+
     }
 }
