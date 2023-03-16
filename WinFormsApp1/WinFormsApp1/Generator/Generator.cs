@@ -61,7 +61,7 @@ namespace WinFormsApp1
 												if (time.overlap(constraint))
 												{
 													overlap = true;
-													if (!timetable.ConstraintConflict(time, constraint.hours))
+													if (timetable.ConstraintConflict(time, constraint.hours))
 													{
 														timetable.AddTime(time);
 													}
