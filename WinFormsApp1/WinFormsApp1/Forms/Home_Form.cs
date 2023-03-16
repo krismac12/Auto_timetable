@@ -75,7 +75,6 @@ namespace WinFormsApp1
                         string pdfFile = filePath + "//Timetable" + i + ".pdf";
                         ConvertExcelToPDF(destination, pdfFile);
                         i++;
-                        File.Delete(destination);
 
                     }
                     MessageBox.Show("Finished Generating Timetables", "INFO",
@@ -242,7 +241,6 @@ namespace WinFormsApp1
                         string c = time.sDay + (time.sHour - subtract).ToString() + ":" + time.eDay + (time.sHour - subtract + cells);
                         ws.Cells[c].Merge = true;
                         ws.Cells[time.start.Hour - subtract, a].Value = time.Display();
-                        ws.Cells[time.start.Hour - subtract, a].AutoFitColumns();
                         double height = 120;
                         if (cells >= 1)
                         {
@@ -265,6 +263,7 @@ namespace WinFormsApp1
                     }
                     a++;
                 }
+
                 p.Save();
             }
         }

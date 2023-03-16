@@ -55,7 +55,7 @@ namespace WinFormsApp1
 									{
 										if (!timetable.Conflicts(time))
 										{
-											/*bool overlap = false;
+											bool overlap = false;
 											foreach(Time constraint in constraints)
 											{
 												if (time.overlap(constraint))
@@ -71,7 +71,7 @@ namespace WinFormsApp1
 											{
 												timetable.AddTime(time);
 												break;
-											}*/
+											}
 											timetable.AddTime(time);
 											break;
 										}
