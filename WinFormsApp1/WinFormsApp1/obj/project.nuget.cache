@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dqzsTasg+xrc3uc7vYZ+xtM7l7ZwiFi/8p5eTZN/+IKesYM1zVZQgo+eIPjHB4KS0A47GRamn1eLMJn9XPBvog==",
+  "dgSpecHash": "pA/8hrTDD1thmggIjdNy90/Eal7q7WaOSfCrfrAhIe9VGNYMhSZmAfDAzcwpUuAyDEoEGXfmVpQP8m4JfP6aag==",
   "success": true,
   "projectFilePath": "C:\\desk\\code\\Fivver\\Auto_table\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
@@ -70,6 +70,8 @@
     "C:\\Users\\krist\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\krist\\.nuget\\packages\\sautinsoft.exceltopdf\\5.6.11.14\\sautinsoft.exceltopdf.5.6.11.14.nupkg.sha512",
+    "C:\\Users\\krist\\.nuget\\packages\\sautinsoft.pdffocus\\8.6.1.18\\sautinsoft.pdffocus.8.6.1.18.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\sautinsoft.pdfvision\\6.2.11.16\\sautinsoft.pdfvision.6.2.11.16.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.117\\stub.system.data.sqlite.core.netstandard.1.0.117.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
@@ -179,7 +181,9 @@
     "C:\\Users\\krist\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\krist\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\krist\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\krist\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
+    "C:\\Users\\krist\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
     {

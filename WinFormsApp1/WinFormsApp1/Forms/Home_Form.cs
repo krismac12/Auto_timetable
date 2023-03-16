@@ -10,7 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OfficeOpenXml;
-using Spire.Xls;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using SautinSoft;
 
 namespace WinFormsApp1
 {
@@ -70,6 +72,10 @@ namespace WinFormsApp1
                         writeTable(destination, table);
                         FileInfo existingFile = new FileInfo(destination);
 
+                        string pdfFile = filePath + "//Timetable" + i + ".pdf";
+                        ConvertExcelToPDF(destination, pdfFile);
+                        i++;
+                        File.Delete(destination);
 
                     }
                     MessageBox.Show("Finished Generating Timetables", "INFO",
@@ -86,6 +92,13 @@ namespace WinFormsApp1
                 MessageBox.Show("Please Create Times", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        public void ConvertExcelToPDF(string inputFilePath, string outputFilePath)
+        {
+            SautinSoft.ExcelToPdf f = new ExcelToPdf();
+
+            f.ConvertFile(inputFilePath, outputFilePath);
         }
 
         private void folder_output_Click(object sender, EventArgs e)
