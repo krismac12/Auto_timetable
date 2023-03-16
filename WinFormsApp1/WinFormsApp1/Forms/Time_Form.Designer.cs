@@ -96,6 +96,7 @@ namespace WinFormsApp1
             this.label2.Size = new System.Drawing.Size(53, 23);
             this.label2.TabIndex = 33;
             this.label2.Text = "Start";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Room_box
             // 
@@ -104,6 +105,7 @@ namespace WinFormsApp1
             this.Room_box.Name = "Room_box";
             this.Room_box.Size = new System.Drawing.Size(165, 30);
             this.Room_box.TabIndex = 32;
+            this.Room_box.TextChanged += new System.EventHandler(this.Room_box_TextChanged);
             // 
             // label1
             // 
@@ -114,6 +116,7 @@ namespace WinFormsApp1
             this.label1.Size = new System.Drawing.Size(62, 23);
             this.label1.TabIndex = 31;
             this.label1.Text = "Room";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Delete_Button
             // 
@@ -139,6 +142,7 @@ namespace WinFormsApp1
             this.label3.Size = new System.Drawing.Size(44, 23);
             this.label3.TabIndex = 38;
             this.label3.Text = "End";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Start_Picker
             // 
@@ -158,6 +162,7 @@ namespace WinFormsApp1
             this.label4.Size = new System.Drawing.Size(45, 23);
             this.label4.TabIndex = 42;
             this.label4.Text = "Day";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Day_Box
             // 
@@ -167,6 +172,7 @@ namespace WinFormsApp1
             this.Day_Box.Name = "Day_Box";
             this.Day_Box.Size = new System.Drawing.Size(166, 31);
             this.Day_Box.TabIndex = 43;
+            this.Day_Box.SelectedIndexChanged += new System.EventHandler(this.Day_Box_SelectedIndexChanged);
             // 
             // End_Picker
             // 
@@ -175,6 +181,7 @@ namespace WinFormsApp1
             this.End_Picker.Name = "End_Picker";
             this.End_Picker.Size = new System.Drawing.Size(165, 30);
             this.End_Picker.TabIndex = 44;
+            this.End_Picker.ValueChanged += new System.EventHandler(this.End_Picker_ValueChanged);
             // 
             // Class_Label
             // 
@@ -197,6 +204,7 @@ namespace WinFormsApp1
             this.label6.Size = new System.Drawing.Size(110, 23);
             this.label6.TabIndex = 46;
             this.label6.Text = "Start Week";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Start_num
             // 
@@ -205,6 +213,7 @@ namespace WinFormsApp1
             this.Start_num.Name = "Start_num";
             this.Start_num.Size = new System.Drawing.Size(166, 30);
             this.Start_num.TabIndex = 50;
+            this.Start_num.ValueChanged += new System.EventHandler(this.Start_num_ValueChanged);
             // 
             // End_num
             // 
@@ -213,6 +222,7 @@ namespace WinFormsApp1
             this.End_num.Name = "End_num";
             this.End_num.Size = new System.Drawing.Size(166, 30);
             this.End_num.TabIndex = 51;
+            this.End_num.ValueChanged += new System.EventHandler(this.End_num_ValueChanged);
             // 
             // label7
             // 
@@ -223,6 +233,7 @@ namespace WinFormsApp1
             this.label7.Size = new System.Drawing.Size(101, 23);
             this.label7.TabIndex = 52;
             this.label7.Text = "End Week";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Edit
             // 
@@ -252,8 +263,10 @@ namespace WinFormsApp1
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // button1
             // 
@@ -268,6 +281,7 @@ namespace WinFormsApp1
             this.button1.TabIndex = 2;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Edit_Button
             // 
@@ -282,6 +296,7 @@ namespace WinFormsApp1
             this.Edit_Button.TabIndex = 1;
             this.Edit_Button.Text = "Edit";
             this.Edit_Button.UseVisualStyleBackColor = false;
+            this.Edit_Button.Click += new System.EventHandler(this.Edit_Button_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -301,6 +316,7 @@ namespace WinFormsApp1
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(849, 43);
             this.tableLayoutPanel2.TabIndex = 54;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // Back_Button
             // 

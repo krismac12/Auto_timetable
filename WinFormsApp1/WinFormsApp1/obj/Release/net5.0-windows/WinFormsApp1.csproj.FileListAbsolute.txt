@@ -575,3 +575,10 @@ C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Rele
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Main_Form.resources
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Grade_Form.resources
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Grade_form2.resources
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\itextsharp.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\PdfSharp.Charting.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\PdfSharp.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\de\PdfSharp.Charting.resources.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\de\PdfSharp.resources.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Spire.Doc.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.Constraints_Form.resources

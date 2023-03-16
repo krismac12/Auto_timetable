@@ -23,13 +23,13 @@ namespace WinFormsApp1
         List<Time> times = new List<Time>();
         List<DateTime> days = new List<DateTime>();
         Time selected;
-        Form home;
+        Main_Form main;
 
-        public NA_Form(Form form)
+        public NA_Form(Main_Form form)
         {
             InitializeComponent();
 
-            home = form;
+            main = form;
 
             days.Add(sunday);
             days.Add(monday);
@@ -205,6 +205,77 @@ namespace WinFormsApp1
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void Day_Box_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Start_Picker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Type_box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void End_num_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Start_num_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void End_Picker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Constraint_Button_Click(object sender, EventArgs e)
+        {
+            main.OpenChildForm(new Constraints_Form(main,this));
+            main.ActiveButton(main.available_times, Color.FromArgb(235, 104, 104));
         }
     }
 }

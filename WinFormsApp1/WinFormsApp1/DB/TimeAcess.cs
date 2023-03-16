@@ -72,6 +72,36 @@ namespace WinFormsApp1
             return times;
         }
 
+        public static List<Time> getConstraints()
+        {
+            List<Time> times = new List<Time>();
+            Database db = new Database();
+            string query = "Select * from Time WHERE Type = 3";
+            SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
+            db.OpenConnection();
+            SQLiteDataReader result = myCommand.ExecuteReader();
+
+            if (result.HasRows)
+            {
+                while (result.Read())
+                {
+                    int id = Convert.ToInt32(result["ID"]);
+                    int type = Convert.ToInt32(result["Type"]);
+                    string room = result["Room"].ToString();
+                    string startTime = result["StartTime"].ToString();
+                    string endTime = result["EndTime"].ToString();
+                    int start = Convert.ToInt32(result["Start_Week"]);
+                    int end = Convert.ToInt32(result["End_Week"]);
+                    int hours = Convert.ToInt32(result["Hours"]);
+                    Time time = new Time(id, type, DateTime.Parse(startTime), DateTime.Parse(endTime), start, end,hours);
+                    times.Add(time);
+                }
+            }
+
+            db.CloseConnection();
+            return times;
+        }
+
         public static void insertTime(int type, string room, string start_time, string end_time, int class_ID,int start,int end)
         {
             Database db = new Database();
@@ -113,6 +143,23 @@ namespace WinFormsApp1
 
         }
 
+        public static void insertConstraints(int type, string start_time, string end_time, int start, int end, int hours)
+        {
+            Database db = new Database();
+            string query = "INSERT INTO Time ('Type', 'StartTime', 'EndTime', 'Start_Week', 'End_Week', 'Hours') VALUES(@type, @start_time, @end_time, @start, @end, @hours)";
+            db.OpenConnection();
+            SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
+            myCommand.Parameters.AddWithValue("@type", type);
+            myCommand.Parameters.AddWithValue("@start_time", start_time);
+            myCommand.Parameters.AddWithValue("@end_time", end_time);
+            myCommand.Parameters.AddWithValue("@start", start);
+            myCommand.Parameters.AddWithValue("@end", end);
+            myCommand.Parameters.AddWithValue("@hours", hours);
+            var result = myCommand.ExecuteNonQuery();
+            db.CloseConnection();
+        }
+
+
         public static void UpdateTime(int id, int type, string room, string start_time, string end_time,int start_week,int end_week)
         {
             Database db = new Database();
@@ -132,6 +179,24 @@ namespace WinFormsApp1
 
 
         }
+
+        public static void updateConstraints(int id, int type, string start_time, string end_time, int start_week, int end_week, int hours)
+        {
+            Database db = new Database();
+            string query = "UPDATE Time SET type = @type, StartTime = @start_time,EndTime = @end_time, Start_Week = @start_week, End_Week = @end_week, Hours = @hours WHERE ID = @ID ";
+            db.OpenConnection();
+            SQLiteCommand myCommand = new SQLiteCommand(query, db.myConnection);
+            myCommand.Parameters.AddWithValue("@ID", id);
+            myCommand.Parameters.AddWithValue("@type", type);
+            myCommand.Parameters.AddWithValue("@start_time", start_time);
+            myCommand.Parameters.AddWithValue("@end_time", end_time);
+            myCommand.Parameters.AddWithValue("@start_week", start_week);
+            myCommand.Parameters.AddWithValue("@end_week", end_week);
+            myCommand.Parameters.AddWithValue("@hours", hours);
+            var result = myCommand.ExecuteNonQuery();
+            db.CloseConnection();
+        }
+
 
         public static void deleteTime(int ID)
         {

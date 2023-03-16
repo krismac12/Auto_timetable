@@ -46,6 +46,7 @@ namespace WinFormsApp1
             this.Delete_Button = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.Button();
             this.Add_Button = new System.Windows.Forms.Button();
+            this.Constraint_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.End_num)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Start_num)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -57,6 +58,7 @@ namespace WinFormsApp1
             this.End_Picker.Name = "End_Picker";
             this.End_Picker.Size = new System.Drawing.Size(150, 31);
             this.End_Picker.TabIndex = 57;
+            this.End_Picker.ValueChanged += new System.EventHandler(this.End_Picker_ValueChanged);
             // 
             // Day_Box
             // 
@@ -65,6 +67,7 @@ namespace WinFormsApp1
             this.Day_Box.Name = "Day_Box";
             this.Day_Box.Size = new System.Drawing.Size(151, 33);
             this.Day_Box.TabIndex = 56;
+            this.Day_Box.SelectedIndexChanged += new System.EventHandler(this.Day_Box_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -74,6 +77,7 @@ namespace WinFormsApp1
             this.label4.Size = new System.Drawing.Size(43, 25);
             this.label4.TabIndex = 55;
             this.label4.Text = "Day";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Start_Picker
             // 
@@ -81,6 +85,7 @@ namespace WinFormsApp1
             this.Start_Picker.Name = "Start_Picker";
             this.Start_Picker.Size = new System.Drawing.Size(150, 31);
             this.Start_Picker.TabIndex = 54;
+            this.Start_Picker.ValueChanged += new System.EventHandler(this.Start_Picker_ValueChanged);
             // 
             // label3
             // 
@@ -90,6 +95,7 @@ namespace WinFormsApp1
             this.label3.Size = new System.Drawing.Size(42, 25);
             this.label3.TabIndex = 53;
             this.label3.Text = "End";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // listBox1
             // 
@@ -112,6 +118,7 @@ namespace WinFormsApp1
             this.label2.Size = new System.Drawing.Size(48, 25);
             this.label2.TabIndex = 49;
             this.label2.Text = "Start";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Type_box
             // 
@@ -119,6 +126,7 @@ namespace WinFormsApp1
             this.Type_box.Name = "Type_box";
             this.Type_box.Size = new System.Drawing.Size(150, 31);
             this.Type_box.TabIndex = 48;
+            this.Type_box.TextChanged += new System.EventHandler(this.Type_box_TextChanged);
             // 
             // label1
             // 
@@ -128,6 +136,7 @@ namespace WinFormsApp1
             this.label1.Size = new System.Drawing.Size(49, 25);
             this.label1.TabIndex = 47;
             this.label1.Text = "Type";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label7
             // 
@@ -137,6 +146,7 @@ namespace WinFormsApp1
             this.label7.Size = new System.Drawing.Size(90, 25);
             this.label7.TabIndex = 61;
             this.label7.Text = "End Week";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // End_num
             // 
@@ -144,6 +154,7 @@ namespace WinFormsApp1
             this.End_num.Name = "End_num";
             this.End_num.Size = new System.Drawing.Size(151, 31);
             this.End_num.TabIndex = 60;
+            this.End_num.ValueChanged += new System.EventHandler(this.End_num_ValueChanged);
             // 
             // Start_num
             // 
@@ -151,6 +162,7 @@ namespace WinFormsApp1
             this.Start_num.Name = "Start_num";
             this.Start_num.Size = new System.Drawing.Size(151, 31);
             this.Start_num.TabIndex = 59;
+            this.Start_num.ValueChanged += new System.EventHandler(this.Start_num_ValueChanged);
             // 
             // label6
             // 
@@ -160,15 +172,18 @@ namespace WinFormsApp1
             this.label6.Size = new System.Drawing.Size(96, 25);
             this.label6.TabIndex = 58;
             this.label6.Text = "Start Week";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnCount = 4;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.Controls.Add(this.Constraint_Button, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.Delete_Button, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Edit, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.Add_Button, 2, 0);
@@ -178,6 +193,7 @@ namespace WinFormsApp1
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(855, 47);
             this.tableLayoutPanel2.TabIndex = 62;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // Delete_Button
             // 
@@ -186,9 +202,9 @@ namespace WinFormsApp1
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
-            this.Delete_Button.Location = new System.Drawing.Point(23, 3);
+            this.Delete_Button.Location = new System.Drawing.Point(3, 3);
             this.Delete_Button.Name = "Delete_Button";
-            this.Delete_Button.Size = new System.Drawing.Size(238, 41);
+            this.Delete_Button.Size = new System.Drawing.Size(207, 41);
             this.Delete_Button.TabIndex = 30;
             this.Delete_Button.Text = "Delete";
             this.Delete_Button.UseVisualStyleBackColor = false;
@@ -201,9 +217,9 @@ namespace WinFormsApp1
             this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Edit.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Edit.ForeColor = System.Drawing.Color.White;
-            this.Edit.Location = new System.Drawing.Point(321, 3);
+            this.Edit.Location = new System.Drawing.Point(216, 3);
             this.Edit.Name = "Edit";
-            this.Edit.Size = new System.Drawing.Size(212, 41);
+            this.Edit.Size = new System.Drawing.Size(207, 41);
             this.Edit.TabIndex = 53;
             this.Edit.Text = "Edit";
             this.Edit.UseVisualStyleBackColor = false;
@@ -216,13 +232,28 @@ namespace WinFormsApp1
             this.Add_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_Button.ForeColor = System.Drawing.Color.White;
-            this.Add_Button.Location = new System.Drawing.Point(606, 3);
+            this.Add_Button.Location = new System.Drawing.Point(429, 3);
             this.Add_Button.Name = "Add_Button";
-            this.Add_Button.Size = new System.Drawing.Size(212, 41);
+            this.Add_Button.Size = new System.Drawing.Size(207, 41);
             this.Add_Button.TabIndex = 36;
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = false;
             this.Add_Button.Click += new System.EventHandler(this.Add_Button_Click_1);
+            // 
+            // Constraint_Button
+            // 
+            this.Constraint_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Constraint_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.Constraint_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Constraint_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Constraint_Button.ForeColor = System.Drawing.Color.White;
+            this.Constraint_Button.Location = new System.Drawing.Point(643, 3);
+            this.Constraint_Button.Name = "Constraint_Button";
+            this.Constraint_Button.Size = new System.Drawing.Size(207, 41);
+            this.Constraint_Button.TabIndex = 63;
+            this.Constraint_Button.Text = "Constraints";
+            this.Constraint_Button.UseVisualStyleBackColor = false;
+            this.Constraint_Button.Click += new System.EventHandler(this.Constraint_Button_Click);
             // 
             // NA_Form
             // 
@@ -272,5 +303,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Button Delete_Button;
         private System.Windows.Forms.Button Edit;
         private System.Windows.Forms.Button Add_Button;
+        private System.Windows.Forms.Button Constraint_Button;
     }
 }

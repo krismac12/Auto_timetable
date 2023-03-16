@@ -97,5 +97,10 @@ namespace WinFormsApp1
                 FillList();
             }
         }
+
+        private void Back_Button_Click(object sender, EventArgs e)
+        {
+            main.OpenChildForm(new Grade_Form(main));
+        }
     }
 }

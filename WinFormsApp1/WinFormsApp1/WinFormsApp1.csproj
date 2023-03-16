@@ -40,10 +40,13 @@
     <PackageReference Include="Bytescout.Spreadsheet" Version="4.6.0.2025" />
     <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="EPPlus" Version="6.1.2" />
+    <PackageReference Include="FreeSpire.Doc" Version="10.8.0" />
     <PackageReference Include="FreeSpire.XLS" Version="12.7.0" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
     <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
     <PackageReference Include="MySql.Data" Version="8.0.31" />
     <PackageReference Include="MySqlConnector" Version="2.2.5" />
+    <PackageReference Include="PdfSharp" Version="1.50.5147" />
     <PackageReference Include="SautinSoft.PdfVision" Version="6.2.11.16" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.117" />
   </ItemGroup>

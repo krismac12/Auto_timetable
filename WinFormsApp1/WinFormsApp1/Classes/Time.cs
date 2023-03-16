@@ -14,6 +14,7 @@ public class Time
 	public int eHour;
 	public string sDay;
 	public string eDay;
+	public int hours;
 	public Time(int id ,string room,int type, DateTime start,DateTime end,Class @class,int start_week,int end_week)
 	{
 		this.ID = id;
@@ -89,6 +90,17 @@ public class Time
 		this.end_week = end_week;
 	}
 
+	public Time(int id, int type, DateTime start, DateTime end, int start_week, int end_week, int hours)
+	{
+		this.ID = id;
+		this.type = type;
+		this.start = nextDayofWeek(start);
+		this.end = nextDayofWeek(end);
+		this.start_week = start_week;
+		this.end_week = end_week;
+		this.hours = hours;
+	}
+
 	public bool overlap(Time newTime)
     {
 		bool overlap = true;
@@ -133,7 +145,14 @@ public class Time
 
 	public override string ToString()
 	{
-			return this.room +": "+this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end) + " Weeks: " + start_week + " - "+ end_week;
+		if(type == 1 || type == 2)
+        {
+			return this.room + ": " + this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end) + " Weeks: " + start_week + " - " + end_week;
+		}
+        else
+        {
+			return this.start.DayOfWeek.ToString() + " " + string.Format("{0:hh:mm tt}", start) + " - " + string.Format("{0:hh:mm:ss tt}", end) + " Weeks: " + start_week + " - " + end_week + " Hour Constraint: " + hours + " Hours";
+		}
 	}
 
 

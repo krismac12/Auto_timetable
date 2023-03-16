@@ -1,8 +1,14 @@
-﻿using System;
+﻿using PdfSharp.Drawing;
+using PdfSharp.Drawing.Layout;
+using PdfSharp.Pdf;
+using Spire.Doc;
+using Spire.Doc.Documents;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -128,28 +134,75 @@ namespace WinFormsApp1
 
         private void Download_button_Click(object sender, EventArgs e)
         {
-            List<Subject> graded = new List<Subject>();
-
-            subjects = SubjectAccess.getSubjects();
-
-            List<Grade> grades = GradeAcess.getGrades(subjects);
-            foreach(Subject subject in subjects)
+            if (System.IO.Directory.Exists(Folder_text.Text) && Save_text.Text != "")
             {
-                if(subject.grades.Count > 0)
+                List<Subject> graded = new List<Subject>();
+
+                subjects = SubjectAccess.getSubjects();
+
+                List<Grade> grades = GradeAcess.getGrades(subjects);
+                foreach (Subject subject in subjects)
                 {
-                    graded.Add(subject);
+                    if (subject.grades.Count > 0)
+                    {
+                        graded.Add(subject);
+                    }
                 }
-            }
 
-            string output = "";
-            foreach(Subject subject in graded)
+                string output = "";
+                foreach (Subject subject in graded)
+                {
+                    subject.calculateGrade();
+                    output += subject.name + ": " + subject.Grade + "\n";
+                }
+                string filePath = Folder_text.Text + "\\Grades";
+
+                StringToPdf(output, filePath,Save_text.Text);
+            }
+        }
+
+        public void StringToPdf(string inputString, string folderPath, string fileName)
+        {
+            // create the folder if it doesn't exist
+            if (!Directory.Exists(folderPath))
             {
-                subject.calculateGrade();
-                output += subject.name + ": " + subject.Grade + "@\n"; 
+                Directory.CreateDirectory(folderPath);
             }
 
-            MessageBox.Show(output, "Info",
-            MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // append the .pdf extension to the file name if it's not already there
+            if (!fileName.EndsWith(".pdf"))
+            {
+                fileName += ".pdf";
+            }
+
+            // create the full output file path
+            string outputPath = Path.Combine(folderPath, fileName);
+
+            // create a new Document object
+            Document document = new Document();
+
+            // add a new section to the document
+            Section section = document.AddSection();
+
+            // create a new Paragraph object
+            Paragraph paragraph = section.AddParagraph();
+
+            // split the input string by line breaks and add each line as a new paragraph
+            string[] lines = inputString.Split('\n');
+            foreach (string line in lines)
+            {
+                // add the line to the paragraph
+                paragraph.AppendText(line);
+
+                // add a line break
+                paragraph.AppendBreak(BreakType.LineBreak);
+            }
+
+            // save the document as a PDF
+            document.SaveToFile(outputPath, FileFormat.PDF);
+
+            // dispose of the document
+            document.Dispose();
         }
     }
 }

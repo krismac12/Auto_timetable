@@ -58,11 +58,12 @@ namespace WinFormsApp1
             this.Back_Button.Size = new System.Drawing.Size(45, 31);
             this.Back_Button.TabIndex = 73;
             this.Back_Button.UseVisualStyleBackColor = true;
+            this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
             // 
             // Edit
             // 
             this.Edit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(92)))), ((int)(((byte)(214)))));
             this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Edit.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Edit.ForeColor = System.Drawing.Color.White;
@@ -96,7 +97,7 @@ namespace WinFormsApp1
             // Delete_Button
             // 
             this.Delete_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Delete_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.Delete_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(92)))), ((int)(((byte)(214)))));
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
@@ -111,7 +112,7 @@ namespace WinFormsApp1
             // Add_Button
             // 
             this.Add_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.Add_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(92)))), ((int)(((byte)(214)))));
             this.Add_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_Button.ForeColor = System.Drawing.Color.White;
