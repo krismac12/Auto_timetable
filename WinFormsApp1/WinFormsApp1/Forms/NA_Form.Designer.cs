@@ -43,10 +43,10 @@ namespace WinFormsApp1
             this.Start_num = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.Constraint_Button = new System.Windows.Forms.Button();
             this.Delete_Button = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.Button();
             this.Add_Button = new System.Windows.Forms.Button();
-            this.Constraint_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.End_num)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Start_num)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -54,45 +54,50 @@ namespace WinFormsApp1
             // 
             // End_Picker
             // 
-            this.End_Picker.Location = new System.Drawing.Point(99, 207);
+            this.End_Picker.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.End_Picker.Location = new System.Drawing.Point(132, 207);
             this.End_Picker.Name = "End_Picker";
-            this.End_Picker.Size = new System.Drawing.Size(150, 31);
+            this.End_Picker.Size = new System.Drawing.Size(150, 30);
             this.End_Picker.TabIndex = 57;
             this.End_Picker.ValueChanged += new System.EventHandler(this.End_Picker_ValueChanged);
             // 
             // Day_Box
             // 
+            this.Day_Box.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Day_Box.FormattingEnabled = true;
-            this.Day_Box.Location = new System.Drawing.Point(99, 133);
+            this.Day_Box.Location = new System.Drawing.Point(132, 133);
             this.Day_Box.Name = "Day_Box";
-            this.Day_Box.Size = new System.Drawing.Size(151, 33);
+            this.Day_Box.Size = new System.Drawing.Size(151, 31);
             this.Day_Box.TabIndex = 56;
             this.Day_Box.SelectedIndexChanged += new System.EventHandler(this.Day_Box_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 133);
+            this.label4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(62, 133);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 25);
+            this.label4.Size = new System.Drawing.Size(45, 23);
             this.label4.TabIndex = 55;
             this.label4.Text = "Day";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Start_Picker
             // 
-            this.Start_Picker.Location = new System.Drawing.Point(99, 170);
+            this.Start_Picker.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Start_Picker.Location = new System.Drawing.Point(132, 170);
             this.Start_Picker.Name = "Start_Picker";
-            this.Start_Picker.Size = new System.Drawing.Size(150, 31);
+            this.Start_Picker.Size = new System.Drawing.Size(150, 30);
             this.Start_Picker.TabIndex = 54;
             this.Start_Picker.ValueChanged += new System.EventHandler(this.Start_Picker_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 209);
+            this.label3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(63, 207);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 25);
+            this.label3.Size = new System.Drawing.Size(44, 23);
             this.label3.TabIndex = 53;
             this.label3.Text = "End";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -102,38 +107,42 @@ namespace WinFormsApp1
             this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
+            this.listBox1.ItemHeight = 23;
             this.listBox1.Location = new System.Drawing.Point(323, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(565, 379);
+            this.listBox1.Size = new System.Drawing.Size(565, 372);
             this.listBox1.TabIndex = 50;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 169);
+            this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(54, 170);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 25);
+            this.label2.Size = new System.Drawing.Size(53, 23);
             this.label2.TabIndex = 49;
             this.label2.Text = "Start";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Type_box
             // 
-            this.Type_box.Location = new System.Drawing.Point(99, 96);
+            this.Type_box.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Type_box.Location = new System.Drawing.Point(132, 96);
             this.Type_box.Name = "Type_box";
-            this.Type_box.Size = new System.Drawing.Size(150, 31);
+            this.Type_box.Size = new System.Drawing.Size(150, 30);
             this.Type_box.TabIndex = 48;
             this.Type_box.TextChanged += new System.EventHandler(this.Type_box_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 96);
+            this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(54, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 25);
+            this.label1.Size = new System.Drawing.Size(53, 23);
             this.label1.TabIndex = 47;
             this.label1.Text = "Type";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -141,35 +150,39 @@ namespace WinFormsApp1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(-3, 287);
+            this.label7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(6, 288);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 25);
+            this.label7.Size = new System.Drawing.Size(101, 23);
             this.label7.TabIndex = 61;
             this.label7.Text = "End Week";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // End_num
             // 
-            this.End_num.Location = new System.Drawing.Point(99, 281);
+            this.End_num.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.End_num.Location = new System.Drawing.Point(132, 281);
             this.End_num.Name = "End_num";
-            this.End_num.Size = new System.Drawing.Size(151, 31);
+            this.End_num.Size = new System.Drawing.Size(151, 30);
             this.End_num.TabIndex = 60;
             this.End_num.ValueChanged += new System.EventHandler(this.End_num_ValueChanged);
             // 
             // Start_num
             // 
-            this.Start_num.Location = new System.Drawing.Point(99, 244);
+            this.Start_num.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Start_num.Location = new System.Drawing.Point(132, 244);
             this.Start_num.Name = "Start_num";
-            this.Start_num.Size = new System.Drawing.Size(151, 31);
+            this.Start_num.Size = new System.Drawing.Size(151, 30);
             this.Start_num.TabIndex = 59;
             this.Start_num.ValueChanged += new System.EventHandler(this.Start_num_ValueChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(-3, 250);
+            this.label6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(-3, 246);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 25);
+            this.label6.Size = new System.Drawing.Size(110, 23);
             this.label6.TabIndex = 58;
             this.label6.Text = "Start Week";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -194,6 +207,21 @@ namespace WinFormsApp1
             this.tableLayoutPanel2.Size = new System.Drawing.Size(855, 47);
             this.tableLayoutPanel2.TabIndex = 62;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
+            // 
+            // Constraint_Button
+            // 
+            this.Constraint_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Constraint_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.Constraint_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Constraint_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Constraint_Button.ForeColor = System.Drawing.Color.White;
+            this.Constraint_Button.Location = new System.Drawing.Point(643, 3);
+            this.Constraint_Button.Name = "Constraint_Button";
+            this.Constraint_Button.Size = new System.Drawing.Size(207, 41);
+            this.Constraint_Button.TabIndex = 63;
+            this.Constraint_Button.Text = "Constraints";
+            this.Constraint_Button.UseVisualStyleBackColor = false;
+            this.Constraint_Button.Click += new System.EventHandler(this.Constraint_Button_Click);
             // 
             // Delete_Button
             // 
@@ -239,21 +267,6 @@ namespace WinFormsApp1
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = false;
             this.Add_Button.Click += new System.EventHandler(this.Add_Button_Click_1);
-            // 
-            // Constraint_Button
-            // 
-            this.Constraint_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Constraint_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.Constraint_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Constraint_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Constraint_Button.ForeColor = System.Drawing.Color.White;
-            this.Constraint_Button.Location = new System.Drawing.Point(643, 3);
-            this.Constraint_Button.Name = "Constraint_Button";
-            this.Constraint_Button.Size = new System.Drawing.Size(207, 41);
-            this.Constraint_Button.TabIndex = 63;
-            this.Constraint_Button.Text = "Constraints";
-            this.Constraint_Button.UseVisualStyleBackColor = false;
-            this.Constraint_Button.Click += new System.EventHandler(this.Constraint_Button_Click);
             // 
             // NA_Form
             // 

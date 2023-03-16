@@ -36,6 +36,26 @@ public class Timetable
         }
 		return conflict;
 	}
+
+	public bool ConstraintConflict(Time time, int hours)
+	{
+		if (times.Count > 0)
+		{
+			foreach (Time t in times)
+			{
+				if (time.start <= t.end.AddHours(hours) && time.start <= t.end)
+				{
+					return true;
+				}
+
+				if (time.end >= t.start.AddHours(-hours) && time.end >= t.end)
+				{
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 	public void AddTime(Time time)
 	{
 		this.times.Add(time);

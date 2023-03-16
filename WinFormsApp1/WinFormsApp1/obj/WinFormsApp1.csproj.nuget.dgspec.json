@@ -54,7 +54,7 @@
             },
             "FreeSpire.Doc": {
               "target": "Package",
-              "version": "[10.8.0, )"
+              "version": "[10.7.0, )"
             },
             "FreeSpire.XLS": {
               "target": "Package",

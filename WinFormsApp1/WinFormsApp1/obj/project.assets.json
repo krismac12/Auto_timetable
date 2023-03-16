@@ -72,7 +72,7 @@
           "lib/netstandard2.1/EPPlus.System.Drawing.dll": {}
         }
       },
-      "FreeSpire.Doc/10.8.0": {
+      "FreeSpire.Doc/10.7.0": {
         "type": "package",
         "dependencies": {
           "System.Drawing.Common": "4.5.0",
@@ -2819,14 +2819,14 @@
         "readme.md"
       ]
     },
-    "FreeSpire.Doc/10.8.0": {
-      "sha512": "DQveY8in8JxaZsfTX1ZmRrVIl8kHeN0mhkp/KcliHOrmuKwZdf7gOuJdM1Rnakqg7dTVwbHLUhmi67V5U/WW5Q==",
+    "FreeSpire.Doc/10.7.0": {
+      "sha512": "/r1ZU/aWTlT3Izx4iIeyI1+cKWsaDBfRqQkhs+JNY53PfwuNSzGQgV+6/o60QoQpeSvUFq/8qaXVLjIXFRMLGQ==",
       "type": "package",
-      "path": "freespire.doc/10.8.0",
+      "path": "freespire.doc/10.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "freespire.doc.10.8.0.nupkg.sha512",
+        "freespire.doc.10.7.0.nupkg.sha512",
         "freespire.doc.nuspec",
         "lib/MonoAndroid/Spire.Doc.dll",
         "lib/MonoAndroid/Spire.Doc.xml",
@@ -9168,7 +9168,7 @@
       "Bytescout.Spreadsheet >= 4.6.0.2025",
       "Dapper >= 2.0.123",
       "EPPlus >= 6.1.2",
-      "FreeSpire.Doc >= 10.8.0",
+      "FreeSpire.Doc >= 10.7.0",
       "FreeSpire.XLS >= 12.7.0",
       "Microsoft.Office.Interop.Excel >= 15.0.4795.1001",
       "MySql.Data >= 8.0.31",
@@ -9232,7 +9232,7 @@
           },
           "FreeSpire.Doc": {
             "target": "Package",
-            "version": "[10.8.0, )"
+            "version": "[10.7.0, )"
           },
           "FreeSpire.XLS": {
             "target": "Package",

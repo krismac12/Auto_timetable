@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dddP5DHsSTvWE/06OTS6oZulgWUcSAoBO9newDpJXKfWgtwJSxdWAZR8r+4SuBlxrqt0cbTK+YjyiB/bn2VYeQ==",
+  "dgSpecHash": "dqzsTasg+xrc3uc7vYZ+xtM7l7ZwiFi/8p5eTZN/+IKesYM1zVZQgo+eIPjHB4KS0A47GRamn1eLMJn9XPBvog==",
   "success": true,
   "projectFilePath": "C:\\desk\\code\\Fivver\\Auto_table\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,7 @@
     "C:\\Users\\krist\\.nuget\\packages\\epplus\\6.1.2\\epplus.6.1.2.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\epplus.system.drawing\\6.1.1\\epplus.system.drawing.6.1.1.nupkg.sha512",
-    "C:\\Users\\krist\\.nuget\\packages\\freespire.doc\\10.8.0\\freespire.doc.10.8.0.nupkg.sha512",
+    "C:\\Users\\krist\\.nuget\\packages\\freespire.doc\\10.7.0\\freespire.doc.10.7.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\freespire.xls\\12.7.0\\freespire.xls.12.7.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\itextsharp\\5.5.13.3\\itextsharp.5.5.13.3.nupkg.sha512",

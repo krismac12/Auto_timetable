@@ -11,7 +11,7 @@
           "Bytescout.Spreadsheet": "4.6.0.2025",
           "Dapper": "2.0.123",
           "EPPlus": "6.1.2",
-          "FreeSpire.Doc": "10.8.0",
+          "FreeSpire.Doc": "10.7.0",
           "FreeSpire.XLS": "12.7.0",
           "Microsoft.Office.Interop.Excel": "15.0.4795.1001",
           "MySql.Data": "8.0.31",
@@ -82,7 +82,7 @@
           }
         }
       },
-      "FreeSpire.Doc/10.8.0": {
+      "FreeSpire.Doc/10.7.0": {
         "dependencies": {
           "System.Drawing.Common": "5.0.0",
           "System.Security.Cryptography.Xml": "5.0.0",
@@ -90,12 +90,12 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/Spire.Doc.dll": {
-            "assemblyVersion": "10.8.0.0",
-            "fileVersion": "10.8.0.3320"
+            "assemblyVersion": "10.7.0.0",
+            "fileVersion": "10.7.0.3320"
           },
           "lib/netcoreapp2.0/Spire.Pdf.dll": {
-            "assemblyVersion": "8.8.6.0",
-            "fileVersion": "8.8.6.1320"
+            "assemblyVersion": "8.7.2.0",
+            "fileVersion": "8.7.2.1320"
           }
         }
       },
@@ -1898,12 +1898,12 @@
       "path": "epplus.system.drawing/6.1.1",
       "hashPath": "epplus.system.drawing.6.1.1.nupkg.sha512"
     },
-    "FreeSpire.Doc/10.8.0": {
+    "FreeSpire.Doc/10.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-DQveY8in8JxaZsfTX1ZmRrVIl8kHeN0mhkp/KcliHOrmuKwZdf7gOuJdM1Rnakqg7dTVwbHLUhmi67V5U/WW5Q==",
-      "path": "freespire.doc/10.8.0",
-      "hashPath": "freespire.doc.10.8.0.nupkg.sha512"
+      "sha512": "sha512-/r1ZU/aWTlT3Izx4iIeyI1+cKWsaDBfRqQkhs+JNY53PfwuNSzGQgV+6/o60QoQpeSvUFq/8qaXVLjIXFRMLGQ==",
+      "path": "freespire.doc/10.7.0",
+      "hashPath": "freespire.doc.10.7.0.nupkg.sha512"
     },
     "FreeSpire.XLS/12.7.0": {
       "type": "package",

@@ -64,33 +64,13 @@ namespace WinFormsApp1
                     int i = 1;
                     foreach (Timetable table in g.timetables)
                     {
-                        string destination = "./DB/excelfile.xlsx";
+                        string destination =  filePath + "/excelfile"+i+".xlsx";
                         CreateExcel("./DB/Schedule_template.xlsx", destination);
 
                         writeTable(destination, table);
                         FileInfo existingFile = new FileInfo(destination);
 
-                        string pdfFile = filePath + "\\Timetable" + i + ".pdf";
 
-                        Workbook workbook = new Workbook();
-                        workbook.LoadFromFile(destination);
-
-                        Worksheet sheet = workbook.Worksheets[0];
-                        for (int x = 0; x < 6; x++)
-                        {
-                            sheet.Columns[x].AutoFitColumns();
-                        }
-
-                            sheet.PageSetup.Orientation = PageOrientationType.Landscape;
-                        sheet.PageSetup.FitToPagesTall = 1;
-
-                        workbook.SaveToFile(pdfFile, FileFormat.PDF);
-                        File.Delete(destination);
-                        i++;
-                        if (i > num)
-                        {
-                            break;
-                        }
                     }
                     MessageBox.Show("Finished Generating Timetables", "INFO",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -274,8 +254,6 @@ namespace WinFormsApp1
                 }
                 p.Save();
             }
-
-
         }
 
 

@@ -12,6 +12,8 @@ namespace WinFormsApp1
 		public List<Class> classes = new List<Class>();
 		public List<Timetable> timetables = new List<Timetable>();
 		public List<Time> NA = new List<Time>();
+		public List<Time> constraints = TimeAcess.getConstraints();
+
 		public Generator(List<Class> classes,List<Time> times)
 		{
 			NA = times;
@@ -24,7 +26,6 @@ namespace WinFormsApp1
 		public void generateTimetables(int count)
 		{
 			int num = 0;
-
 				for (int i = 0; i < classes.Count; i++)
 				{
 					for (int x = 0; x < classes[i].times.Count; x++)
@@ -34,6 +35,7 @@ namespace WinFormsApp1
                         {
 							timetable.AddTime(time);
                         }
+
 						if (timetable.Conflicts(classes[i].times[x]))
                         {
 							continue;
@@ -53,6 +55,23 @@ namespace WinFormsApp1
 									{
 										if (!timetable.Conflicts(time))
 										{
+											/*bool overlap = false;
+											foreach(Time constraint in constraints)
+											{
+												if (time.overlap(constraint))
+												{
+													overlap = true;
+													if (!timetable.ConstraintConflict(time, constraint.hours))
+													{
+														timetable.AddTime(time);
+													}
+												}
+											}
+											if(overlap == false)
+											{
+												timetable.AddTime(time);
+												break;
+											}*/
 											timetable.AddTime(time);
 											break;
 										}
