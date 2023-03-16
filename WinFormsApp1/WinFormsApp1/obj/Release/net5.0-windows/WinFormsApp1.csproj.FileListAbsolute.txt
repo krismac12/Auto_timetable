@@ -451,7 +451,6 @@ C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\MySqlConnector.dll
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.Runtime.CompilerServices.Unsafe.dll
-C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\auto_timetable.db
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Saves\auto_timetable.db
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\WinFormsApp1.exe
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Schedule_template.xlsx
@@ -585,3 +584,4 @@ C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\obj\Rele
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\SautinSoft.ExcelToPdf.dll
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\SautinSoft.PdfFocus.dll
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.Xml.XPath.XmlDocument.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\auto_timetable.db
