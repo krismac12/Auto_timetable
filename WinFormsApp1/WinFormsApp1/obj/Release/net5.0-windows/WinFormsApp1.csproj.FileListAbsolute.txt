@@ -453,7 +453,6 @@ C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.
 C:\Users\krist\source\repos\new_2new\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.Runtime.CompilerServices.Unsafe.dll
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Saves\auto_timetable.db
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\WinFormsApp1.exe
-C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Schedule_template.xlsx
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Key.xml
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\WinFormsApp1.dll.config
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\WinFormsApp1.deps.json
@@ -588,3 +587,4 @@ C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Rele
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo.PNG
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo__2_w_trans.png
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo (3).png
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Schedule_template.xlsx

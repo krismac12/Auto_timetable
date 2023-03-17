@@ -84,8 +84,21 @@ namespace WinFormsApp1
                 {
                     if(((int)Start_num.Value) < ((int)End_num.Value))
                     {
-                        TimeAcess.insertTime(1, Room_box.Text, start.ToString(), end.ToString(), @class.ID, ((int)Start_num.Value), ((int)End_num.Value));
-                        FillList();
+                        if(start.Hour <= 6 || end.Hour <= 6)
+                        {
+                            MessageBox.Show("Please make Hour after 7 AM", "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if(start.Hour >= 22 || end.Hour >= 22)
+                        {
+                            MessageBox.Show("Please make Hour Before 10 PM", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            TimeAcess.insertTime(1, Room_box.Text, start.ToString(), end.ToString(), @class.ID, ((int)Start_num.Value), ((int)End_num.Value));
+                            FillList();
+                        }
                     }
                     else
                     {
@@ -162,7 +175,20 @@ namespace WinFormsApp1
                 DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
                 if (end > start)
                 {
-                    TimeAcess.UpdateTime(selected.ID, 1, Room_box.Text, start.ToString(), end.ToString(),((int)Start_num.Value),((int)End_num.Value));
+                    if (start.Hour <= 6 || end.Hour <= 6)
+                    {
+                        MessageBox.Show("Please make Hour after 7 AM", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (start.Hour >= 22 || end.Hour >= 22)
+                    {
+                        MessageBox.Show("Please make Hour Before 10 PM", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        TimeAcess.UpdateTime(selected.ID, 1, Room_box.Text, start.ToString(), end.ToString(), ((int)Start_num.Value), ((int)End_num.Value));
+                    }
                 }
             }
             FillList();

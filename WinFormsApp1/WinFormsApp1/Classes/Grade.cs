@@ -25,7 +25,7 @@ using System.Threading.Tasks;
 
         public override string ToString() 
         {
-            return name + ": " + grade;
+            return name + ": Grade: " + grade + " Weight: " + weight;
         }
 
     }

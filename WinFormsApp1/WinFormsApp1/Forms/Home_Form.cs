@@ -76,7 +76,6 @@ namespace WinFormsApp1
                             CreateExcel("./DB/Schedule_template.xlsx", destination);
 
 
-                            CreateExcel("./DB/Schedule_template.xlsx", destination);
 
                             writeTable(destination, table);
                             FileInfo existingFile = new FileInfo(destination);
@@ -84,8 +83,8 @@ namespace WinFormsApp1
                             string pdfFile = filePath + "//Timetable" + i + ".pdf";
                             ConvertExcelToPDF(destination, pdfFile);
 
-                            File.Delete(destination);
                             i++;
+                            File.Delete(destination);
                         }
                         catch
                         {
@@ -294,7 +293,7 @@ namespace WinFormsApp1
             }
             catch (IOException iox)
             {
-                System.Diagnostics.Debug.WriteLine(iox.Message);
+                MessageBox.Show(iox.Message);
             }
         }
         private void OpenFolder(string folderPath)
