@@ -71,16 +71,26 @@ namespace WinFormsApp1
                             Directory.CreateDirectory(filePath);
                         }
                         string destination =  filePath + "/excelfile"+i+".xlsx";
-                        CreateExcel("./DB/Schedule_template.xlsx", destination);
+                        try
+                        {
+                            CreateExcel("./DB/Schedule_template.xlsx", destination);
 
-                        writeTable(destination, table);
-                        FileInfo existingFile = new FileInfo(destination);
 
-                        string pdfFile = filePath + "//Timetable" + i + ".pdf";
-                        ConvertExcelToPDF(destination, pdfFile);
+                            CreateExcel("./DB/Schedule_template.xlsx", destination);
 
-                        File.Delete(destination);
-                        i++;
+                            writeTable(destination, table);
+                            FileInfo existingFile = new FileInfo(destination);
+
+                            string pdfFile = filePath + "//Timetable" + i + ".pdf";
+                            ConvertExcelToPDF(destination, pdfFile);
+
+                            File.Delete(destination);
+                            i++;
+                        }
+                        catch
+                        {
+
+                        }
 
                     }
                     MessageBox.Show("Finished Generating Timetables", "INFO",

@@ -85,7 +85,7 @@ namespace WinFormsApp1
 
         private void Add_Button_Click(object sender, EventArgs e)
         {
-            if (Day_Box.SelectedIndex == -1 || ((int)Start_num.Value) <= 0 || ((int)End_num.Value) <= 0)
+            if (Day_Box.SelectedIndex == -1 )
             {
             }
             else
@@ -94,16 +94,12 @@ namespace WinFormsApp1
                 DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
                 if (end > start)
                 {
-                    if (((int)Start_num.Value) < ((int)End_num.Value))
-                    {
-                        TimeAcess.insertConstraints(3, start.ToString(), end.ToString(), ((int)Start_num.Value), ((int)End_num.Value), ((int)Hour_Num.Value));
+                    
+
+                        TimeAcess.insertConstraints(3, start.ToString(), end.ToString(), 1, 100, ((int)Hour_Num.Value));
                         FillList();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please make End Week After Start Week", "Error",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+
+
                 }
                 else
                 {
@@ -120,7 +116,7 @@ namespace WinFormsApp1
 
         private void Edit_Click(object sender, EventArgs e)
         {
-            if (Day_Box.SelectedIndex == -1 || Start_num.Value == 0 || End_num.Value == 0 || listBox1.SelectedIndex == -1)
+            if (Day_Box.SelectedIndex == -1|| listBox1.SelectedIndex == -1)
             {
 
             }
@@ -130,7 +126,7 @@ namespace WinFormsApp1
                 DateTime end = days[Day_Box.SelectedIndex].AddHours(End_Picker.Value.Hour).AddMinutes(End_Picker.Value.Minute);
                 if (end > start)
                 {
-                    TimeAcess.updateConstraints(selected.ID,3, start.ToString(), end.ToString(), ((int)Start_num.Value), ((int)End_num.Value), ((int)Hour_Num.Value));
+                    TimeAcess.updateConstraints(selected.ID,3, start.ToString(), end.ToString(), 1, 100, ((int)Hour_Num.Value));
                 }
             }
             FillList();

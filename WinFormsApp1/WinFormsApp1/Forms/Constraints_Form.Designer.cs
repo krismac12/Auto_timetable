@@ -35,10 +35,6 @@ namespace WinFormsApp1
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Delete_Button = new System.Windows.Forms.Button();
             this.Add_Button = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.End_num = new System.Windows.Forms.NumericUpDown();
-            this.Start_num = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
             this.Class_Label = new System.Windows.Forms.Label();
             this.End_Picker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,8 +46,6 @@ namespace WinFormsApp1
             this.label5 = new System.Windows.Forms.Label();
             this.Hour_Num = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.End_num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Start_num)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Hour_Num)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,42 +124,6 @@ namespace WinFormsApp1
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = false;
             this.Add_Button.Click += new System.EventHandler(this.Add_Button_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(18, 292);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 23);
-            this.label7.TabIndex = 71;
-            this.label7.Text = "End Week";
-            // 
-            // End_num
-            // 
-            this.End_num.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.End_num.Location = new System.Drawing.Point(129, 285);
-            this.End_num.Name = "End_num";
-            this.End_num.Size = new System.Drawing.Size(166, 30);
-            this.End_num.TabIndex = 70;
-            // 
-            // Start_num
-            // 
-            this.Start_num.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Start_num.Location = new System.Drawing.Point(129, 251);
-            this.Start_num.Name = "Start_num";
-            this.Start_num.Size = new System.Drawing.Size(166, 30);
-            this.Start_num.TabIndex = 69;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(8, 258);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 23);
-            this.label6.TabIndex = 68;
-            this.label6.Text = "Start Week";
             // 
             // Class_Label
             // 
@@ -251,7 +209,7 @@ namespace WinFormsApp1
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(57, 328);
+            this.label5.Location = new System.Drawing.Point(57, 260);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 23);
             this.label5.TabIndex = 75;
@@ -260,7 +218,7 @@ namespace WinFormsApp1
             // Hour_Num
             // 
             this.Hour_Num.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Hour_Num.Location = new System.Drawing.Point(128, 321);
+            this.Hour_Num.Location = new System.Drawing.Point(128, 253);
             this.Hour_Num.Name = "Hour_Num";
             this.Hour_Num.Size = new System.Drawing.Size(166, 30);
             this.Hour_Num.TabIndex = 74;
@@ -274,10 +232,6 @@ namespace WinFormsApp1
             this.Controls.Add(this.Hour_Num);
             this.Controls.Add(this.Back_Button);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.End_num);
-            this.Controls.Add(this.Start_num);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.Class_Label);
             this.Controls.Add(this.End_Picker);
             this.Controls.Add(this.label4);
@@ -290,8 +244,6 @@ namespace WinFormsApp1
             this.Text = "constraintsForm";
             this.Load += new System.EventHandler(this.Constraints_Form_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.End_num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Start_num)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Hour_Num)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -305,10 +257,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button Delete_Button;
         private System.Windows.Forms.Button Add_Button;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown End_num;
-        private System.Windows.Forms.NumericUpDown Start_num;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label Class_Label;
         private System.Windows.Forms.DateTimePicker End_Picker;
         private System.Windows.Forms.Label label4;
