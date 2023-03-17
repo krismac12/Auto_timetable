@@ -15,7 +15,19 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_5EED4EA89BA64000AA9C54C16858293D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5F435B3CA26F41F5A05DC628AA750DA6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CEA27B56468C48BC8E7A923DC7F400E6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -84,10 +96,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.8"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    "Name" = "8:Microsoft .NET Framework 4.8 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.8"
                     }
                 }
             }
@@ -122,6 +134,46 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5EED4EA89BA64000AA9C54C16858293D"
+            {
+            "SourcePath" = "8:..\\WinFormsApp1\\app.manifest"
+            "TargetName" = "8:app.manifest"
+            "Tag" = "8:"
+            "Folder" = "8:_EBD7C54A385B46DCB3E4A063E01D20EA"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:TRUE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CEA27B56468C48BC8E7A923DC7F400E6"
+            {
+            "SourcePath" = "8:C:\\Users\\krist\\Downloads\\logo__3_w_trans.ico"
+            "TargetName" = "8:logo__3_w_trans.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_EBD7C54A385B46DCB3E4A063E01D20EA"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -173,7 +225,7 @@
                 {
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_EBD7C54A385B46DCB3E4A063E01D20EA"
                     {
-                    "Name" = "8:AutoTable"
+                    "Name" = "8:Data"
                     "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
@@ -187,6 +239,13 @@
         }
         "LaunchCondition"
         {
+            "{836E08B8-0285-4809-BA42-01DB6754A45D}:_4EA2492613DE482AA35559EA7E0753AD"
+            {
+            "Name" = "8:Admin"
+            "Condition" = "8:AdminUser"
+            "Message" = "8:Requires Admin"
+            "InstallUrl" = "8:"
+            }
         }
         "Locator"
         {
@@ -201,7 +260,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Schedix"
         "ProductCode" = "8:{C46856E1-B9DE-4843-9722-3598FD046DF7}"
-        "PackageCode" = "8:{26D75CE7-BAB7-4A6B-A180-A577E5E3FA1F}"
+        "PackageCode" = "8:{BE737DD8-7AAC-4A77-BB89-5C32543C4089}"
         "UpgradeCode" = "8:{CD5E0ED1-238D-4E06-907A-13C33E7D9D41}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -321,18 +380,18 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_746190F77755480098EAAF5B96DF1F48"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C3FAB26D63D84EE1B36DFBC7367F7B1A"
             {
-            "Name" = "8:Shortcut to Primary output from WinFormsApp1 (Active)"
+            "Name" = "8:Schedix"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_5F435B3CA26F41F5A05DC628AA750DA6"
+            "Target" = "8:_D9A5237B66364588A25D4DA8E2A1A42F"
             "Folder" = "8:_5874477B994248C197A9DFF8606ECEFE"
             "WorkingFolder" = "8:_EBD7C54A385B46DCB3E4A063E01D20EA"
-            "Icon" = "8:"
+            "Icon" = "8:_CEA27B56468C48BC8E7A923DC7F400E6"
             "Feature" = "8:"
             }
         }
