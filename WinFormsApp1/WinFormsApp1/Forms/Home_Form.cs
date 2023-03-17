@@ -61,11 +61,15 @@ namespace WinFormsApp1
                         return;
                     }
 
-                    string filePath = folder_output.Text;
+                    string filePath = folder_output.Text + "//Timetables//";
                     //loop
                     int i = 1;
                     foreach (Timetable table in g.timetables)
                     {
+                        if (!Directory.Exists(filePath))
+                        {
+                            Directory.CreateDirectory(filePath);
+                        }
                         string destination =  filePath + "/excelfile"+i+".xlsx";
                         CreateExcel("./DB/Schedule_template.xlsx", destination);
 
@@ -74,6 +78,8 @@ namespace WinFormsApp1
 
                         string pdfFile = filePath + "//Timetable" + i + ".pdf";
                         ConvertExcelToPDF(destination, pdfFile);
+
+                        File.Delete(destination);
                         i++;
 
                     }

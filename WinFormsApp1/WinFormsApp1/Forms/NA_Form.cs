@@ -274,7 +274,7 @@ namespace WinFormsApp1
 
         private void Constraint_Button_Click(object sender, EventArgs e)
         {
-            main.OpenChildForm(new Constraints_Form(main,this));
+            main.OpenChildForm(new Constraints_Form(main,this),"Time Constraints");
             main.ActiveButton(main.available_times, Color.FromArgb(235, 104, 104));
         }
     }

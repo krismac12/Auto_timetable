@@ -41,6 +41,7 @@ namespace WinFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Home_Button = new System.Windows.Forms.Button();
+            this.Page_Label = new System.Windows.Forms.Label();
             this.Main_Panel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -195,6 +196,7 @@ namespace WinFormsApp1
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.panel3.Controls.Add(this.Home_Button);
+            this.panel3.Controls.Add(this.Page_Label);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ForeColor = System.Drawing.Color.Gainsboro;
             this.panel3.Location = new System.Drawing.Point(220, 0);
@@ -215,6 +217,18 @@ namespace WinFormsApp1
             this.Home_Button.TabIndex = 4;
             this.Home_Button.UseVisualStyleBackColor = false;
             this.Home_Button.Click += new System.EventHandler(this.Home_Button_Click);
+            // 
+            // Page_Label
+            // 
+            this.Page_Label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Page_Label.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Page_Label.Location = new System.Drawing.Point(0, 0);
+            this.Page_Label.Name = "Page_Label";
+            this.Page_Label.Size = new System.Drawing.Size(1038, 100);
+            this.Page_Label.TabIndex = 5;
+            this.Page_Label.Text = "Home";
+            this.Page_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Main_Panel
             // 
@@ -244,6 +258,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.Main_Panel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(940, 510);
             this.Name = "Main_Form";
             this.Text = "Main_Form";
@@ -271,5 +286,6 @@ namespace WinFormsApp1
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Button OutputButton;
         public System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Page_Label;
     }
 }

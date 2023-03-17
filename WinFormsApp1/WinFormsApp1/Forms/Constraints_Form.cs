@@ -115,7 +115,7 @@ namespace WinFormsApp1
 
         private void Back_Button_Click(object sender, EventArgs e)
         {
-            Main.OpenChildForm(new NA_Form(Main));
+            Main.OpenChildForm(new NA_Form(Main),"Unavailable Times");
         }
 
         private void Edit_Click(object sender, EventArgs e)

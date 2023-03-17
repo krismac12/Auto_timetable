@@ -146,7 +146,7 @@ namespace WinFormsApp1
 
         private void Back_Button_Click(object sender, EventArgs e)
         {
-            main.OpenChildForm(class_form);
+            main.OpenChildForm(class_form, "Classes");
             main.ActiveButton(main.classes, Color.FromArgb(212, 176, 83));
         }
 
@@ -170,7 +170,7 @@ namespace WinFormsApp1
 
         private void Back_Button_Click_1(object sender, EventArgs e)
         {
-            main.OpenChildForm(class_form);
+            main.OpenChildForm(class_form,"Classes");
             main.ActiveButton(main.classes, Color.FromArgb(212, 176, 83));
         }
 

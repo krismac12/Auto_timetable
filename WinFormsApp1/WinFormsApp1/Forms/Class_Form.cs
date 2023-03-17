@@ -157,7 +157,7 @@ namespace WinFormsApp1
         {
             if(subject != null)
             {
-                main.OpenChildForm(subject_Form1);
+                main.OpenChildForm(subject_Form1,"Subjects");
                 main.ActiveButton(main.subjects, Color.FromArgb(200, 162, 200));
             }
             else
@@ -176,7 +176,7 @@ namespace WinFormsApp1
             {
                 var myForm = new Time_Form(selected,classes,this,main);
                 main.ActiveButton(main.classes, Color.FromArgb(235, 104, 104));
-                main.OpenChildForm(myForm);
+                main.OpenChildForm(myForm,"Times");
             }
 
         }

@@ -114,7 +114,7 @@ namespace WinFormsApp1
                 if (selected != null)
                 {
                     var myForm = new Grade_form2(main,selected);
-                    main.OpenChildForm(myForm);
+                    main.OpenChildForm(myForm,"Grades");
                 }
             }
         }

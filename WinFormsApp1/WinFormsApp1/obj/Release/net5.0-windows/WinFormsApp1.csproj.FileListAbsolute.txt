@@ -585,3 +585,6 @@ C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Rele
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\SautinSoft.PdfFocus.dll
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.Xml.XPath.XmlDocument.dll
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\auto_timetable.db
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo.PNG
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo__2_w_trans.png
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo (3).png

@@ -15,6 +15,8 @@ namespace WinFormsApp1
         public Main_Form()
         {
             InitializeComponent();
+            this.Text = "Schedix - Home";
+
         }
 
         Form activeForm;
@@ -53,8 +55,10 @@ namespace WinFormsApp1
 
             panel3.BackColor = Color.FromArgb(39, 39, 58);
             Home_Button.BackColor = Color.FromArgb(39, 39, 58);
+            this.Text = "Schedix - Home";
+            Page_Label.Text = "Home";
         }
-        public void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm, String title)
         {
             if(activeForm != null)
             {
@@ -68,32 +72,34 @@ namespace WinFormsApp1
             this.Main_Panel.Controls.Add(childForm);
             childForm.BringToFront();
             childForm.Show();
+            this.Text = "Schedix - " + title;
+            Page_Label.Text = title;
 
         }
 
 
         private void subjects_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new Subject_Form(this));
+            OpenChildForm(new Subject_Form(this),"Subjects");
             ActiveButton(subjects,Color.FromArgb(200, 162, 200));
         }
 
         private void classes_Click_1(object sender, EventArgs e)
         {
 
-            OpenChildForm(new Class_Form(this));
+            OpenChildForm(new Class_Form(this),"Classes");
             ActiveButton(classes, Color.FromArgb(212, 176, 83));
         }
 
         private void available_times_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new NA_Form(this));
+            OpenChildForm(new NA_Form(this),"Unavailable Times");
             ActiveButton(available_times, Color.FromArgb(235, 104, 104));
         }
 
         private void Grade_Calc_Button_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Grade_Form(this));
+            OpenChildForm(new Grade_Form(this),"Grade Calculator");
             ActiveButton(Grade_Calc_Button, Color.FromArgb(101, 92, 214));
 
         }
@@ -109,7 +115,7 @@ namespace WinFormsApp1
 
         private void OutputButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Home_Form());
+            OpenChildForm(new Home_Form(),"Output");
             ActiveButton(OutputButton, Color.FromArgb(110, 250, 227));
         }
     }

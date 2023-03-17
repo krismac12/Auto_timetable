@@ -100,7 +100,7 @@ namespace WinFormsApp1
 
         private void Back_Button_Click(object sender, EventArgs e)
         {
-            main.OpenChildForm(new Grade_Form(main));
+            main.OpenChildForm(new Grade_Form(main),"Grade Calculator");
         }
     }
 }

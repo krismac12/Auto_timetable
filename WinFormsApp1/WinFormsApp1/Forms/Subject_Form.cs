@@ -123,7 +123,7 @@ namespace WinFormsApp1
                 if(selected != null)
                 {
                    var myForm = new Class_Form(main, selected);
-                    main.OpenChildForm(myForm);
+                    main.OpenChildForm(myForm,"Classes");
                     main.ActiveButton(main.classes, Color.FromArgb(212, 176, 83));
                 }
             }
