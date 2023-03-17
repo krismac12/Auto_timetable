@@ -23,8 +23,10 @@ namespace WinFormsApp1
             }
             else
             {
-                Application.Run(new login_Form());
+                //Application.Run(new login_Form());
                 //Application.Run(new Main_Form());
+                Application.Run(new Home_Form());
+
 
             }
 

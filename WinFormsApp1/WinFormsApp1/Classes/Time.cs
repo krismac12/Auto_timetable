@@ -88,6 +88,12 @@ public class Time
 		this.end = nextDayofWeek(end);
 		this.start_week = start_week;
 		this.end_week = end_week;
+
+		sDay = dayCell(start);
+		eDay = dayCell(end);
+
+		sHour = start.Hour;
+		eHour = end.Hour;
 	}
 
 	public Time(int id, int type, DateTime start, DateTime end, int start_week, int end_week, int hours)

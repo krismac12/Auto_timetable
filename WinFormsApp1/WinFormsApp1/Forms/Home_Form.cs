@@ -256,6 +256,7 @@ namespace WinFormsApp1
                         int cells = (time.eHour - subtract) - (time.sHour - subtract);
                         string c = time.sDay + (time.sHour - subtract).ToString() + ":" + time.eDay + (time.sHour - subtract + cells);
                         ws.Cells[c].Merge = true;
+                        System.Diagnostics.Debug.WriteLine(c);
                         ws.Cells[time.start.Hour - subtract, a].Value = time.Display();
                         double height = 120;
                         if (cells >= 1)
