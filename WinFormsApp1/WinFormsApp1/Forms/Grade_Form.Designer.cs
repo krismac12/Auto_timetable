@@ -63,6 +63,7 @@ namespace WinFormsApp1
             this.label7 = new System.Windows.Forms.Label();
             this.Save_text = new System.Windows.Forms.TextBox();
             this.Download_button = new System.Windows.Forms.Button();
+            this.View_Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -538,7 +539,7 @@ namespace WinFormsApp1
             this.Download_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Download_button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Download_button.ForeColor = System.Drawing.Color.White;
-            this.Download_button.Location = new System.Drawing.Point(779, 204);
+            this.Download_button.Location = new System.Drawing.Point(779, 188);
             this.Download_button.MaximumSize = new System.Drawing.Size(140, 41);
             this.Download_button.Name = "Download_button";
             this.Download_button.Size = new System.Drawing.Size(140, 41);
@@ -547,11 +548,30 @@ namespace WinFormsApp1
             this.Download_button.UseVisualStyleBackColor = false;
             this.Download_button.Click += new System.EventHandler(this.Download_button_Click);
             // 
+            // View_Button
+            // 
+            this.View_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.View_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(92)))), ((int)(((byte)(214)))));
+            this.View_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.View_Button.FlatAppearance.BorderSize = 0;
+            this.View_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.View_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.View_Button.ForeColor = System.Drawing.Color.White;
+            this.View_Button.Location = new System.Drawing.Point(779, 253);
+            this.View_Button.MaximumSize = new System.Drawing.Size(140, 41);
+            this.View_Button.Name = "View_Button";
+            this.View_Button.Size = new System.Drawing.Size(140, 41);
+            this.View_Button.TabIndex = 42;
+            this.View_Button.Text = "View";
+            this.View_Button.UseVisualStyleBackColor = false;
+            this.View_Button.Click += new System.EventHandler(this.View_Button_Click);
+            // 
             // Grade_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 508);
+            this.Controls.Add(this.View_Button);
             this.Controls.Add(this.Download_button);
             this.Controls.Add(this.Folder_text);
             this.Controls.Add(this.label7);
@@ -609,5 +629,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox Save_text;
         private System.Windows.Forms.Button Download_button;
+        private System.Windows.Forms.Button View_Button;
     }
 }

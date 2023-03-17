@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -203,6 +204,32 @@ namespace WinFormsApp1
 
             // dispose of the document
             document.Dispose();
+
+            MessageBox.Show("Finished Outputting Grades", "INFO",
+            MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void View_Button_Click(object sender, EventArgs e)
+        {
+            OpenFolder(Folder_text.Text);
+        }
+
+        private void OpenFolder(string folderPath)
+        {
+            if (Directory.Exists(folderPath))
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo
+                {
+                    Arguments = folderPath,
+                    FileName = "explorer.exe"
+                };
+                Process.Start(startInfo);
+
+            }
+            else
+            {
+                MessageBox.Show(string.Format("{0} Directory does not exist!", folderPath));
+            }
         }
     }
 }
