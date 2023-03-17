@@ -30,7 +30,7 @@
 
   <ItemGroup>
     <Content Include="DB\auto_timetable.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DB\Schedule_template.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
