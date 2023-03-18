@@ -53,9 +53,9 @@ namespace WinFormsApp1
             this.Back_Button.FlatAppearance.BorderSize = 0;
             this.Back_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back_Button.Image = ((System.Drawing.Image)(resources.GetObject("Back_Button.Image")));
-            this.Back_Button.Location = new System.Drawing.Point(36, 21);
+            this.Back_Button.Location = new System.Drawing.Point(1, 12);
             this.Back_Button.Name = "Back_Button";
-            this.Back_Button.Size = new System.Drawing.Size(45, 31);
+            this.Back_Button.Size = new System.Drawing.Size(94, 75);
             this.Back_Button.TabIndex = 73;
             this.Back_Button.UseVisualStyleBackColor = true;
             this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
@@ -67,9 +67,10 @@ namespace WinFormsApp1
             this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Edit.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Edit.ForeColor = System.Drawing.Color.White;
-            this.Edit.Location = new System.Drawing.Point(238, 3);
+            this.Edit.Location = new System.Drawing.Point(238, 8);
+            this.Edit.MinimumSize = new System.Drawing.Size(183, 68);
             this.Edit.Name = "Edit";
-            this.Edit.Size = new System.Drawing.Size(229, 37);
+            this.Edit.Size = new System.Drawing.Size(229, 68);
             this.Edit.TabIndex = 53;
             this.Edit.Text = "Edit";
             this.Edit.UseVisualStyleBackColor = false;
@@ -86,12 +87,12 @@ namespace WinFormsApp1
             this.tableLayoutPanel2.Controls.Add(this.Delete_Button, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Edit, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.Add_Button, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(76, 339);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(76, 298);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(707, 43);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(707, 84);
             this.tableLayoutPanel2.TabIndex = 72;
             // 
             // Delete_Button
@@ -101,9 +102,10 @@ namespace WinFormsApp1
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
-            this.Delete_Button.Location = new System.Drawing.Point(3, 3);
+            this.Delete_Button.Location = new System.Drawing.Point(3, 8);
+            this.Delete_Button.MinimumSize = new System.Drawing.Size(183, 68);
             this.Delete_Button.Name = "Delete_Button";
-            this.Delete_Button.Size = new System.Drawing.Size(229, 37);
+            this.Delete_Button.Size = new System.Drawing.Size(229, 68);
             this.Delete_Button.TabIndex = 30;
             this.Delete_Button.Text = "Delete";
             this.Delete_Button.UseVisualStyleBackColor = false;
@@ -116,9 +118,10 @@ namespace WinFormsApp1
             this.Add_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_Button.ForeColor = System.Drawing.Color.White;
-            this.Add_Button.Location = new System.Drawing.Point(473, 3);
+            this.Add_Button.Location = new System.Drawing.Point(473, 8);
+            this.Add_Button.MinimumSize = new System.Drawing.Size(183, 68);
             this.Add_Button.Name = "Add_Button";
-            this.Add_Button.Size = new System.Drawing.Size(231, 37);
+            this.Add_Button.Size = new System.Drawing.Size(231, 68);
             this.Add_Button.TabIndex = 36;
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = false;
@@ -163,7 +166,7 @@ namespace WinFormsApp1
             this.listBox1.ItemHeight = 23;
             this.listBox1.Location = new System.Drawing.Point(391, 59);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(391, 234);
+            this.listBox1.Size = new System.Drawing.Size(391, 211);
             this.listBox1.TabIndex = 61;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 

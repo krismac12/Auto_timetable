@@ -356,8 +356,10 @@ namespace WinFormsApp1
             this.AddButton.ForeColor = System.Drawing.Color.White;
             this.AddButton.Location = new System.Drawing.Point(363, 3);
             this.AddButton.MaximumSize = new System.Drawing.Size(212, 47);
+            this.AddButton.MinimumSize = new System.Drawing.Size(115, 65);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(115, 41);
+            this.AddButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AddButton.Size = new System.Drawing.Size(115, 65);
             this.AddButton.TabIndex = 27;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
@@ -429,8 +431,10 @@ namespace WinFormsApp1
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
             this.DeleteButton.Location = new System.Drawing.Point(3, 3);
             this.DeleteButton.MaximumSize = new System.Drawing.Size(212, 47);
+            this.DeleteButton.MinimumSize = new System.Drawing.Size(115, 65);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(114, 41);
+            this.DeleteButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.DeleteButton.Size = new System.Drawing.Size(115, 65);
             this.DeleteButton.TabIndex = 18;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = false;
@@ -447,8 +451,10 @@ namespace WinFormsApp1
             this.GradesButton.ForeColor = System.Drawing.Color.White;
             this.GradesButton.Location = new System.Drawing.Point(243, 3);
             this.GradesButton.MaximumSize = new System.Drawing.Size(212, 47);
+            this.GradesButton.MinimumSize = new System.Drawing.Size(115, 65);
             this.GradesButton.Name = "GradesButton";
-            this.GradesButton.Size = new System.Drawing.Size(114, 41);
+            this.GradesButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.GradesButton.Size = new System.Drawing.Size(115, 65);
             this.GradesButton.TabIndex = 29;
             this.GradesButton.Text = "Grades";
             this.GradesButton.UseVisualStyleBackColor = false;
@@ -465,8 +471,10 @@ namespace WinFormsApp1
             this.EditButton.ForeColor = System.Drawing.Color.White;
             this.EditButton.Location = new System.Drawing.Point(123, 3);
             this.EditButton.MaximumSize = new System.Drawing.Size(212, 47);
+            this.EditButton.MinimumSize = new System.Drawing.Size(115, 65);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(114, 41);
+            this.EditButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.EditButton.Size = new System.Drawing.Size(115, 65);
             this.EditButton.TabIndex = 17;
             this.EditButton.Text = "Edit";
             this.EditButton.UseVisualStyleBackColor = false;
@@ -485,12 +493,12 @@ namespace WinFormsApp1
             this.tableLayoutPanel3.Controls.Add(this.GradesButton, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.EditButton, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.DeleteButton, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 324);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 300);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(481, 47);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(481, 71);
             this.tableLayoutPanel3.TabIndex = 36;
             // 
             // Folder_text
@@ -498,7 +506,7 @@ namespace WinFormsApp1
             this.Folder_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Folder_text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Folder_text.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Folder_text.Location = new System.Drawing.Point(542, 136);
+            this.Folder_text.Location = new System.Drawing.Point(542, 134);
             this.Folder_text.MaximumSize = new System.Drawing.Size(200, 37);
             this.Folder_text.MinimumSize = new System.Drawing.Size(200, 37);
             this.Folder_text.Name = "Folder_text";
@@ -539,10 +547,11 @@ namespace WinFormsApp1
             this.Download_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Download_button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Download_button.ForeColor = System.Drawing.Color.White;
-            this.Download_button.Location = new System.Drawing.Point(571, 188);
-            this.Download_button.MaximumSize = new System.Drawing.Size(140, 41);
+            this.Download_button.Location = new System.Drawing.Point(542, 201);
+            this.Download_button.MaximumSize = new System.Drawing.Size(183, 50);
+            this.Download_button.MinimumSize = new System.Drawing.Size(183, 50);
             this.Download_button.Name = "Download_button";
-            this.Download_button.Size = new System.Drawing.Size(140, 41);
+            this.Download_button.Size = new System.Drawing.Size(183, 50);
             this.Download_button.TabIndex = 41;
             this.Download_button.Text = "Download";
             this.Download_button.UseVisualStyleBackColor = false;
@@ -557,10 +566,11 @@ namespace WinFormsApp1
             this.View_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.View_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.View_Button.ForeColor = System.Drawing.Color.White;
-            this.View_Button.Location = new System.Drawing.Point(571, 253);
-            this.View_Button.MaximumSize = new System.Drawing.Size(140, 41);
+            this.View_Button.Location = new System.Drawing.Point(542, 271);
+            this.View_Button.MaximumSize = new System.Drawing.Size(183, 50);
+            this.View_Button.MinimumSize = new System.Drawing.Size(183, 50);
             this.View_Button.Name = "View_Button";
-            this.View_Button.Size = new System.Drawing.Size(140, 41);
+            this.View_Button.Size = new System.Drawing.Size(183, 50);
             this.View_Button.TabIndex = 42;
             this.View_Button.Text = "View";
             this.View_Button.UseVisualStyleBackColor = false;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MC2QZFdKkxiAq/cipXhhCMj0T3g7TAGze/DyKF4TqUE7VaZwZZ316SkQBdGUEPe3+hP83NxpbgJjZ7IgjPMT+Q==",
+  "dgSpecHash": "i/0WqyUFOdnD4uCWRkXUmYL2hWvVu1d67TlXphDpfi4c3yR8rtEG0fr2+/WtWbBZzF0xlsQGuSO+bP1xvtLaNA==",
   "success": true,
-  "projectFilePath": "C:\\desk\\code\\Fivver\\Auto_table\\Auto_timetable\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\desk\\code\\Fivver\\AutoTable2\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\krist\\.nuget\\packages\\aspose.cells\\23.3.0\\aspose.cells.23.3.0.nupkg.sha512",
     "C:\\Users\\krist\\.nuget\\packages\\aspose.pdf\\23.3.0\\aspose.pdf.23.3.0.nupkg.sha512",

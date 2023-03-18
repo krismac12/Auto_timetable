@@ -54,9 +54,9 @@ namespace WinFormsApp1
             this.Back_Button.FlatAppearance.BorderSize = 0;
             this.Back_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back_Button.Image = ((System.Drawing.Image)(resources.GetObject("Back_Button.Image")));
-            this.Back_Button.Location = new System.Drawing.Point(17, 18);
+            this.Back_Button.Location = new System.Drawing.Point(2, 2);
             this.Back_Button.Name = "Back_Button";
-            this.Back_Button.Size = new System.Drawing.Size(45, 31);
+            this.Back_Button.Size = new System.Drawing.Size(101, 55);
             this.Back_Button.TabIndex = 73;
             this.Back_Button.UseVisualStyleBackColor = true;
             this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
@@ -69,8 +69,9 @@ namespace WinFormsApp1
             this.Edit.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Edit.ForeColor = System.Drawing.Color.White;
             this.Edit.Location = new System.Drawing.Point(255, 3);
+            this.Edit.MinimumSize = new System.Drawing.Size(183, 68);
             this.Edit.Name = "Edit";
-            this.Edit.Size = new System.Drawing.Size(233, 37);
+            this.Edit.Size = new System.Drawing.Size(233, 68);
             this.Edit.TabIndex = 53;
             this.Edit.Text = "Edit";
             this.Edit.UseVisualStyleBackColor = false;
@@ -87,12 +88,12 @@ namespace WinFormsApp1
             this.tableLayoutPanel2.Controls.Add(this.Delete_Button, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Edit, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.Add_Button, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(57, 342);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(57, 311);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 43);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 74);
             this.tableLayoutPanel2.TabIndex = 72;
             // 
             // Delete_Button
@@ -103,8 +104,9 @@ namespace WinFormsApp1
             this.Delete_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
             this.Delete_Button.Location = new System.Drawing.Point(3, 3);
+            this.Delete_Button.MinimumSize = new System.Drawing.Size(183, 68);
             this.Delete_Button.Name = "Delete_Button";
-            this.Delete_Button.Size = new System.Drawing.Size(242, 37);
+            this.Delete_Button.Size = new System.Drawing.Size(242, 68);
             this.Delete_Button.TabIndex = 30;
             this.Delete_Button.Text = "Delete";
             this.Delete_Button.UseVisualStyleBackColor = false;
@@ -118,8 +120,9 @@ namespace WinFormsApp1
             this.Add_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_Button.ForeColor = System.Drawing.Color.White;
             this.Add_Button.Location = new System.Drawing.Point(503, 3);
+            this.Add_Button.MinimumSize = new System.Drawing.Size(183, 68);
             this.Add_Button.Name = "Add_Button";
-            this.Add_Button.Size = new System.Drawing.Size(233, 37);
+            this.Add_Button.Size = new System.Drawing.Size(233, 68);
             this.Add_Button.TabIndex = 36;
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = false;
@@ -139,7 +142,7 @@ namespace WinFormsApp1
             // End_Picker
             // 
             this.End_Picker.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.End_Picker.Location = new System.Drawing.Point(129, 217);
+            this.End_Picker.Location = new System.Drawing.Point(127, 201);
             this.End_Picker.Name = "End_Picker";
             this.End_Picker.Size = new System.Drawing.Size(165, 30);
             this.End_Picker.TabIndex = 66;
@@ -148,7 +151,7 @@ namespace WinFormsApp1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(72, 152);
+            this.label4.Location = new System.Drawing.Point(69, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 23);
             this.label4.TabIndex = 64;
@@ -157,7 +160,7 @@ namespace WinFormsApp1
             // Start_Picker
             // 
             this.Start_Picker.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Start_Picker.Location = new System.Drawing.Point(129, 183);
+            this.Start_Picker.Location = new System.Drawing.Point(126, 151);
             this.Start_Picker.Name = "Start_Picker";
             this.Start_Picker.Size = new System.Drawing.Size(165, 30);
             this.Start_Picker.TabIndex = 63;
@@ -166,7 +169,7 @@ namespace WinFormsApp1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(73, 223);
+            this.label3.Location = new System.Drawing.Point(71, 207);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 23);
             this.label3.TabIndex = 62;
@@ -176,7 +179,7 @@ namespace WinFormsApp1
             // 
             this.Day_Box.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Day_Box.FormattingEnabled = true;
-            this.Day_Box.Location = new System.Drawing.Point(129, 149);
+            this.Day_Box.Location = new System.Drawing.Point(126, 99);
             this.Day_Box.Name = "Day_Box";
             this.Day_Box.Size = new System.Drawing.Size(166, 31);
             this.Day_Box.TabIndex = 65;
@@ -191,7 +194,7 @@ namespace WinFormsApp1
             this.listBox1.ItemHeight = 23;
             this.listBox1.Location = new System.Drawing.Point(372, 56);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(428, 234);
+            this.listBox1.Size = new System.Drawing.Size(428, 211);
             this.listBox1.TabIndex = 61;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -199,7 +202,7 @@ namespace WinFormsApp1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(65, 190);
+            this.label2.Location = new System.Drawing.Point(62, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 23);
             this.label2.TabIndex = 60;
@@ -209,7 +212,7 @@ namespace WinFormsApp1
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(57, 260);
+            this.label5.Location = new System.Drawing.Point(56, 254);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 23);
             this.label5.TabIndex = 75;
@@ -218,7 +221,7 @@ namespace WinFormsApp1
             // Hour_Num
             // 
             this.Hour_Num.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Hour_Num.Location = new System.Drawing.Point(128, 253);
+            this.Hour_Num.Location = new System.Drawing.Point(127, 247);
             this.Hour_Num.Name = "Hour_Num";
             this.Hour_Num.Size = new System.Drawing.Size(166, 30);
             this.Hour_Num.TabIndex = 74;
