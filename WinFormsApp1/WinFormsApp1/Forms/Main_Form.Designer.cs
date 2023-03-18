@@ -63,9 +63,10 @@ namespace WinFormsApp1
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.ForeColor = System.Drawing.Color.Gainsboro;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel1.Size = new System.Drawing.Size(220, 664);
+            this.panel1.Size = new System.Drawing.Size(176, 531);
             this.panel1.TabIndex = 14;
             // 
             // OutputButton
@@ -77,10 +78,11 @@ namespace WinFormsApp1
             this.OutputButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.OutputButton.Image = ((System.Drawing.Image)(resources.GetObject("OutputButton.Image")));
             this.OutputButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.OutputButton.Location = new System.Drawing.Point(0, 340);
-            this.OutputButton.MaximumSize = new System.Drawing.Size(1000, 10000);
+            this.OutputButton.Location = new System.Drawing.Point(0, 272);
+            this.OutputButton.Margin = new System.Windows.Forms.Padding(2);
+            this.OutputButton.MaximumSize = new System.Drawing.Size(800, 8000);
             this.OutputButton.Name = "OutputButton";
-            this.OutputButton.Size = new System.Drawing.Size(220, 60);
+            this.OutputButton.Size = new System.Drawing.Size(176, 48);
             this.OutputButton.TabIndex = 4;
             this.OutputButton.Text = "   Output";
             this.OutputButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -96,10 +98,11 @@ namespace WinFormsApp1
             this.Grade_Calc_Button.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Grade_Calc_Button.Image = ((System.Drawing.Image)(resources.GetObject("Grade_Calc_Button.Image")));
             this.Grade_Calc_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Grade_Calc_Button.Location = new System.Drawing.Point(0, 280);
-            this.Grade_Calc_Button.MaximumSize = new System.Drawing.Size(1000, 10000);
+            this.Grade_Calc_Button.Location = new System.Drawing.Point(0, 224);
+            this.Grade_Calc_Button.Margin = new System.Windows.Forms.Padding(2);
+            this.Grade_Calc_Button.MaximumSize = new System.Drawing.Size(800, 8000);
             this.Grade_Calc_Button.Name = "Grade_Calc_Button";
-            this.Grade_Calc_Button.Size = new System.Drawing.Size(220, 60);
+            this.Grade_Calc_Button.Size = new System.Drawing.Size(176, 48);
             this.Grade_Calc_Button.TabIndex = 3;
             this.Grade_Calc_Button.Text = "   Grade Calculator";
             this.Grade_Calc_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -114,10 +117,11 @@ namespace WinFormsApp1
             this.available_times.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.available_times.Image = ((System.Drawing.Image)(resources.GetObject("available_times.Image")));
             this.available_times.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.available_times.Location = new System.Drawing.Point(0, 220);
-            this.available_times.MaximumSize = new System.Drawing.Size(1000, 10000);
+            this.available_times.Location = new System.Drawing.Point(0, 176);
+            this.available_times.Margin = new System.Windows.Forms.Padding(2);
+            this.available_times.MaximumSize = new System.Drawing.Size(800, 8000);
             this.available_times.Name = "available_times";
-            this.available_times.Size = new System.Drawing.Size(220, 60);
+            this.available_times.Size = new System.Drawing.Size(176, 48);
             this.available_times.TabIndex = 2;
             this.available_times.Text = "   N/A Times";
             this.available_times.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -133,10 +137,11 @@ namespace WinFormsApp1
             this.classes.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.classes.Image = ((System.Drawing.Image)(resources.GetObject("classes.Image")));
             this.classes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.classes.Location = new System.Drawing.Point(0, 160);
-            this.classes.MaximumSize = new System.Drawing.Size(1000, 1000);
+            this.classes.Location = new System.Drawing.Point(0, 128);
+            this.classes.Margin = new System.Windows.Forms.Padding(2);
+            this.classes.MaximumSize = new System.Drawing.Size(800, 800);
             this.classes.Name = "classes";
-            this.classes.Size = new System.Drawing.Size(220, 60);
+            this.classes.Size = new System.Drawing.Size(176, 48);
             this.classes.TabIndex = 1;
             this.classes.Text = "   Classes";
             this.classes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -151,15 +156,17 @@ namespace WinFormsApp1
             this.subjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.subjects.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.subjects.ForeColor = System.Drawing.Color.Gainsboro;
-            this.subjects.Image = ((System.Drawing.Image)(resources.GetObject("subjects.Image")));
+            this.subjects.Image = global::WinFormsApp1.Properties.Resources.Book__1_;
             this.subjects.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.subjects.Location = new System.Drawing.Point(0, 100);
-            this.subjects.MaximumSize = new System.Drawing.Size(1000, 10000);
+            this.subjects.Location = new System.Drawing.Point(0, 80);
+            this.subjects.Margin = new System.Windows.Forms.Padding(2);
+            this.subjects.MaximumSize = new System.Drawing.Size(800, 8000);
             this.subjects.Name = "subjects";
-            this.subjects.Size = new System.Drawing.Size(220, 60);
+            this.subjects.Size = new System.Drawing.Size(176, 48);
             this.subjects.TabIndex = 0;
             this.subjects.Text = "   Subjects";
             this.subjects.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.subjects.UseMnemonic = false;
             this.subjects.UseVisualStyleBackColor = false;
             this.subjects.Click += new System.EventHandler(this.subjects_Click_1);
             // 
@@ -171,23 +178,27 @@ namespace WinFormsApp1
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(220, 100);
+            this.panel2.Size = new System.Drawing.Size(176, 80);
             this.panel2.TabIndex = 0;
             // 
             // label2
             // 
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Image = global::WinFormsApp1.Properties.Resources.logo__2_w_trans;
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 100);
+            this.label2.Size = new System.Drawing.Size(176, 80);
             this.label2.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(73, 38);
+            this.label1.Location = new System.Drawing.Point(58, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 25);
             this.label1.TabIndex = 0;
@@ -199,33 +210,36 @@ namespace WinFormsApp1
             this.panel3.Controls.Add(this.Page_Label);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.panel3.Location = new System.Drawing.Point(220, 0);
+            this.panel3.Location = new System.Drawing.Point(176, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1038, 100);
+            this.panel3.Size = new System.Drawing.Size(830, 80);
             this.panel3.TabIndex = 4;
             // 
             // Home_Button
             // 
             this.Home_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.Home_Button.Dock = System.Windows.Forms.DockStyle.Left;
             this.Home_Button.FlatAppearance.BorderSize = 0;
             this.Home_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Home_Button.Image = ((System.Drawing.Image)(resources.GetObject("Home_Button.Image")));
             this.Home_Button.Location = new System.Drawing.Point(0, 0);
-            this.Home_Button.MaximumSize = new System.Drawing.Size(1000, 10000);
+            this.Home_Button.Margin = new System.Windows.Forms.Padding(2);
+            this.Home_Button.MaximumSize = new System.Drawing.Size(800, 8000);
             this.Home_Button.Name = "Home_Button";
-            this.Home_Button.Size = new System.Drawing.Size(113, 100);
+            this.Home_Button.Size = new System.Drawing.Size(90, 80);
             this.Home_Button.TabIndex = 4;
             this.Home_Button.UseVisualStyleBackColor = false;
             this.Home_Button.Click += new System.EventHandler(this.Home_Button_Click);
             // 
             // Page_Label
             // 
-            this.Page_Label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Page_Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Page_Label.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Page_Label.Location = new System.Drawing.Point(0, 0);
+            this.Page_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Page_Label.Name = "Page_Label";
-            this.Page_Label.Size = new System.Drawing.Size(1038, 100);
+            this.Page_Label.Size = new System.Drawing.Size(830, 80);
             this.Page_Label.TabIndex = 5;
             this.Page_Label.Text = "Home";
             this.Page_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -236,30 +250,32 @@ namespace WinFormsApp1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Main_Panel.Controls.Add(this.label3);
-            this.Main_Panel.Location = new System.Drawing.Point(220, 100);
+            this.Main_Panel.Location = new System.Drawing.Point(176, 80);
+            this.Main_Panel.Margin = new System.Windows.Forms.Padding(2);
             this.Main_Panel.Name = "Main_Panel";
-            this.Main_Panel.Size = new System.Drawing.Size(1038, 564);
+            this.Main_Panel.Size = new System.Drawing.Size(830, 451);
             this.Main_Panel.TabIndex = 15;
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
             this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1038, 564);
+            this.label3.Size = new System.Drawing.Size(830, 451);
             this.label3.TabIndex = 3;
             // 
             // Main_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1258, 664);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1006, 531);
             this.Controls.Add(this.Main_Panel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(940, 510);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(1028, 587);
             this.Name = "Main_Form";
             this.Text = "Main_Form";
             this.panel1.ResumeLayout(false);

@@ -68,7 +68,7 @@ namespace WinFormsApp1
             this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Edit.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Edit.ForeColor = System.Drawing.Color.White;
-            this.Edit.Location = new System.Drawing.Point(308, 3);
+            this.Edit.Location = new System.Drawing.Point(255, 3);
             this.Edit.Name = "Edit";
             this.Edit.Size = new System.Drawing.Size(233, 37);
             this.Edit.TabIndex = 53;
@@ -87,12 +87,12 @@ namespace WinFormsApp1
             this.tableLayoutPanel2.Controls.Add(this.Delete_Button, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Edit, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.Add_Button, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(57, 443);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(57, 342);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(849, 43);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 43);
             this.tableLayoutPanel2.TabIndex = 72;
             // 
             // Delete_Button
@@ -102,9 +102,9 @@ namespace WinFormsApp1
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
-            this.Delete_Button.Location = new System.Drawing.Point(10, 3);
+            this.Delete_Button.Location = new System.Drawing.Point(3, 3);
             this.Delete_Button.Name = "Delete_Button";
-            this.Delete_Button.Size = new System.Drawing.Size(262, 37);
+            this.Delete_Button.Size = new System.Drawing.Size(242, 37);
             this.Delete_Button.TabIndex = 30;
             this.Delete_Button.Text = "Delete";
             this.Delete_Button.UseVisualStyleBackColor = false;
@@ -117,7 +117,7 @@ namespace WinFormsApp1
             this.Add_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Add_Button.ForeColor = System.Drawing.Color.White;
-            this.Add_Button.Location = new System.Drawing.Point(591, 3);
+            this.Add_Button.Location = new System.Drawing.Point(503, 3);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(233, 37);
             this.Add_Button.TabIndex = 36;
@@ -191,7 +191,7 @@ namespace WinFormsApp1
             this.listBox1.ItemHeight = 23;
             this.listBox1.Location = new System.Drawing.Point(372, 56);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(533, 349);
+            this.listBox1.Size = new System.Drawing.Size(428, 234);
             this.listBox1.TabIndex = 61;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -227,7 +227,7 @@ namespace WinFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 496);
+            this.ClientSize = new System.Drawing.Size(808, 395);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Hour_Num);
             this.Controls.Add(this.Back_Button);

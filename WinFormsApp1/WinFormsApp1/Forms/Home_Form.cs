@@ -13,6 +13,8 @@ using OfficeOpenXml;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using SautinSoft;
+using ClosedXML.Excel;
+using Spire.Xls;
 
 namespace WinFormsApp1
 {
@@ -81,7 +83,7 @@ namespace WinFormsApp1
                             FileInfo existingFile = new FileInfo(destination);
 
                             string pdfFile = filePath + "//Timetable" + i + ".pdf";
-                            ConvertExcelToPDF(destination, pdfFile);
+                            ConvertExcelToPdf(destination, pdfFile);
 
                             i++;
                             File.Delete(destination);
@@ -108,7 +110,8 @@ namespace WinFormsApp1
             }
         }
 
-        public void ConvertExcelToPDF(string inputFilePath, string outputFilePath)
+
+        public void ConvertExcelToPdf(string inputFilePath, string outputFilePath)
         {
             SautinSoft.ExcelToPdf f = new ExcelToPdf();
 
@@ -402,6 +405,11 @@ namespace WinFormsApp1
         private void view_timetables_Click_1(object sender, EventArgs e)
         {
             OpenFolder(folder_output.Text);
+        }
+
+        private void Home_Form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

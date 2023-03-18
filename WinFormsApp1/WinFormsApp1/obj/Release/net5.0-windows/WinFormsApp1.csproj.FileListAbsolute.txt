@@ -588,3 +588,10 @@ C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Rele
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo__2_w_trans.png
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo (3).png
 C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Schedule_template.xlsx
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\ClosedXML.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DocumentFormat.OpenXml.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\ExcelNumberFormat.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Irony.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\SixLabors.Fonts.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\System.IO.Packaging.dll
+C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\XLParser.dll

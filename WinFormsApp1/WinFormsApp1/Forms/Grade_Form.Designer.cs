@@ -354,10 +354,10 @@ namespace WinFormsApp1
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddButton.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AddButton.ForeColor = System.Drawing.Color.White;
-            this.AddButton.Location = new System.Drawing.Point(532, 3);
+            this.AddButton.Location = new System.Drawing.Point(363, 3);
             this.AddButton.MaximumSize = new System.Drawing.Size(212, 47);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(140, 41);
+            this.AddButton.Size = new System.Drawing.Size(115, 41);
             this.AddButton.TabIndex = 27;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
@@ -374,7 +374,7 @@ namespace WinFormsApp1
             this.listBox.Location = new System.Drawing.Point(11, 85);
             this.listBox.MaximumSize = new System.Drawing.Size(1300, 10000);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(690, 303);
+            this.listBox.Size = new System.Drawing.Size(482, 188);
             this.listBox.TabIndex = 35;
             this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
@@ -382,7 +382,7 @@ namespace WinFormsApp1
             // 
             this.codeBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.codeBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.codeBox.Location = new System.Drawing.Point(328, 42);
+            this.codeBox.Location = new System.Drawing.Point(331, 36);
             this.codeBox.Name = "codeBox";
             this.codeBox.Size = new System.Drawing.Size(150, 30);
             this.codeBox.TabIndex = 34;
@@ -392,7 +392,7 @@ namespace WinFormsApp1
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(262, 42);
+            this.label5.Location = new System.Drawing.Point(265, 36);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 23);
             this.label5.TabIndex = 33;
@@ -402,7 +402,7 @@ namespace WinFormsApp1
             // 
             this.nameBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nameBox.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nameBox.Location = new System.Drawing.Point(77, 42);
+            this.nameBox.Location = new System.Drawing.Point(80, 36);
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(150, 30);
             this.nameBox.TabIndex = 32;
@@ -412,7 +412,7 @@ namespace WinFormsApp1
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(11, 42);
+            this.label6.Location = new System.Drawing.Point(14, 36);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 23);
             this.label6.TabIndex = 31;
@@ -427,10 +427,10 @@ namespace WinFormsApp1
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteButton.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
-            this.DeleteButton.Location = new System.Drawing.Point(17, 3);
+            this.DeleteButton.Location = new System.Drawing.Point(3, 3);
             this.DeleteButton.MaximumSize = new System.Drawing.Size(212, 47);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(138, 41);
+            this.DeleteButton.Size = new System.Drawing.Size(114, 41);
             this.DeleteButton.TabIndex = 18;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = false;
@@ -445,10 +445,10 @@ namespace WinFormsApp1
             this.GradesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GradesButton.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.GradesButton.ForeColor = System.Drawing.Color.White;
-            this.GradesButton.Location = new System.Drawing.Point(361, 3);
+            this.GradesButton.Location = new System.Drawing.Point(243, 3);
             this.GradesButton.MaximumSize = new System.Drawing.Size(212, 47);
             this.GradesButton.Name = "GradesButton";
-            this.GradesButton.Size = new System.Drawing.Size(138, 41);
+            this.GradesButton.Size = new System.Drawing.Size(114, 41);
             this.GradesButton.TabIndex = 29;
             this.GradesButton.Text = "Grades";
             this.GradesButton.UseVisualStyleBackColor = false;
@@ -463,10 +463,10 @@ namespace WinFormsApp1
             this.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditButton.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.EditButton.ForeColor = System.Drawing.Color.White;
-            this.EditButton.Location = new System.Drawing.Point(189, 3);
+            this.EditButton.Location = new System.Drawing.Point(123, 3);
             this.EditButton.MaximumSize = new System.Drawing.Size(212, 47);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(138, 41);
+            this.EditButton.Size = new System.Drawing.Size(114, 41);
             this.EditButton.TabIndex = 17;
             this.EditButton.Text = "Edit";
             this.EditButton.UseVisualStyleBackColor = false;
@@ -485,12 +485,12 @@ namespace WinFormsApp1
             this.tableLayoutPanel3.Controls.Add(this.GradesButton, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.EditButton, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.DeleteButton, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 437);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 324);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(689, 47);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(481, 47);
             this.tableLayoutPanel3.TabIndex = 36;
             // 
             // Folder_text
@@ -498,7 +498,7 @@ namespace WinFormsApp1
             this.Folder_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Folder_text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Folder_text.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Folder_text.Location = new System.Drawing.Point(750, 136);
+            this.Folder_text.Location = new System.Drawing.Point(542, 136);
             this.Folder_text.MaximumSize = new System.Drawing.Size(200, 37);
             this.Folder_text.MinimumSize = new System.Drawing.Size(200, 37);
             this.Folder_text.Name = "Folder_text";
@@ -512,7 +512,7 @@ namespace WinFormsApp1
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(795, 61);
+            this.label7.Location = new System.Drawing.Point(587, 61);
             this.label7.MaximumSize = new System.Drawing.Size(103, 21);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 21);
@@ -523,7 +523,7 @@ namespace WinFormsApp1
             // 
             this.Save_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Save_text.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Save_text.Location = new System.Drawing.Point(750, 85);
+            this.Save_text.Location = new System.Drawing.Point(542, 85);
             this.Save_text.MaximumSize = new System.Drawing.Size(200, 28);
             this.Save_text.MinimumSize = new System.Drawing.Size(200, 28);
             this.Save_text.Name = "Save_text";
@@ -539,7 +539,7 @@ namespace WinFormsApp1
             this.Download_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Download_button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Download_button.ForeColor = System.Drawing.Color.White;
-            this.Download_button.Location = new System.Drawing.Point(779, 188);
+            this.Download_button.Location = new System.Drawing.Point(571, 188);
             this.Download_button.MaximumSize = new System.Drawing.Size(140, 41);
             this.Download_button.Name = "Download_button";
             this.Download_button.Size = new System.Drawing.Size(140, 41);
@@ -557,7 +557,7 @@ namespace WinFormsApp1
             this.View_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.View_Button.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.View_Button.ForeColor = System.Drawing.Color.White;
-            this.View_Button.Location = new System.Drawing.Point(779, 253);
+            this.View_Button.Location = new System.Drawing.Point(571, 253);
             this.View_Button.MaximumSize = new System.Drawing.Size(140, 41);
             this.View_Button.Name = "View_Button";
             this.View_Button.Size = new System.Drawing.Size(140, 41);
@@ -570,7 +570,7 @@ namespace WinFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 508);
+            this.ClientSize = new System.Drawing.Size(808, 395);
             this.Controls.Add(this.View_Button);
             this.Controls.Add(this.Download_button);
             this.Controls.Add(this.Folder_text);
@@ -582,7 +582,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tableLayoutPanel3);
-            this.MinimumSize = new System.Drawing.Size(977, 552);
+            this.MinimumSize = new System.Drawing.Size(830, 451);
             this.Name = "Grade_Form";
             this.Text = "Grade_Form";
             this.tableLayoutPanel1.ResumeLayout(false);
