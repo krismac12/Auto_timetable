@@ -89,7 +89,7 @@ namespace WinFormsApp1
             this.Save_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Save_Button.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Save_Button.ForeColor = System.Drawing.Color.Black;
-            this.Save_Button.Location = new System.Drawing.Point(43, 218);
+            this.Save_Button.Location = new System.Drawing.Point(42, 196);
             this.Save_Button.MaximumSize = new System.Drawing.Size(423, 37);
             this.Save_Button.MinimumSize = new System.Drawing.Size(309, 37);
             this.Save_Button.Name = "Save_Button";
@@ -104,7 +104,7 @@ namespace WinFormsApp1
             this.Save_file.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Save_file.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Save_file.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Save_file.Location = new System.Drawing.Point(43, 274);
+            this.Save_file.Location = new System.Drawing.Point(42, 252);
             this.Save_file.MaximumSize = new System.Drawing.Size(200, 37);
             this.Save_file.MinimumSize = new System.Drawing.Size(200, 37);
             this.Save_file.Name = "Save_file";
@@ -122,7 +122,7 @@ namespace WinFormsApp1
             this.Load_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Load_Button.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Load_Button.ForeColor = System.Drawing.Color.Black;
-            this.Load_Button.Location = new System.Drawing.Point(43, 327);
+            this.Load_Button.Location = new System.Drawing.Point(42, 305);
             this.Load_Button.MaximumSize = new System.Drawing.Size(200, 37);
             this.Load_Button.MinimumSize = new System.Drawing.Size(200, 37);
             this.Load_Button.Name = "Load_Button";
@@ -136,7 +136,7 @@ namespace WinFormsApp1
             // 
             this.Save_text.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Save_text.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Save_text.Location = new System.Drawing.Point(43, 179);
+            this.Save_text.Location = new System.Drawing.Point(42, 157);
             this.Save_text.MaximumSize = new System.Drawing.Size(200, 28);
             this.Save_text.MinimumSize = new System.Drawing.Size(150, 28);
             this.Save_text.Name = "Save_text";
@@ -148,7 +148,7 @@ namespace WinFormsApp1
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(74, 155);
+            this.label2.Location = new System.Drawing.Point(73, 133);
             this.label2.MaximumSize = new System.Drawing.Size(103, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 21);
@@ -186,7 +186,7 @@ namespace WinFormsApp1
             this.Folder_text.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Folder_text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Folder_text.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Folder_text.Location = new System.Drawing.Point(238, 170);
+            this.Folder_text.Location = new System.Drawing.Point(237, 148);
             this.Folder_text.MaximumSize = new System.Drawing.Size(200, 37);
             this.Folder_text.MinimumSize = new System.Drawing.Size(200, 37);
             this.Folder_text.Name = "Folder_text";
