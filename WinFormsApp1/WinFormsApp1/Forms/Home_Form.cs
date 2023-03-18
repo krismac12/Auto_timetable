@@ -19,6 +19,8 @@ using iTextSharp.text.pdf;
 using Spire.Xls;
 using Spire.Pdf;
 using PdfDocument = Spire.Pdf.PdfDocument;
+using Aspose.Pdf;
+using Syncfusion.Pdf.Parsing;
 
 namespace WinFormsApp1
 {
@@ -87,11 +89,26 @@ namespace WinFormsApp1
                             FileInfo existingFile = new FileInfo(destination);
 
                             string pdfFile = filePath + "//Timetable" + i + ".pdf";
+                            string pdfFile1 = filePath + "//Timetable"  + ".pdf";
 
-                            ConvertExcelToPdf(destination, pdfFile);
+                            ConvertExcelToPdf(destination, pdfFile1);
+                            try
+                            {
+                                RemovePage(pdfFile1, pdfFile);
+
+                            }
+
+                            catch(Exception ex)
+                            {
+                                MessageBox.Show(ex.Message, "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+
+
 
 
                             i++;
+                            File.Delete(pdfFile1);
                             File.Delete(destination);
                         }
                         catch
@@ -116,29 +133,26 @@ namespace WinFormsApp1
             }
         }
 
+        static private void RemovePage(string fileName,string output)
+        {
+            //Create a PdfDocument object
+            PdfDocument document = new PdfDocument();
 
+            //Load a sample PDF document
+            document.LoadFromFile(fileName);
+
+            //Remove the second page
+            document.Pages.RemoveAt(1);
+
+            //Save the result document
+            document.SaveToFile(output);
+
+        }
         public void ConvertExcelToPdf(string inputFilePath, string outputFilePath)
         {
-            // Load the Excel workbook using the latest version of Spire.XLS
-            Workbook workbook = new Workbook();
-            try
-            {
-                workbook.LoadFromFile(inputFilePath);
+            SautinSoft.ExcelToPdf f = new ExcelToPdf();
 
-            }
-
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            // Create a new PDF document using the latest version of Spire.PDF
-
-            // Convert the Excel workbook to PDF using the latest version of Spire.XLS and Spire.PDF
-            Worksheet sheet = workbook.Worksheets[0];
-            using (FileStream fs = File.Create(outputFilePath))
-            sheet.SaveToPdf(outputFilePath);
-
+            f.ConvertFile(inputFilePath, outputFilePath);
 
         }
 

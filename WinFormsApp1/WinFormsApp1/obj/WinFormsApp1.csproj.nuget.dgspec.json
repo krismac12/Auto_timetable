@@ -104,6 +104,10 @@
               "target": "Package",
               "version": "[6.2.11.16, )"
             },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[20.4.0.54, )"
+            },
             "System.Data.SQLite.Core": {
               "target": "Package",
               "version": "[1.0.117, )"

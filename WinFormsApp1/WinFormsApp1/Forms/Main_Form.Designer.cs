@@ -105,6 +105,7 @@ namespace WinFormsApp1
             this.Grade_Calc_Button.Size = new System.Drawing.Size(176, 48);
             this.Grade_Calc_Button.TabIndex = 3;
             this.Grade_Calc_Button.Text = "   Grade Calculator";
+            this.Grade_Calc_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Grade_Calc_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Grade_Calc_Button.UseVisualStyleBackColor = false;
             this.Grade_Calc_Button.Click += new System.EventHandler(this.Grade_Calc_Button_Click);
