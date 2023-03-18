@@ -10,11 +10,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OfficeOpenXml;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
 using SautinSoft;
 using ClosedXML.Excel;
+using PdfiumViewer;
+using Aspose.Pdf.Text;
+using GemBox.Spreadsheet;
+using iTextSharp.text.pdf;
 using Spire.Xls;
+using Spire.Pdf;
+using PdfDocument = Spire.Pdf.PdfDocument;
 
 namespace WinFormsApp1
 {
@@ -83,7 +87,9 @@ namespace WinFormsApp1
                             FileInfo existingFile = new FileInfo(destination);
 
                             string pdfFile = filePath + "//Timetable" + i + ".pdf";
+
                             ConvertExcelToPdf(destination, pdfFile);
+
 
                             i++;
                             File.Delete(destination);
@@ -113,9 +119,32 @@ namespace WinFormsApp1
 
         public void ConvertExcelToPdf(string inputFilePath, string outputFilePath)
         {
-            SautinSoft.ExcelToPdf f = new ExcelToPdf();
+            // Load the Excel workbook using the latest version of Spire.XLS
+            Workbook workbook = new Workbook();
+            try
+            {
+                workbook.LoadFromFile(inputFilePath);
 
-            f.ConvertFile(inputFilePath, outputFilePath);
+            }
+
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            // Create a new PDF document using the latest version of Spire.PDF
+
+            // Convert the Excel workbook to PDF using the latest version of Spire.XLS and Spire.PDF
+            Worksheet sheet = workbook.Worksheets[0];
+            using (FileStream fs = File.Create(outputFilePath))
+            sheet.SaveToPdf(outputFilePath);
+
+
+        }
+
+        public void RemoveTextFromPdf(string inputFilePath, string outputFilePath, string textToRemove)
+        {
+
         }
 
         private void folder_output_Click(object sender, EventArgs e)
@@ -238,7 +267,7 @@ namespace WinFormsApp1
 
             using (ExcelPackage p = new ExcelPackage(fileinfo))
             {
-                ExcelWorksheet ws = p.Workbook.Worksheets[0];
+                OfficeOpenXml.ExcelWorksheet ws = p.Workbook.Worksheets[0];
 
                 ws.Rows.Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
                 ws.Rows.Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Top;
@@ -360,6 +389,7 @@ namespace WinFormsApp1
             {
                 MessageBox.Show("Wait DB file is still in use , if persists close the application", "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Restart();
             }
         }
 

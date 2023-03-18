@@ -40,6 +40,14 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
+            "Aspose.Cells": {
+              "target": "Package",
+              "version": "[23.3.0, )"
+            },
+            "Aspose.PDF": {
+              "target": "Package",
+              "version": "[23.3.0, )"
+            },
             "Bytescout.Spreadsheet": {
               "target": "Package",
               "version": "[4.6.0.2025, )"
@@ -58,11 +66,19 @@
             },
             "FreeSpire.Doc": {
               "target": "Package",
-              "version": "[10.7.0, )"
+              "version": "[10.8.0, )"
+            },
+            "FreeSpire.PDF": {
+              "target": "Package",
+              "version": "[8.6.0, )"
             },
             "FreeSpire.XLS": {
               "target": "Package",
               "version": "[12.7.0, )"
+            },
+            "GemBox.Spreadsheet": {
+              "target": "Package",
+              "version": "[49.0.1274, )"
             },
             "Microsoft.Office.Interop.Excel": {
               "target": "Package",
@@ -79,6 +95,10 @@
             "PdfSharp": {
               "target": "Package",
               "version": "[1.50.5147, )"
+            },
+            "PdfiumViewer": {
+              "target": "Package",
+              "version": "[2.13.0, )"
             },
             "SautinSoft.PdfVision": {
               "target": "Package",

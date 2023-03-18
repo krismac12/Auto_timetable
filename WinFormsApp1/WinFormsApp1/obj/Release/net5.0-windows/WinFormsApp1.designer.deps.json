@@ -6,6 +6,36 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
+      "Aspose.Cells/23.3.0": {
+        "dependencies": {
+          "System.Drawing.Common": "5.0.3",
+          "System.Security.Cryptography.Pkcs": "5.0.1",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aspose.Cells.dll": {
+            "assemblyVersion": "23.3.0.0",
+            "fileVersion": "23.3.0.0"
+          }
+        }
+      },
+      "Aspose.PDF/23.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "2.0.4",
+          "System.Diagnostics.PerformanceCounter": "5.0.1",
+          "System.Drawing.Common": "5.0.3",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Security.Cryptography.Pkcs": "5.0.1",
+          "System.Security.Permissions": "5.0.0",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aspose.PDF.dll": {
+            "assemblyVersion": "23.3.0.0",
+            "fileVersion": "23.3.0.0"
+          }
+        }
+      },
       "BouncyCastle/1.8.9": {
         "runtime": {
           "lib/BouncyCastle.Crypto.dll": {
@@ -90,7 +120,7 @@
       "EPPlus.System.Drawing/6.1.1": {
         "dependencies": {
           "EPPlus.Interfaces": "6.1.1",
-          "System.Drawing.Common": "5.0.0"
+          "System.Drawing.Common": "5.0.3"
         },
         "runtime": {
           "lib/netstandard2.1/EPPlus.System.Drawing.dll": {
@@ -107,26 +137,38 @@
           }
         }
       },
-      "FreeSpire.Doc/10.7.0": {
+      "FreeSpire.Doc/10.8.0": {
         "dependencies": {
-          "System.Drawing.Common": "5.0.0",
+          "System.Drawing.Common": "5.0.3",
           "System.Security.Cryptography.Xml": "5.0.0",
           "System.Text.Encoding.CodePages": "5.0.0"
         },
         "runtime": {
           "lib/netcoreapp2.0/Spire.Doc.dll": {
-            "assemblyVersion": "10.7.0.0",
-            "fileVersion": "10.7.0.3320"
+            "assemblyVersion": "10.8.0.0",
+            "fileVersion": "10.8.0.3320"
           },
           "lib/netcoreapp2.0/Spire.Pdf.dll": {
-            "assemblyVersion": "8.7.2.0",
-            "fileVersion": "8.7.2.1320"
+            "assemblyVersion": "8.8.6.0",
+            "fileVersion": "8.8.6.1320"
+          }
+        }
+      },
+      "FreeSpire.PDF/8.6.0": {
+        "dependencies": {
+          "System.Drawing.Common": "5.0.3",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Spire.Pdf.dll": {
+            "assemblyVersion": "8.6.1.0",
+            "fileVersion": "8.6.1.1320"
           }
         }
       },
       "FreeSpire.XLS/12.7.0": {
         "dependencies": {
-          "System.Drawing.Common": "5.0.0",
+          "System.Drawing.Common": "5.0.3",
           "System.Security.Cryptography.Xml": "5.0.0",
           "System.Text.Encoding.CodePages": "5.0.0"
         },
@@ -141,11 +183,66 @@
           }
         }
       },
+      "GemBox.Spreadsheet/49.0.1274": {
+        "dependencies": {
+          "HarfBuzzSharp": "2.8.2",
+          "Portable.BouncyCastle": "1.9.0",
+          "SkiaSharp": "2.80.3",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GemBox.Spreadsheet.dll": {
+            "assemblyVersion": "49.0.0.1274",
+            "fileVersion": "49.0.200.1274"
+          }
+        }
+      },
       "Google.Protobuf/3.19.4": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
             "assemblyVersion": "3.19.4.0",
             "fileVersion": "3.19.4.0"
+          }
+        }
+      },
+      "HarfBuzzSharp/2.8.2": {
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Win32": "2.8.2",
+          "HarfBuzzSharp.NativeAssets.macOS": "2.8.2",
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HarfBuzzSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "2.8.2.0"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.macOS/2.8.2": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libHarfBuzzSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Win32/2.8.2": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libHarfBuzzSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libHarfBuzzSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libHarfBuzzSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -211,6 +308,24 @@
         }
       },
       "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.DotNet.PlatformAbstractions/2.0.4": {
+        "dependencies": {
+          "System.AppContext": "4.3.0",
+          "System.Collections": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "assemblyVersion": "2.0.4.0",
+            "fileVersion": "2.0.4.0"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/3.1.30": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.30"
@@ -262,6 +377,21 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.17205"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/2.0.4": {
+        "dependencies": {
+          "Microsoft.DotNet.PlatformAbstractions": "2.0.4",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Linq": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "2.0.4.0",
+            "fileVersion": "2.0.4.0"
           }
         }
       },
@@ -439,7 +569,7 @@
           "System.DirectoryServices": "5.0.0",
           "System.DirectoryServices.AccountManagement": "5.0.0",
           "System.DirectoryServices.Protocols": "5.0.0",
-          "System.Drawing.Common": "5.0.0",
+          "System.Drawing.Common": "5.0.3",
           "System.IO.FileSystem.AccessControl": "5.0.0",
           "System.IO.Packaging": "6.0.0",
           "System.IO.Pipes.AccessControl": "5.0.0",
@@ -563,6 +693,19 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {
             "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.3.21018"
+          }
+        }
+      },
+      "PdfiumViewer/2.13.0": {
+        "runtime": {
+          "lib/net20/PdfiumViewer.dll": {
+            "assemblyVersion": "2.13.0.0",
+            "fileVersion": "2.13.0.0"
+          }
+        },
+        "resources": {
+          "lib/net20/nl/PdfiumViewer.resources.dll": {
+            "locale": "nl"
           }
         }
       },
@@ -810,7 +953,7 @@
       },
       "sautinsoft.exceltopdf/5.6.11.14": {
         "dependencies": {
-          "System.Drawing.Common": "5.0.0",
+          "System.Drawing.Common": "5.0.3",
           "System.IO.Packaging": "6.0.0",
           "System.Text.Encoding.CodePages": "5.0.0",
           "System.Xml.XPath.XmlDocument": "4.3.0"
@@ -824,7 +967,7 @@
       },
       "sautinsoft.pdffocus/8.6.1.18": {
         "dependencies": {
-          "System.Drawing.Common": "5.0.0",
+          "System.Drawing.Common": "5.0.3",
           "System.IO.Packaging": "6.0.0",
           "System.Text.Encoding.CodePages": "5.0.0",
           "System.Xml.XPath.XmlDocument": "4.3.0"
@@ -840,7 +983,7 @@
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.0.2",
           "Newtonsoft.Json": "10.0.3",
-          "System.Drawing.Common": "5.0.0"
+          "System.Drawing.Common": "5.0.3"
         },
         "runtime": {
           "lib/net5.0/SautinSoft.PdfVision.dll": {
@@ -854,6 +997,39 @@
           "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp/2.80.3": {
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.80.0.0",
+            "fileVersion": "2.80.3.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1317,28 +1493,28 @@
           }
         }
       },
-      "System.Drawing.Common/5.0.0": {
+      "System.Drawing.Common/5.0.3": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "5.0.0"
         },
         "runtime": {
           "lib/netcoreapp3.0/System.Drawing.Common.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "5.0.0.2",
+            "fileVersion": "5.0.1221.52207"
           }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
             "rid": "unix",
             "assetType": "runtime",
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "5.0.0.2",
+            "fileVersion": "5.0.1221.52207"
           },
           "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "5.0.0.2",
+            "fileVersion": "5.0.1221.52207"
           }
         }
       },
@@ -1351,6 +1527,31 @@
           "lib/netstandard1.1/System.Drawing.Primitives.dll": {
             "assemblyVersion": "4.0.1.0",
             "fileVersion": "4.6.24705.1"
+          }
+        }
+      },
+      "System.Dynamic.Runtime/4.0.11": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.ObjectModel": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Emit.ILGeneration": "4.7.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Dynamic.Runtime.dll": {
+            "assemblyVersion": "4.0.11.0",
+            "fileVersion": "1.0.24212.1"
           }
         }
       },
@@ -2441,7 +2642,7 @@
       },
       "System.Windows.Extensions/5.0.0": {
         "dependencies": {
-          "System.Drawing.Common": "5.0.0"
+          "System.Drawing.Common": "5.0.3"
         },
         "runtime": {
           "lib/netcoreapp3.0/System.Windows.Extensions.dll": {
@@ -2579,6 +2780,20 @@
     }
   },
   "libraries": {
+    "Aspose.Cells/23.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/8ouQCn0FpX+3Jt/+LmKsvKagS1IxKbLsNYVsJnAwo5zKFj9wXfgcyNf2K7nNAJhlQ9iet083zV27kbRkXJW4Q==",
+      "path": "aspose.cells/23.3.0",
+      "hashPath": "aspose.cells.23.3.0.nupkg.sha512"
+    },
+    "Aspose.PDF/23.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3x/U54frubU/UZaVzKRka7GH4LGSu98ITCkuNFUiGfBDuBKj35gWcqb9pas+CDX2LMYoaACyORJCbpXVcptmXQ==",
+      "path": "aspose.pdf/23.3.0",
+      "hashPath": "aspose.pdf.23.3.0.nupkg.sha512"
+    },
     "BouncyCastle/1.8.9": {
       "type": "package",
       "serviceable": true,
@@ -2642,12 +2857,19 @@
       "path": "excelnumberformat/1.1.0",
       "hashPath": "excelnumberformat.1.1.0.nupkg.sha512"
     },
-    "FreeSpire.Doc/10.7.0": {
+    "FreeSpire.Doc/10.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/r1ZU/aWTlT3Izx4iIeyI1+cKWsaDBfRqQkhs+JNY53PfwuNSzGQgV+6/o60QoQpeSvUFq/8qaXVLjIXFRMLGQ==",
-      "path": "freespire.doc/10.7.0",
-      "hashPath": "freespire.doc.10.7.0.nupkg.sha512"
+      "sha512": "sha512-DQveY8in8JxaZsfTX1ZmRrVIl8kHeN0mhkp/KcliHOrmuKwZdf7gOuJdM1Rnakqg7dTVwbHLUhmi67V5U/WW5Q==",
+      "path": "freespire.doc/10.8.0",
+      "hashPath": "freespire.doc.10.8.0.nupkg.sha512"
+    },
+    "FreeSpire.PDF/8.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wXMAuriDaNcQWLZhg6cRGE+qE7rdeEIrSq8bePreuUl2pZDvt+yQ1YeSQEGFndekbLhff6lAd8Zd3uou7TvnEA==",
+      "path": "freespire.pdf/8.6.0",
+      "hashPath": "freespire.pdf.8.6.0.nupkg.sha512"
     },
     "FreeSpire.XLS/12.7.0": {
       "type": "package",
@@ -2656,12 +2878,40 @@
       "path": "freespire.xls/12.7.0",
       "hashPath": "freespire.xls.12.7.0.nupkg.sha512"
     },
+    "GemBox.Spreadsheet/49.0.1274": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3Nsfnv/7gKz6c4laE/q+Mjo0Sl2DsCfUmGgBticovGS2jsWFnPSa6oeym322TFbP4PrilA61EEuPLyE1S0qGow==",
+      "path": "gembox.spreadsheet/49.0.1274",
+      "hashPath": "gembox.spreadsheet.49.0.1274.nupkg.sha512"
+    },
     "Google.Protobuf/3.19.4": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-fd07/ykL4O4FhqrZIELm5lmiyOHfdPg9+o+hWr6tcfRdS7tHXnImg/2wtogLzlW2eEmr0J7j6ZrZvaWOLiJbxQ==",
       "path": "google.protobuf/3.19.4",
       "hashPath": "google.protobuf.3.19.4.nupkg.sha512"
+    },
+    "HarfBuzzSharp/2.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FE1LiYN6XhSafzpI1NXrKJKsfNCcnaYaRlH5qu8Tl4f03tfu5i9b8uk1JjqsuaBJgCHCoGobukFOWcNNNGjbCA==",
+      "path": "harfbuzzsharp/2.8.2",
+      "hashPath": "harfbuzzsharp.2.8.2.nupkg.sha512"
+    },
+    "HarfBuzzSharp.NativeAssets.macOS/2.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iX9qhY3MRvwAmUwfxnTCWms+xpLVM0DPFhDdS0KmXl9TAMh3dHaqcL9oQmn20MtaMz6kS/isJeJNzDFJM8EKYQ==",
+      "path": "harfbuzzsharp.nativeassets.macos/2.8.2",
+      "hashPath": "harfbuzzsharp.nativeassets.macos.2.8.2.nupkg.sha512"
+    },
+    "HarfBuzzSharp.NativeAssets.Win32/2.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FDCEa1e7s8ILADfzpdjoNbVzIxYeMRirVDlEGdPpFOf22djw6a7S2pHA+LQGwJLgffniTrjpbOVNJP3PvSyYpg==",
+      "path": "harfbuzzsharp.nativeassets.win32/2.8.2",
+      "hashPath": "harfbuzzsharp.nativeassets.win32.2.8.2.nupkg.sha512"
     },
     "Irony.NetCore/1.0.11": {
       "type": "package",
@@ -2705,6 +2955,13 @@
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
+    "Microsoft.DotNet.PlatformAbstractions/2.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2HjSGp63VCLQaeGadrLYR868g25mJHr+TFF81yWCaClzjUbU2vNDx6km7SUgPnoLVksE/1e7in88eh+oPtc4aQ==",
+      "path": "microsoft.dotnet.platformabstractions/2.0.4",
+      "hashPath": "microsoft.dotnet.platformabstractions.2.0.4.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration/3.1.30": {
       "type": "package",
       "serviceable": true,
@@ -2739,6 +2996,13 @@
       "sha512": "sha512-eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyModel/2.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jnHAeijsfJFQXdXmnYK/NhQIkgBUeth//RZZkf0ldIKC+jARbf7YxbA9uTrs/EPhuQxHXaDxVuMyscgmL+UqfA==",
+      "path": "microsoft.extensions.dependencymodel/2.0.4",
+      "hashPath": "microsoft.extensions.dependencymodel.2.0.4.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Abstractions/3.1.30": {
       "type": "package",
@@ -2879,6 +3143,13 @@
       "sha512": "sha512-hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "path": "newtonsoft.json/10.0.3",
       "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
+    },
+    "PdfiumViewer/2.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nw4owBmJzDVXoMRjCnqPbET07CPOawwhcNjt+PyRaSxONN9bsFF+cm9kcMsDLEAEaxsiDJo5jls8bCQjvjidkA==",
+      "path": "pdfiumviewer/2.13.0",
+      "hashPath": "pdfiumviewer.2.13.0.nupkg.sha512"
     },
     "PDFsharp/1.50.5147": {
       "type": "package",
@@ -3097,6 +3368,13 @@
       "path": "sixlabors.fonts/1.0.0-beta18",
       "hashPath": "sixlabors.fonts.1.0.0-beta18.nupkg.sha512"
     },
+    "SkiaSharp/2.80.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qX6tGNP3+MXNYe2pKm0PCRiJ/cx+LTeLaggwZifB7sUMXhECfKKKHJq45VqZKt37xQegnCCdf1jHXwmHeJQs5Q==",
+      "path": "skiasharp/2.80.3",
+      "hashPath": "skiasharp.2.80.3.nupkg.sha512"
+    },
     "Stub.System.Data.SQLite.Core.NetStandard/1.0.117": {
       "type": "package",
       "serviceable": true,
@@ -3300,12 +3578,12 @@
       "path": "system.directoryservices.protocols/5.0.0",
       "hashPath": "system.directoryservices.protocols.5.0.0.nupkg.sha512"
     },
-    "System.Drawing.Common/5.0.0": {
+    "System.Drawing.Common/5.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SztFwAnpfKC8+sEKXAFxCBWhKQaEd97EiOL7oZJZP56zbqnLpmxACWA8aGseaUExciuEAUuR9dY8f7HkTRAdnw==",
-      "path": "system.drawing.common/5.0.0",
-      "hashPath": "system.drawing.common.5.0.0.nupkg.sha512"
+      "sha512": "sha512-rEQZuslijqdsO0pkJn7LtGBaMc//YVA8de0meGihkg9oLPaN+w+/Pb5d71lgp0YjPoKgBKNMvdq0IPnoW4PEng==",
+      "path": "system.drawing.common/5.0.3",
+      "hashPath": "system.drawing.common.5.0.3.nupkg.sha512"
     },
     "System.Drawing.Primitives/4.3.0": {
       "type": "package",
@@ -3313,6 +3591,13 @@
       "sha512": "sha512-1QU/c35gwdhvj77fkScXQQbjiVAqIL3fEYn/19NE0CV/ic5TN5PyWAft8HsrbRd4SBLEoErNCkWSzMDc0MmbRw==",
       "path": "system.drawing.primitives/4.3.0",
       "hashPath": "system.drawing.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Dynamic.Runtime/4.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-db34f6LHYM0U0JpE+sOmjar27BnqTVkbLJhgfwMpTdgTigG/Hna3m2MYVwnFzGGKnEJk2UXFuoVTr8WUbU91/A==",
+      "path": "system.dynamic.runtime/4.0.11",
+      "hashPath": "system.dynamic.runtime.4.0.11.nupkg.sha512"
     },
     "System.Formats.Asn1/5.0.0": {
       "type": "package",

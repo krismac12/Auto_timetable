@@ -50,16 +50,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspose.Cells" Version="23.3.0" />
+    <PackageReference Include="Aspose.PDF" Version="23.3.0" />
     <PackageReference Include="Bytescout.Spreadsheet" Version="4.6.0.2025" />
     <PackageReference Include="ClosedXML" Version="0.100.3" />
     <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="EPPlus" Version="6.1.2" />
-    <PackageReference Include="FreeSpire.Doc" Version="10.7.0" />
+    <PackageReference Include="FreeSpire.Doc" Version="10.8.0" />
+    <PackageReference Include="FreeSpire.PDF" Version="8.6.0" />
     <PackageReference Include="FreeSpire.XLS" Version="12.7.0" />
+    <PackageReference Include="GemBox.Spreadsheet" Version="49.0.1274" />
     <PackageReference Include="iTextSharp" Version="5.5.13.3" />
     <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
     <PackageReference Include="MySql.Data" Version="8.0.31" />
     <PackageReference Include="MySqlConnector" Version="2.2.5" />
+    <PackageReference Include="PdfiumViewer" Version="2.13.0" />
     <PackageReference Include="PdfSharp" Version="1.50.5147" />
     <PackageReference Include="sautinsoft.exceltopdf" Version="5.6.11.14" />
     <PackageReference Include="sautinsoft.pdffocus" Version="8.6.1.18" />
