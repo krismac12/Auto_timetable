@@ -23,6 +23,7 @@
     <None Remove="DB\auto_timetable.db" />
     <None Remove="DB\Key.xml" />
     <None Remove="DB\Schedule_template1 %287%29.xlsx" />
+    <None Remove="DB\Schedule_template1 %288%29.xlsx" />
     <None Remove="DB\Schedule_template1.xlsx" />
     <None Remove="DB\Schedule_template2.xlsx" />
     <None Remove="Images\logo %283%29.png" />
@@ -35,6 +36,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DB\Schedule_template1 (7).xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB\Schedule_template1 (8).xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DB\Schedule_template2.xlsx">

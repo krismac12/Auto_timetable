@@ -81,7 +81,7 @@ namespace WinFormsApp1
                         string destination =  filePath + "/excelfile"+i+".xlsx";
                         try
                         {
-                            CreateExcel("./DB/Schedule_template1 (7).xlsx", destination);
+                            CreateExcel("./DB/Schedule_template1 (8).xlsx", destination);
 
 
 
@@ -108,8 +108,8 @@ namespace WinFormsApp1
 
 
                             i++;
-                            //File.Delete(pdfFile1);
-                            //File.Delete(destination);
+                            File.Delete(pdfFile1);
+                            File.Delete(destination);
                         }
                         catch
                         {
@@ -222,9 +222,19 @@ namespace WinFormsApp1
         {
             int minute = dateTime.Minute;
             int hour = dateTime.Hour;
+            if((minute >= 16 && minute <= 29))
+            {
+                minute = 30;
+            }
 
+            if(minute <= 46)
+            {
+                hour += 1;
+                minute = 0;
+            }
             // Calculate the number of 30-minute intervals since midnight
-            int interval = (hour * 60 + minute) / 30;
+            double intervals = (hour * 60 + minute) / 30;
+            int interval = (int) Math.Round(intervals);
 
             return interval;
         }
@@ -311,29 +321,29 @@ namespace WinFormsApp1
                         foreach (Time time in times)
                         {
 
-                            int subtract = 5;
-                            while (ws.Cells[time.start.Hour - subtract, a].Merge)
-                            {
-                                subtract--;
-                            }
-                            int cells = (time.eHour - subtract) - (time.sHour - subtract);
-                            string c = time.sDay + (time.sHour - subtract).ToString() + ":" + time.eDay + (time.sHour - subtract + cells - 1); 
-                            //MessageBox.Show("Cells " + c+ " Time: "+ time, "Info",
-                                              //MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            int subtract = 12;
+
+
+                            int g = GetClosest30MinuteInterval(time.start);
+
+                            int cells = (GetClosest30MinuteInterval(time.end) - subtract) - (GetClosest30MinuteInterval(time.start) - subtract);
+                            string c = time.sDay + (GetClosest30MinuteInterval(time.start) - subtract) + ":" + time.eDay + (GetClosest30MinuteInterval(time.start) - subtract + cells - 1); 
+
+
                             ws.Cells[c].Merge = true;
                             System.Diagnostics.Debug.WriteLine(c);
-                            ws.Cells[time.start.Hour - subtract, a].Value = time.Display();
-                            double height = 75;
+                            ws.Cells[GetClosest30MinuteInterval(time.start) - subtract, a].Value = time.Display();
+                            double height = 125;
                             if (cells >= 1)
                             {
-                                height = 75 / cells;
+                                height = 125 / cells;
 
                             }
                             else
                             {
 
                             }
-                            for (int r = time.start.Hour - subtract; r <= time.eHour - 5; r++)
+                            for (int r = GetClosest30MinuteInterval(time.start) - subtract; r <= GetClosest30MinuteInterval(time.start) - subtract + cells - 1; r++)
                             {
                                 if (height >= ws.Row(r).Height)
                                 {
@@ -341,7 +351,37 @@ namespace WinFormsApp1
                                 }
                             }
 
-                            b++;
+                                b++;
+
+
+                            /*int subtract = 5;
+                            while (ws.Cells[time.start.Hour - subtract, a].Merge)
+                            {
+                                subtract--;
+                            }
+                            int cells = (time.eHour - subtract) - (time.sHour - subtract);
+                            string c = time.sDay + (time.sHour - subtract).ToString() + ":" + time.eDay + (time.sHour - subtract + cells - 1);
+                            //MessageBox.Show("Cells " + c+ " Time: "+ time, "Info",
+                            //MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ws.Cells[c].Merge = true;
+                            System.Diagnostics.Debug.WriteLine(c);
+                            ws.Cells[time.start.Hour - subtract, a].Value = time.Display();
+                            double height = 75;
+                            if (cells >= 1)
+                            {
+                                height = 75 / cells;
+                            }
+                            else
+                            {
+                            }
+                            for (int r = time.start.Hour - subtract; r <= time.eHour - 5; r++)
+                            {
+                                if (height >= ws.Row(r).Height)
+                                {
+                                    ws.Row(r).Height = height;
+                                }
+                            }*/
+
                         }
                         a++;
                     }
