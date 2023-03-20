@@ -168,12 +168,9 @@ public class Time
 		if(type == 1)
         {
 			return @class.subject.code + " \r\n" +
-				@class.subject.name + " \r\n" +
 				"Class: " + @class.name + " \r\n" +
 				"Room: " + room + " \r\n" +
-				"Weeks: " + start_week + " - " + end_week + " \r\n" +
-				"Time: " + " \r\n" +
-				string.Format("{0:hh:mm tt}", start) +" - "+ string.Format("{0:hh:mm tt}", end) + "\r\n";
+				"Weeks: " + start_week + " - " + end_week + " \r\n";
 
 
 		}

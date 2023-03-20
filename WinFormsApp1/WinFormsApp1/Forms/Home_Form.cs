@@ -81,7 +81,7 @@ namespace WinFormsApp1
                         string destination =  filePath + "/excelfile"+i+".xlsx";
                         try
                         {
-                            CreateExcel("./DB/Schedule_template.xlsx", destination);
+                            CreateExcel("./DB/Schedule_template1 (7).xlsx", destination);
 
 
 
@@ -108,8 +108,8 @@ namespace WinFormsApp1
 
 
                             i++;
-                            File.Delete(pdfFile1);
-                            File.Delete(destination);
+                            //File.Delete(pdfFile1);
+                            //File.Delete(destination);
                         }
                         catch
                         {
@@ -151,6 +151,13 @@ namespace WinFormsApp1
         public void ConvertExcelToPdf(string inputFilePath, string outputFilePath)
         {
             SautinSoft.ExcelToPdf f = new ExcelToPdf();
+
+            f.OutputFormat = SautinSoft.ExcelToPdf.eOutputFormat.Pdf;
+            f.PageStyle.PageSize.Heightmm(594);
+            f.PageStyle.PageSize.Widthmm(841);
+
+
+
 
             f.ConvertFile(inputFilePath, outputFilePath);
 
@@ -211,7 +218,16 @@ namespace WinFormsApp1
             g = new Generator(classes, NA);
             g.generateTimetables(count);
         }
+        public static int GetClosest30MinuteInterval(DateTime dateTime)
+        {
+            int minute = dateTime.Minute;
+            int hour = dateTime.Hour;
 
+            // Calculate the number of 30-minute intervals since midnight
+            int interval = (hour * 60 + minute) / 30;
+
+            return interval;
+        }
         private void writeTable(string file,Timetable table)
         {
             ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
@@ -278,55 +294,66 @@ namespace WinFormsApp1
             }
 
 
-
-            using (ExcelPackage p = new ExcelPackage(fileinfo))
+            try
             {
-                OfficeOpenXml.ExcelWorksheet ws = p.Workbook.Worksheets[0];
-
-                ws.Rows.Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
-                ws.Rows.Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Top;
-                ws.Rows.Style.WrapText = true;
-                int a = 2;
-                foreach (List<Time> times in lists)
+                using (ExcelPackage p = new ExcelPackage(fileinfo))
                 {
-                    int b = 2;
-                    foreach (Time time in times)
+                    OfficeOpenXml.ExcelWorksheet ws = p.Workbook.Worksheets[0];
+
+                    ws.Rows.Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
+                    ws.Rows.Style.VerticalAlignment = OfficeOpenXml.Style.ExcelVerticalAlignment.Top;
+                    ws.Rows.Style.WrapText = true;
+                    ws.PrinterSettings.Orientation = eOrientation.Landscape;
+                    int a = 2;
+                    foreach (List<Time> times in lists)
                     {
-                        
-                        int subtract = 5;
-                        while(ws.Cells[time.start.Hour - subtract, a].Merge)
-                        {
-                            subtract--;
-                        }
-                        int cells = (time.eHour - subtract) - (time.sHour - subtract);
-                        string c = time.sDay + (time.sHour - subtract).ToString() + ":" + time.eDay + (time.sHour - subtract + cells);
-                        ws.Cells[c].Merge = true;
-                        System.Diagnostics.Debug.WriteLine(c);
-                        ws.Cells[time.start.Hour - subtract, a].Value = time.Display();
-                        double height = 120;
-                        if (cells >= 1)
-                        {
-                            height = 120 / cells;
-
-                        }
-                        else
+                        int b = 2;
+                        foreach (Time time in times)
                         {
 
-                        }
-                        for (int r = time.start.Hour - subtract ; r <= time.eHour - 5; r++)
-                        {
-                            if (height >= ws.Row(r).Height)
+                            int subtract = 5;
+                            while (ws.Cells[time.start.Hour - subtract, a].Merge)
                             {
-                                ws.Row(r).Height = height;
+                                subtract--;
                             }
+                            int cells = (time.eHour - subtract) - (time.sHour - subtract);
+                            string c = time.sDay + (time.sHour - subtract).ToString() + ":" + time.eDay + (time.sHour - subtract + cells - 1); 
+                            //MessageBox.Show("Cells " + c+ " Time: "+ time, "Info",
+                                              //MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ws.Cells[c].Merge = true;
+                            System.Diagnostics.Debug.WriteLine(c);
+                            ws.Cells[time.start.Hour - subtract, a].Value = time.Display();
+                            double height = 75;
+                            if (cells >= 1)
+                            {
+                                height = 75 / cells;
+
+                            }
+                            else
+                            {
+
+                            }
+                            for (int r = time.start.Hour - subtract; r <= time.eHour - 5; r++)
+                            {
+                                if (height >= ws.Row(r).Height)
+                                {
+                                    ws.Row(r).Height = height;
+                                }
+                            }
+
+                            b++;
                         }
-
-                        b++;
+                        a++;
                     }
-                    a++;
-                }
 
-                p.Save();
+                    p.Save();
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                // Handle the exception here
+                MessageBox.Show(ex.Message, "Info",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

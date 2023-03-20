@@ -621,7 +621,6 @@ C:\desk\code\Fivver\Auto_table\Auto_timetable\WinFormsApp1\WinFormsApp1\bin\Rele
 C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Saves\auto_timetable.db
 C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\WinFormsApp1.exe
 C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\auto_timetable.db
-C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Schedule_template.xlsx
 C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo (3).png
 C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo.PNG
 C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\Images\logo__2_w_trans.png
@@ -785,3 +784,6 @@ C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-wind
 C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\ref\WinFormsApp1.dll
 C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.pdb
 C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\obj\Release\net5.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Schedule_template1.xlsx
+C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Schedule_template2.xlsx
+C:\desk\code\Fivver\AutoTable2\WinFormsApp1\WinFormsApp1\bin\Release\net5.0-windows\DB\Schedule_template1 (7).xlsx
