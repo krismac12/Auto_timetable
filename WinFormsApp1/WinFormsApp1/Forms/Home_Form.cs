@@ -326,8 +326,8 @@ namespace WinFormsApp1
 
                             int g = GetClosest30MinuteInterval(time.start);
 
-                            int cells = (GetClosest30MinuteInterval(time.end) - subtract) - (GetClosest30MinuteInterval(time.start) - subtract);
-                            string c = time.sDay + (GetClosest30MinuteInterval(time.start) - subtract) + ":" + time.eDay + (GetClosest30MinuteInterval(time.start) - subtract + cells - 1); 
+                            int cells = (GetClosest30MinuteInterval(time.end) - subtract-1) - (GetClosest30MinuteInterval(time.start) - subtract);
+                            string c = time.sDay + (GetClosest30MinuteInterval(time.start) - subtract-1) + ":" + time.eDay + (GetClosest30MinuteInterval(time.start) - subtract + cells - 1); 
 
 
                             ws.Cells[c].Merge = true;
