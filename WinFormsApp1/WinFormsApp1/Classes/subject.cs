@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 
 public class Subject
 {
@@ -12,6 +13,8 @@ public class Subject
 	float totalWeight = 0;
 	float totalGrade = 0;
 	float g;
+	public Color color;
+	private Random rnd = new Random();
 
 	public float Grade;
 
@@ -20,6 +23,25 @@ public class Subject
 		this.ID = ID;
 		this.name = name;
 		this.code = code;
+		int colorSelect = rnd.Next(0, 2);
+		int r = rnd.Next(128);
+		int g = rnd.Next(128);
+		int b = rnd.Next(128);
+        switch (colorSelect)
+        {
+			case 0:
+				r = 220;
+				break;
+
+			case 1:
+				g = 220;
+				break;
+
+			case 2:
+				b = 220;
+				break;
+        }
+		color = Color.FromArgb(r,g,b);
 	}
 
 	public void AddClass(Class @class)

@@ -21,6 +21,7 @@ using Spire.Pdf;
 using PdfDocument = Spire.Pdf.PdfDocument;
 using Aspose.Pdf;
 using Syncfusion.Pdf.Parsing;
+using OfficeOpenXml.Style;
 
 namespace WinFormsApp1
 {
@@ -81,7 +82,7 @@ namespace WinFormsApp1
                         string destination =  filePath + "/excelfile"+i+".xlsx";
                         try
                         {
-                            CreateExcel("./DB/Schedule_template1 (8).xlsx", destination);
+                            CreateExcel("./DB/Schedule_template1 (10).xlsx", destination);
 
 
 
@@ -327,10 +328,40 @@ namespace WinFormsApp1
                             int g = GetClosest30MinuteInterval(time.start);
 
                             int cells = (GetClosest30MinuteInterval(time.end) - subtract-1) - (GetClosest30MinuteInterval(time.start) - subtract);
-                            string c = time.sDay + (GetClosest30MinuteInterval(time.start) - subtract-1) + ":" + time.eDay + (GetClosest30MinuteInterval(time.start) - subtract + cells - 1); 
+                            string c = time.sDay + (GetClosest30MinuteInterval(time.start) - subtract-1) + ":" + time.eDay + (GetClosest30MinuteInterval(time.start) - subtract + cells - 1);
 
 
                             ws.Cells[c].Merge = true;
+                            ws.Cells[c].Style.Fill.PatternType = ExcelFillStyle.Solid;
+                            if(time.type == 1)
+                            {
+                                ws.Cells[c].Style.Fill.BackgroundColor.SetColor(time.@class.subject.color);
+                            }
+                            else
+
+                            {
+                                Random rnd = new Random();
+                                int colorSelect = rnd.Next(0, 2);
+                                int red = rnd.Next(128);
+                                int green = rnd.Next(128);
+                                int blue = rnd.Next(128);
+                                switch (colorSelect)
+                                {
+                                    case 0:
+                                        red = 220;
+                                        break;
+
+                                    case 1:
+                                        green = 220;
+                                        break;
+
+                                    case 2:
+                                        blue = 220;
+                                        break;
+                                }
+                                System.Drawing.Color randomColor = System.Drawing.Color.FromArgb(red, green, blue); 
+                                ws.Cells[c].Style.Fill.BackgroundColor.SetColor(randomColor);
+                            }
                             System.Diagnostics.Debug.WriteLine(c);
                             ws.Cells[GetClosest30MinuteInterval(time.start) - subtract, a].Value = time.Display();
                             double height = 125;
